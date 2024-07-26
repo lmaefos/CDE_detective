@@ -1,0 +1,4 @@
+# Required dependencies to install prior to running CDE_ID.py
+pip install openai
+pip install aiohttp
+pip install python-dotenv

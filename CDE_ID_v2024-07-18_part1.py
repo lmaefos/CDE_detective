@@ -12,26 +12,34 @@ load_dotenv()
 
 # Set up your OpenAI API key
 api_key = os.getenv("OPENAI_API_KEY")
+assistant_id = 'asst_sVyA5k18qmvx83n4pp8jLad9'  # replace as needed
 
 # Initialize OpenAI client
 client = openai.Client(api_key=api_key)
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, filename='process_log.log', 
+log_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\process_log_2024-07-23-temp07pt2.log' # rename as needed
+logging.basicConfig(level=logging.INFO, filename=log_file_path, 
                     filemode='w', format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Function to read JSON file
+def read_json(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
 
 # Function to write JSON file
 def write_json(data, file_path):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
+    print(f"Data written to {file_path}")
 
-# Function to create a module-level prompt
+# Function to create a prompt for a module
 def create_module_prompt(module_name, module_entries):
     module_prompt = "\n\n".join([
         f"Entry {entry_number}: {json.dumps(entry, indent=2)}"
-        for entry_number, entry in module_entries
+        for entry_number, entry in enumerate(module_entries, start=1)
     ])
-    prompt = f"Analyze the following entries for the module '{module_name}' to determine if the module or specific entries within it correspond to the HEAL Core Common Data Elements (CDE) list:\n{module_prompt}"
+    prompt = f"Analyze the following entries for the module '{module_name}' to determine if they correspond to the HEAL Core Common Data Elements (CDE) list:\n{module_prompt}"
     return prompt
 
 # Asynchronous function to process a module
@@ -42,30 +50,30 @@ async def process_module(session, module_name, module_entries):
         'https://api.openai.com/v1/chat/completions',
         headers={'Authorization': f'Bearer {api_key}'},
         json={
-            'model': 'gpt-4o-2024-05-13',  # Updated model name
+            'model': 'gpt-4o-mini-2024-07-18',  # Updated model name
             'messages': [{'role': 'user', 'content': prompt}],
             'max_tokens': 1500
         }
     ) as response:
         response_json = await response.json()
         
-        # Log the response structure for debugging
-        logging.info(f"Response for module '{module_name}': {response_json}")
+        # Log the raw response for debugging
+        logging.info(f"Raw response for module '{module_name}': {response_json}")
         
+        # Return raw response content
         response_content = response_json['choices'][0]['message']['content'].strip()
         
-        # Assume the response content will be sufficient to determine if the module matches HEAL CDEs
         return {
-            'module_name': module_name,
-            'response': response_content
+            "module_name": module_name,
+            "raw_response": response_content
         }
 
 # Function to group entries by module name
 def group_entries_by_module(entries):
     grouped_entries = defaultdict(list)
-    for entry_number, entry in enumerate(entries, start=1):
-        module_name = entry.get('module_name')  # Assuming each entry has a 'module_name' key
-        grouped_entries[module_name].append((entry_number, entry))
+    for module_name, module_entries in entries.items():
+        for entry in module_entries:
+            grouped_entries[module_name].append(entry)
     return grouped_entries
 
 # Function to process entries asynchronously by module
@@ -85,13 +93,16 @@ async def process_entries(entries):
 def main(input_file, output_file, master_cde_file):
     # Read the input JSON file
     data_dictionary = read_json(input_file)
+    print(f"Data dictionary loaded: {data_dictionary}")  # Debug print
     
     # Read the master CDE list
     master_cde_list = read_json(master_cde_file)
+    print(f"Master CDE list loaded: {master_cde_list}")  # Debug print
     
     # Process entries asynchronously by module
     loop = asyncio.get_event_loop()
     results = loop.run_until_complete(process_entries(data_dictionary))
+    print(f"Processing results: {results}")  # Debug print
     
     # Write the results to the output JSON file
     write_json(results, output_file)
@@ -99,7 +110,7 @@ def main(input_file, output_file, master_cde_file):
 # Run the main function
 if __name__ == '__main__':
     main(
-        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\PRECICEV2_DD_JSON.json',
-        'output.json',
-        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\KnowledgeBase\All_HEALPAINCDEsDD_JSON.json'
+        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_ForTesting.json', # modify input path as needed
+        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_output_2024-07-23-temp07pt2.json', # modify output path as needed
+        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\KnowledgeBase\All_HEALPAINCDEsDD_JSON.json' # modify knowledgebase path as needed
     )

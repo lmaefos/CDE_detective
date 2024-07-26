@@ -1,0 +1,271 @@
+[
+    {
+        "module_name": "baseline_assessment",
+        "entries": [
+            {
+                "name": "birth",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "age_at_enrollment",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "gender",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ethnicity",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___1",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___2",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___3",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___4",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___5",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___6",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___7",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "ehtnicity_1___8",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "income",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "employment",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "marital_status",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "education",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "little_do",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "feel_down",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "fall_sleep",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "tired_energy",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "poor_eating",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "let_down",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "con_things",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "move_usual",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "phq8_questions",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "groc_quest",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            }
+        ]
+    },
+    {
+        "module_name": "opioid_risk_tool",
+        "entries": [
+            {
+                "name": "alcohol_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "illegal_drugs_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "rx_drugs_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "alcohol_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "illegal_drugs",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "rx_drugs_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "age_between_16_45_years",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "history_of_preadolescent_s",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "add_ocd_bipolar_schizophre",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "illegal_drugs_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            },
+            {
+                "name": "depression",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "No CDE match",
+                "crf_name": "No CRF match"
+            }
+        ]
+    }
+]
