@@ -18,7 +18,7 @@ assistant_id = 'asst_sVyA5k18qmvx83n4pp8jLad9'  # replace as needed
 client = openai.Client(api_key=api_key)
 
 # Configure logging
-log_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\process_log_2024-07-23-temp07pt2.log' # rename as needed
+log_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\process_log_2024-07-29-temp08.log' # rename as needed
 logging.basicConfig(level=logging.INFO, filename=log_file_path, 
                     filemode='w', format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -34,17 +34,18 @@ def write_json(data, file_path):
     print(f"Data written to {file_path}")
 
 # Function to create a prompt for a module
-def create_module_prompt(module_name, module_entries):
+def create_module_prompt(module_name, module_entries, cde_list):
     module_prompt = "\n\n".join([
         f"Entry {entry_number}: {json.dumps(entry, indent=2)}"
         for entry_number, entry in enumerate(module_entries, start=1)
     ])
-    prompt = f"Analyze the following entries for the module '{module_name}' to determine if they correspond to the HEAL Core Common Data Elements (CDE) list:\n{module_prompt}"
+    cde_list_str = json.dumps(cde_list, indent=2)
+    prompt = f"Analyze the following entries for the module '{module_name}' to determine if they correspond to the HEAL Core Common Data Elements (CDE) list:\n{module_prompt}\n\nHere is the HEAL CDE list for reference:\n{cde_list_str}"
     return prompt
 
 # Asynchronous function to process a module
-async def process_module(session, module_name, module_entries):
-    prompt = create_module_prompt(module_name, module_entries)
+async def process_module(session, module_name, module_entries, cde_list):
+    prompt = create_module_prompt(module_name, module_entries, cde_list)
     
     async with session.post(
         'https://api.openai.com/v1/chat/completions',
@@ -77,12 +78,12 @@ def group_entries_by_module(entries):
     return grouped_entries
 
 # Function to process entries asynchronously by module
-async def process_entries(entries):
+async def process_entries(entries, cde_list):
     grouped_entries = group_entries_by_module(entries)
     processed_modules = []
     async with aiohttp.ClientSession() as session:
         tasks = [
-            process_module(session, module_name, module_entries)
+            process_module(session, module_name, module_entries, cde_list)
             for module_name, module_entries in grouped_entries.items()
         ]
         module_results = await asyncio.gather(*tasks)
@@ -101,7 +102,7 @@ def main(input_file, output_file, master_cde_file):
     
     # Process entries asynchronously by module
     loop = asyncio.get_event_loop()
-    results = loop.run_until_complete(process_entries(data_dictionary))
+    results = loop.run_until_complete(process_entries(data_dictionary, master_cde_list))
     print(f"Processing results: {results}")  # Debug print
     
     # Write the results to the output JSON file
@@ -111,6 +112,6 @@ def main(input_file, output_file, master_cde_file):
 if __name__ == '__main__':
     main(
         r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_ForTesting.json', # modify input path as needed
-        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_output_2024-07-23-temp07pt2.json', # modify output path as needed
+        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_output_2024-07-29-temp08.json', # modify output path as needed
         r'C:\Users\lmaefos\Code Stuffs\CDE_detective\KnowledgeBase\All_HEALPAINCDEsDD_JSON.json' # modify knowledgebase path as needed
     )
