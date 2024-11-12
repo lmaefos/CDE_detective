@@ -18,7 +18,7 @@ assistant_id = 'asst_sVyA5k18qmvx83n4pp8jLad9'  # replace as needed
 client = openai.Client(api_key=api_key)
 
 # Configure logging
-log_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\process_log_2024-07-29-temp08.log' # rename as needed
+log_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\process_log_2024-07-29-temp09.log' # rename as needed
 logging.basicConfig(level=logging.INFO, filename=log_file_path, 
                     filemode='w', format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -112,6 +112,6 @@ def main(input_file, output_file, master_cde_file):
 if __name__ == '__main__':
     main(
         r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_ForTesting.json', # modify input path as needed
-        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_output_2024-07-29-temp08.json', # modify output path as needed
+        r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary_output_2024-07-29-temp09.json', # modify output path as needed
         r'C:\Users\lmaefos\Code Stuffs\CDE_detective\KnowledgeBase\All_HEALPAINCDEsDD_JSON.json' # modify knowledgebase path as needed
     )

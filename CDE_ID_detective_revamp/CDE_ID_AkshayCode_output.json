@@ -1,0 +1,200 @@
+assistant > Based on the provided sample output and the CDE list from the All_HEALPAINCDEsDD_JSON, I have structured the information into the desired JSON format as instructed. Below is the adjusted output:
+
+```json
+[
+    {
+        "module_name": "baseline_assessment",
+        "entries": [
+            {
+                "name": "Date of Birth",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Birth date",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Age at Enrollment",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Age",
+                "confidence_level": "Medium"
+            },
+            {
+                "name": "Gender",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Gender identification type",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Ethnicity category",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - White",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "related to racial classifications",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - Black",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "related to racial classifications",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - American Indian",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "related to racial classifications",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - Asian",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "related to racial classifications",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - Native Hawaiian or Other Pacific Islander",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "related to racial classifications",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Ethnicity - Don't Know",
+                "standards_mapping_type": "Potential HEAL CDE Match",
+                "standards_mapping_label": "Ethnicity category",
+                "confidence_level": "Medium"
+            },
+            {
+                "name": "Ethnicity - Refuse to Answer",
+                "standards_mapping_type": "Potential HEAL CDE Match",
+                "standards_mapping_label": "Ethnicity category",
+                "confidence_level": "Medium"
+            },
+            {
+                "name": "Ethnicity - Other",
+                "standards_mapping_type": "Potential HEAL CDE Match",
+                "standards_mapping_label": "Ethnicity category",
+                "confidence_level": "Medium"
+            },
+            {
+                "name": "Income",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Annual household income range",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Employment",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Employment status",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Marital Status",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Marital response status",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Education",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Education level type",
+                "confidence_level": "High"
+            },
+            {
+                "name": "PHQ8 Questions",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "PHQ for depression measurement",
+                "confidence_level": "High"
+            },
+            {
+                "name": "PHQ8 Total",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "depression measurement",
+                "confidence_level": "High"
+            },
+            {
+                "name": "Pain Condition Rating",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            }
+        ]
+    },
+    {
+        "module_name": "opioid_risk_tool",
+        "entries": [
+            {
+                "name": "alcohol_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "illegal_drugs_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "rx_drugs_family_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "alcohol_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "illegal_drugs",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "rx_drugs_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "age_between_16_45_years",
+                "standards_mapping_type": "HEAL CDE Match",
+                "standards_mapping_label": "Age",
+                "confidence_level": "High"
+            },
+            {
+                "name": "history_of_preadolescent_s",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "add_ocd_bipolar_schizophre",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "illegal_drugs_personal_history",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            },
+            {
+                "name": "depression",
+                "standards_mapping_type": "No CDE match",
+                "standards_mapping_label": "No CRF match",
+                "confidence_level": "Low"
+            }
+        ]
+    }
+]
+```
+
+### Notes:
+- Each entry from both modules was compared against the CDE list, determining the appropriate mapping type and confidence level based on the given guidelines.
+- The specified naming conventions from the desired outcome format have been adhered to, ensuring consistency with your requirements.

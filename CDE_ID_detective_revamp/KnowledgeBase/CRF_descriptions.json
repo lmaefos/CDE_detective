@@ -1,0 +1,115 @@
+{
+    "CRFs": [
+      {
+        "name": "Brief Pain Inventory (BPI)",
+        "abbreviations": ["BPI", "Brief Pain Inventory", "B.P.I."],
+        "description": "A self-report questionnaire measuring pain severity and interference with daily activities."
+      },
+      {
+        "name": "BPI Pain Interference",
+        "abbreviations": ["BPI Interference", "Pain Interference", "BPI-PI"],
+        "description": "Assesses how pain impacts various aspects of daily life, including mood, work, and social activities."
+      },
+      {
+        "name": "BPI Pain Severity",
+        "abbreviations": ["BPI Severity", "Pain Severity", "BPI-PS"],
+        "description": "Measures the intensity of pain at its worst, least, average, and current levels."
+      },
+      {
+        "name": "Demographics",
+        "abbreviations": ["DEM", "Demographics"],
+        "description": "Collects baseline demographic information, including age, gender, ethnicity, education, income, SDOH and other background details."
+      },
+      {
+        "name": "Generalized Anxiety Disorder (GAD-2)",
+        "abbreviations": ["GAD-2", "GAD", "General Anxiety Disorder"],
+        "description": "A 2-item screener for generalized anxiety disorder, assessing symptoms like feeling nervous and unable to control worrying."
+      },
+      {
+        "name": "GAD2 Pain",
+        "abbreviations": ["GAD-2 Pain", "GAD Pain"],
+        "description": "A version of the GAD-2 screener used specifically for populations experiencing pain."
+      },
+      {
+        "name": "NIDA-Modified ASSIST L2",
+        "abbreviations": ["NIDA Modified", "NIDA-Modified ASSIST"],
+        "description": "A screening tool for adolescents (ages 11-17), adapted from the NIDA ASSIST to assess substance use, including alcohol."
+      },
+      {
+        "name": "PCS-6",
+        "abbreviations": ["PCS-6", "Pain Catastrophizing Scale Short Form"],
+        "description": "A shortened version of the Pain Catastrophizing Scale (PCS) focusing on key items related to catastrophic thinking about pain."
+      },
+      {
+        "name": "PCS-Child",
+        "abbreviations": ["PCS Child", "Pain Catastrophizing Scale Child"],
+        "description": "An adapted version of the PCS for children to self-report catastrophic thoughts related to pain."
+      },
+      {
+        "name": "PCS-Parent",
+        "abbreviations": ["PCS Parent", "Pain Catastrophizing Scale Parent"],
+        "description": "An adapted version of the PCS for parents to report on their perceptions of their child’s pain experience."
+      },
+      {
+        "name": "Pediatric Quality of Life Inventory (PedsQL)",
+        "abbreviations": ["PedsQL", "Pediatric Quality of Life"],
+        "description": "A tool to assess the quality of life in children across physical, emotional, social, and school functioning."
+      },
+      {
+        "name": "PEG Pain",
+        "abbreviations": ["PEG", "PEG Pain"],
+        "description": "A 3-item scale assessing pain’s impact on enjoyment of life and general activity."
+      },
+      {
+        "name": "Patient Global Impression of Change (PGIC) Pain",
+        "abbreviations": ["PGIC", "PGIC Pain"],
+        "description": "Assesses the patient’s perception of change or improvement in their pain condition."
+      },
+      {
+        "name": "Patient Global Impression of Severity (PGIS)",
+        "abbreviations": ["PGIS", "Patient Global Severity"],
+        "description": "Measures the patient’s perception of the severity of their condition."
+      },
+      {
+        "name": "Patient Health Questionnaire 2 (PHQ2)",
+        "abbreviations": ["PHQ2", "Patient Health Questionnaire 2"],
+        "description": "A 2-item screener for depression symptoms, focusing on interest or pleasure in activities and feeling down or hopeless."
+      },
+      {
+        "name": "PHQ2 Pain",
+        "abbreviations": ["PHQ2 Pain", "Patient Health Questionnaire 2 Pain"],
+        "description": "A version of the PHQ2 specifically assessing depressive symptoms in relation to pain."
+      },
+      {
+        "name": "PROMIS Physical Function Pain",
+        "abbreviations": ["PROMIS PF Pain", "PROMIS Physical Function Pain"],
+        "description": "Part of the PROMIS suite, assessing physical function as it relates to pain."
+      },
+      {
+        "name": "PROMIS Physical Function Pain 6b",
+        "abbreviations": ["PROMIS PF Pain 6b", "PROMIS Pain 6b"],
+        "description": "A subset of PROMIS Physical Function items related to pain, version 6b."
+      },
+      {
+        "name": "PROMIS Sleep Disturbance 6a",
+        "abbreviations": ["PROMIS Sleep 6a", "PROMIS Sleep Disturbance 6a"],
+        "description": "A subset of PROMIS items measuring sleep disturbance, version 6a."
+      },
+      {
+        "name": "Sleep Duration Pain",
+        "abbreviations": ["Sleep Duration Pain"],
+        "description": "Assesses sleep duration specifically for individuals experiencing pain."
+      },
+      {
+        "name": "Adolescent Sleep-Wake Scale (SleepASWS)",
+        "abbreviations": ["SleepASWS", "Adolescent Sleep-Wake Scale"],
+        "description": "A self-reported measure of sleep patterns and quality in adolescents."
+      },
+      {
+        "name": "TAPS Pain",
+        "abbreviations": ["TAPS Pain", "Tobacco, Alcohol, Prescription Medication, and Other Substance Use Pain"],
+        "description": "The TAPS tool adapted to assess substance use in individuals with pain."
+      }
+    ]
+  }
+  
