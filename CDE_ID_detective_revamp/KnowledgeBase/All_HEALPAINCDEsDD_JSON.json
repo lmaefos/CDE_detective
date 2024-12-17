@@ -1,6 +1,5 @@
 {
     "BPIWrstPain7dRtngScale": {
-        "Study Population Focus": "Peds Chronic",
         "Domain": "Pain Intensity",
         "CRF Question #": 1,
         "CDE Name": "Brief Pain Inventory (BPI) - worst pain rating scale",
@@ -54,7 +53,6 @@
         "Notes": null
     },
     "BPILstPain7dRtngScale": {
-        "Study Population Focus": "Peds Chronic",
         "Domain": "Pain Intensity",
         "CRF Question #": 2,
         "CDE Name": "Brief Pain Inventory (BPI) - least pain rating scale",
@@ -108,7 +106,6 @@
         "Notes": null
     },
     "BPIAvgPain7dRtngScale": {
-        "Study Population Focus": "Peds Chronic",
         "Domain": "Pain Intensity",
         "CRF Question #": 3,
         "CDE Name": "Brief Pain Inventory (BPI) - average pain rating scale",
@@ -162,7 +159,6 @@
         "Notes": null
     },
     "BPICurntPainRtngScale": {
-        "Study Population Focus": "Peds Chronic",
         "Domain": "Pain Intensity",
         "CRF Question #": 4,
         "CDE Name": "Brief Pain Inventory (BPI) - current pain rating scale",
@@ -216,7 +212,6 @@
         "Notes": null
     },
     "BPIPainSeverityScore": {
-        "Study Population Focus": "Peds Chronic",
         "Domain": "Pain Intensity",
         "CRF Question #": null,
         "CDE Name": "Brief Pain Inventory (BPI) - pain severity subscale score",
@@ -248,7 +243,6 @@
         "Notes": null
     },
     "BPIWorstPainRatingScl": {
-        "Study Population Focus": "Adult Acute",
         "Domain": "Pain Intensity",
         "CRF Question #": 1,
         "CDE Name": "Brief Pain Inventory (BPI) - worst pain rating scale",
@@ -302,7 +296,6 @@
         "Notes": null
     },
     "BPILeastPainRatingScl": {
-        "Study Population Focus": "Adult Acute",
         "Domain": "Pain Intensity",
         "CRF Question #": 2,
         "CDE Name": "Brief Pain Inventory (BPI) - least pain rating scale",
@@ -356,7 +349,6 @@
         "Notes": null
     },
     "BPIAvgPainRatingScl": {
-        "Study Population Focus": "Adult Acute",
         "Domain": "Pain Intensity",
         "CRF Question #": 3,
         "CDE Name": "Brief Pain Inventory (BPI) - average pain rating scale",
@@ -410,7 +402,6 @@
         "Notes": null
     },
     "BPICurrentPainRatingScl": {
-        "Study Population Focus": "Adult Acute",
         "Domain": "Pain Intensity",
         "CRF Question #": 4,
         "CDE Name": "Brief Pain Inventory (BPI) - current pain rating scale",
@@ -464,7 +455,6 @@
         "Notes": null
     },
     "BRTHDTC": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 1,
         "CDE Name": "Birth date",
@@ -496,7 +486,6 @@
         "Notes": "https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-3#Date+Time+Precision"
     },
     "Age": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 2,
         "CDE Name": "Age ",
@@ -514,18 +503,9 @@
             "336(7641):425-429. Pediatric-specific reference(s): Anderson V, Catroppa C, Morse S, Haritou F, Rosenfeld J (2005) Functional plasticity or vulnerability after early brain injury. Pediatrics 116:1374-1382."
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": "Number",
-        "CDISC Notes": "Age expressed in AgeU. Maybe derived from RFSTDTC and BIRTHDTC, but BRTHDTC may not be available in all cases (due to subject privacy concers)",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "Sex": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 3,
         "CDE Name": "Sex birth type",
@@ -551,18 +531,9 @@
             "No reference"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": "C66781",
-        "CDISC Permissible Values": "Days - C25301                                         Hours - C25529                                Months - C29846                               Weeks - C29844                                     Years - C29848",
-        "CDISC Data Type": "Character",
-        "CDISC Notes": "Those units of time that are routinely used to express the age of a subject",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "GENIDENT": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 4,
         "CDE Name": "Gender identification type",
@@ -599,7 +570,6 @@
         "Notes": "CDASH SEX is defined as \"Sex of the subject as determined by the investigator.\"\n\nhttps://www.w3.org/wiki/images/6/61/HCLS$$F2F$$DrugSafety$SDTM_3.1_Implementation_Guide_v1_01.pdf"
     },
     "GENIDENTOTH ": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": "(4a)",
         "CDE Name": "Gender identification other type text",
@@ -626,7 +596,6 @@
         "Notes": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/Archive/SDTM%20Terminology%20Changes%202019-03-29.txt\n\nhttps://nciterms.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=19.12e&code=C158277&ns=ncit&type=synonym&key=null&b=1&n=0&vse=null"
     },
     "ETHNIC": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 5,
         "CDE Name": "Ethnicity category",
@@ -652,18 +621,9 @@
             "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": null,
-        "CDISC Notes": null,
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "AI_AN": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 6,
         "CDE Name": "Race",
@@ -673,35 +633,11 @@
         "Additional Notes (Question Text)": "The participant can select one or more races. ",
         "Permissible Values": [
             "0",
-            "1",
-            "Asian",
-            "Bl_AA",
-            "NH_PI",
-            "White",
-            "Unkn",
-            "Not_Rep",
-            "Asian",
-            "Bl_AA",
-            "NH_PI",
-            "White",
-            "Unkn",
-            "Not_Rep"
+            "1"
         ],
         "PV Description": [
             "0=not checked",
-            " 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked"
+            "1=checked"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "The participant can select one or more races",
@@ -709,18 +645,153 @@
             "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": "C66790",
-        "CDISC Permissible Values": "Hispanic or Latino -- C17459,                                 Not Hispanic or Latino -- C4122,                                            Unkown, Not reported --C17998",
-        "CDISC Data Type": "Character",
-        "CDISC Notes": "A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease. ",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
+    },
+    "Asian": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "Asian",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories- Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "Bl_AA": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "Bl_AA",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as Haitian or Negro can be used in addition to Black or African American",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "NH_PI": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "NH_PI",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "White": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "White",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "Unkn": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "Unkn",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Unknown, Not provided or available",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "Not_Rep": {
+        "Domain": null,
+        "CRF Question #": 6,
+        "CDE Name": "Race",
+        "Variable Name": "Not_Rep",
+        "Definition": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Not Reported, Not known, not observed, not recorded, or refused",
+        "Additional Notes (Question Text)": "The participant can select one or more races.",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
     },
     "EDULEVEL": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 7,
         "CDE Name": "Education level type",
@@ -742,8 +813,7 @@
             "3 = High School or Secondary School degree complete",
             "4 = Associate's or Technical Degree complete",
             "5 = College or Baccalaureate degree complete",
-            "6 = Doctoral or Postgraduate education",
-            ""
+            "6 = Doctoral or Postgraduate education"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.",
@@ -751,18 +821,9 @@
             "Behavioral Risk Factor Surveillance System. BRFSS Questionnaires: Demographics. 2018https://www.cdc.gov/brfss/questionnaires/pdf-ques/2018_BRFSS_English_Questionnaire.pdf"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": "C74457",
-        "CDISC Permissible Values": "Not Reported, Not known, not observed, not recorded, or refused - C43234",
-        "CDISC Data Type": null,
-        "CDISC Notes": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": "Collection of Race and Ethnicity Data in Clinical Trials, Guidance for Industry and Food and Drug Administration Staff, October 26, 2016, USHHS,\nhttps://www.fda.gov/media/75453/download\n\nhttps://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-3#Demographics\n\n\nhttps://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-3\nSTDM Implementation Guide 3.3\n\"Submission of mulitple race responses should be represented in the Demographics domain and Supplemental Qualifiers (SUPPDM) dataset....If mulitple races are collected, then the value of RACE should be MULTIPLE and the additional information will be included in the Supplemental Qualifiers dataset.\" "
+        "Classification": "Core"
     },
     "EMPSTAT": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 8,
         "CDE Name": "Employment status",
@@ -776,7 +837,7 @@
             "3"
         ],
         "PV Description": [
-            "1=Full-time employment, Employment involving the standard or customary working time",
+            "1 = Full-time employment, Employment involving the standard or customary working time",
             "2 = Not employed, The state of not having a job",
             "3 = Part-time employment, Employment involving less than the standard or customary working time"
         ],
@@ -787,17 +848,16 @@
         ],
         "Population": "Adult;Pediatric",
         "Classification": "Core",
-        "External Id CDISC": "C17953",
-        "CDISC Permissible Values": "Did not complete Secondary School or Less than High School\nSome Secondary School or High School Education\nHigh School or Secondary School Degree Complete\nAssociate's or Technical Degree Complete\nCollege or Baccalaureate Degree Complete\nDoctoral or Postgraduate Education",
+        "External Id CDISC": "C111108",
+        "CDISC Permissible Values": "Full time -- C52658\nNot employed -- C75563\nPart time -- C75562",
         "CDISC Data Type": "Character",
-        "CDISC Notes": "Level of Education Attained",
+        "CDISC Notes": "Terminology relevant to the state of being engaged in an activity or service for wages or salary.",
         "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": "\nDid not complete Secondary School or Less than High School\nSome Secondary School or High School Education\nHigh School or Secondary School Degree Complete\nAssociate's or Technical Degree Complete\nCollege or Baccalaureate Degree Complete\nDoctoral or Postgraduate Education",
-        "Notes": "https://www.cdisc.org/system/files/members/standard/foundational/cdash/CDASHIG%20v2.1.pdf"
+        "Map to CDISC variable name if different": " ",
+        "Map to CDISC format": " ",
+        "Notes": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.html"
     },
     "MARISTAT": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 9,
         "CDE Name": "Marital response status",
@@ -811,7 +871,7 @@
             "3",
             "4",
             "5",
-            " 6"
+            "6"
         ],
         "PV Description": [
             "1 = Divorced,Marriage contract has been declared dissolved and inactive",
@@ -819,7 +879,7 @@
             "3 = Never Married, No marriage contract has ever been entered",
             "4 = Separated, A person who is separated from their spouse, whether or not there is a legal arrangement",
             "5 = Widowed, The spouse has died",
-            " 6=Domestic Partner, Person declares that a domestic partnership relationship exists"
+            "6 = Domestic Partner, Person declares that a domestic partnership relationship exists"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.",
@@ -829,16 +889,33 @@
         "Population": "Adult;Pediatric",
         "Classification": "Core",
         "External Id CDISC": "C111108",
-        "CDISC Permissible Values": "Full time -- C52658\nNot employed -- C75563\nPart time -- C75562",
+        "CDISC Permissible Values": [
+            "Divorced - C51776",
+            "Married - C51773",
+            "Never married - C51774",
+            "Separated - C156541",
+            "Widowed - C51775",
+            "Domestic Partner - C53262"
+        ],
         "CDISC Data Type": "Character",
-        "CDISC Notes": "Terminology relevant to the state of being engaged in an activity or service for wages or salary.",
+        "CDISC Notes": "A terminology codelist relevant to a person's current conjugal status.",
         "Additional Information": null,
         "Map to CDISC variable name if different": " ",
-        "Map to CDISC format": " ",
+        "Map to CDISC format": [
+            "Divorced - C51776",
+            "Married - C51773",
+            "Never married - C51774",
+            "Separated - C156541",
+            "Widowed - C51775",
+            "Domestic Partner - C53262",
+            "Annulled - C76240",
+            "Interlocutory - C76241",
+            "Legally separated - C51777",
+            "Polygamous - C76242"
+        ],
         "Notes": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.html"
     },
     "INCMLVL": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 10,
         "CDE Name": "Annual household income range",
@@ -877,17 +954,15 @@
         ],
         "Population": "Adult;Pediatric",
         "Classification": "Core",
-        "External Id CDISC": "C76348",
-        "CDISC Permissible Values": "Divorced  - C51776\nMarried --C51773                             Never married -- C51774\nSeparated --C156541\nWidowed -- C51775\nDomestic Partner -C53262",
-        "CDISC Data Type": "Character",
-        "CDISC Notes": "A terminology codelist relevant to a person's current conjugal status.",
+        "External Id CDISC": "C154890",
+        "CDISC Data Type": "Number",
+        "CDISC Notes": "We need to keep our categories",
         "Additional Information": null,
         "Map to CDISC variable name if different": null,
-        "Map to CDISC format": "Divorced  - C51776\nMarried --C51773\nNever married -- C51774\nSeparated --C156541\nWidowed -- C51775\nDomestic Partner -C53262\nAnnulled-- C76240\nInterlocutory -- C76241\nLegally separated -- C51777\nPolygamous __ C76242",
-        "Notes": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.html"
+        "Map to CDISC format": null,
+        "Notes": null
     },
     "DISABINSIND": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 11,
         "CDE Name": "Disability insurance pain indicator",
@@ -909,18 +984,9 @@
             "No reference"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": "C154890",
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": "Number",
-        "CDISC Notes": "We need to keep our categories",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": " ",
-        "Map to CDISC format": null,
-        "Notes": " "
+        "Classification": "Core"
     },
     "PAINDUR": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 12,
         "CDE Name": "Pain duration value",
@@ -936,18 +1002,9 @@
             "No reference"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": null,
-        "CDISC Notes": null,
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "SurveyLanguage": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 13,
         "CDE Name": "Survey language",
@@ -966,12 +1023,12 @@
         ],
         "PV Description": [
             "1 = English",
-            " 2 = Spanish",
-            " 3 = Swedish",
-            " 4 = Korean",
-            " 5 = Japanese",
-            " 6 = Traditional Chinese",
-            " 7 = Simplified Chinese"
+            "2 = Spanish",
+            "3 = Swedish",
+            "4 = Korean",
+            "5 = Japanese",
+            "6 = Traditional Chinese",
+            "7 = Simplified Chinese"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.  Only recorded for studies that administer surveys in multiple languages; all other studies assume default of English (1). ",
@@ -981,16 +1038,13 @@
         "Population": "Adult;Pediatric",
         "Classification": "Core",
         "External Id CDISC": null,
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": null,
-        "CDISC Notes": null,
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "CDISC Permissible Values": [
+            "Spanish-Language Document (Code C19476)",
+            "Spanish Language (Code C120587)",
+            "English Language (Code C82847)"
+        ]
     },
     "demRUCA1": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 14,
         "CDE Name": "Rural-Urban Commuting Area (RUCA) Codes - primary code",
@@ -1013,16 +1067,16 @@
         ],
         "PV Description": [
             "1 = Metropolitan area core: primary flow within an urbanized area (UA)",
-            " 2 = Metropolitan area high commuting: primary flow 30% or more to a UA",
-            " 3 = Metropolitan area low commuting: primary flow 10% to 30% to a UA",
-            " 4 = Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC)",
-            " 5 = Micropolitan high commuting: primary flow 30% or more to a large UC",
-            "  6 = Micropolitan low commuting: primary flow 10% to 30% to a large UC",
-            " 7 = Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC)",
-            " 8 = Small town high commuting: primary flow 30% or more to a small UC",
-            " 9 = Small town low commuting: primary flow 10% to 30% to a small UC",
-            " 10 = Rural areas: primary flow to a tract outside a UA or UC",
-            " 99 = Not coded: Census tract has zero population and no rural-urban identifier information"
+            "2 = Metropolitan area high commuting: primary flow 30% or more to a UA",
+            "3 = Metropolitan area low commuting: primary flow 10% to 30% to a UA",
+            "4 = Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC)",
+            "5 = Micropolitan high commuting: primary flow 30% or more to a large UC",
+            "6 = Micropolitan low commuting: primary flow 10% to 30% to a large UC",
+            "7 = Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC)",
+            "8 = Small town high commuting: primary flow 30% or more to a small UC",
+            "9 = Small town low commuting: primary flow 10% to 30% to a small UC",
+            "10 = Rural areas: primary flow to a tract outside a UA or UC",
+            "99 = Not coded: Census tract has zero population and no rural-urban identifier information"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.\nUse tables or software to determine the code. Secondary codes are optional. The HEAL Initiative RUCA code tool is located: https://nih.box.com/s/zp5l94yte4rowyrw94pvy2d2au16qixw",
@@ -1030,18 +1084,9 @@
             "USDA Economic Research Service (2022). Rural-Urban Commuting Area Codes. Economic Research Service, Department of Agriculture. https://data.nal.usda.gov/dataset/rural-urban-commuting-area-codes. Accessed 2022-05-20."
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": "Spanish-Language Document (Code C19476)\nSpanish Language (Code C120587)\nEnglish Language (Code C82847)",
-        "CDISC Data Type": null,
-        "CDISC Notes": null,
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "demRUCA2": {
-        "Study Population Focus": "Adult Demographics",
         "Domain": null,
         "CRF Question #": 15,
         "CDE Name": "Rural-Urban Commuting Area (RUCA) Codes - secondary code",
@@ -1075,27 +1120,27 @@
         ],
         "PV Description": [
             "1 = Metropolitan area core: primary flow within an urbanized area (UA) [No additional code]",
-            " 1.1 = Secondary flow 30% to 50% to a larger UA",
-            " 2 = Metropolitan area high commuting: primary flow 30% or more to a UA [No additional code]",
-            " 2.1 = Secondary flow 30% to 50% to a larger UA",
-            " 3 = Metropolitan area low commuting: primary flow 10% to 30% to a UA [No additional code]",
-            " 4 = Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC) [No additional code]",
-            " 4.1 = Secondary flow 30% to 50% to a UA",
-            " 5 = Micropolitan high commuting: primary flow 30% or more to a large UC [No additional code]",
-            " 5.1 = Secondary flow 30% to 50% to a UA",
-            " 6 = Micropolitan low commuting: primary flow 10% to 30% to a large UC [No additional code]",
-            " 7 = Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC) [No additional code]",
-            " 7.1 = Secondary flow 30% to 50% to a UA",
-            " 7.2 = Secondary flow 30% to 50% to a large UC",
-            " 8 = Small town high commuting: primary flow 30% or more to a small UC [No additional code]",
-            " 8.1 = Secondary flow 30% to 50% to a UA",
-            " 8.2 = Secondary flow 30% to 50% to a large UC",
-            " 9 = Small town low commuting: primary flow 10% to 30% to a small UC [No additional code]",
-            " 10 = Rural areas: primary flow to a tract outside a UA or UC [No additional code]",
-            " 10.1 = Secondary flow 30% to 50% to a UA",
-            " 10.2 = Secondary flow 30% to 50% to a large UC",
-            " 10.3 = Secondary flow 30% to 50% to a small UC",
-            " 99 = Not coded: Census tract has zero population and no rural-urban identifier information"
+            "1.1 = Secondary flow 30% to 50% to a larger UA",
+            "2 = Metropolitan area high commuting: primary flow 30% or more to a UA [No additional code]",
+            "2.1 = Secondary flow 30% to 50% to a larger UA",
+            "3 = Metropolitan area low commuting: primary flow 10% to 30% to a UA [No additional code]",
+            "4 = Micropolitan area core: primary flow within an Urban Cluster of 10,000 to 49,999 (large UC) [No additional code]",
+            "4.1 = Secondary flow 30% to 50% to a UA",
+            "5 = Micropolitan high commuting: primary flow 30% or more to a large UC [No additional code]",
+            "5.1 = Secondary flow 30% to 50% to a UA",
+            "6 = Micropolitan low commuting: primary flow 10% to 30% to a large UC [No additional code]",
+            "7 = Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC) [No additional code]",
+            "7.1 = Secondary flow 30% to 50% to a UA",
+            "7.2 = Secondary flow 30% to 50% to a large UC",
+            "8 = Small town high commuting: primary flow 30% or more to a small UC [No additional code]",
+            "8.1 = Secondary flow 30% to 50% to a UA",
+            "8.2 = Secondary flow 30% to 50% to a large UC",
+            "9 = Small town low commuting: primary flow 10% to 30% to a small UC [No additional code]",
+            "10 = Rural areas: primary flow to a tract outside a UA or UC [No additional code]",
+            "10.1 = Secondary flow 30% to 50% to a UA",
+            "10.2 = Secondary flow 30% to 50% to a large UC",
+            "10.3 = Secondary flow 30% to 50% to a small UC",
+            "99 = Not coded: Census tract has zero population and no rural-urban identifier information"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.\nUse tables or software to determine the code. Secondary codes are optional. The HEAL Initiative RUCA code tool is located: https://nih.box.com/s/zp5l94yte4rowyrw94pvy2d2au16qixw",
@@ -1103,18 +1148,9 @@
             "USDA Economic Research Service (2022). Rural-Urban Commuting Area Codes. Economic Research Service, Department of Agriculture. https://data.nal.usda.gov/dataset/rural-urban-commuting-area-codes. Accessed 2022-05-20."
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": null,
-        "CDISC Data Type": null,
-        "CDISC Notes": null,
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "AgeU": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": null,
         "CDE Name": "Age unit child",
@@ -1124,10 +1160,10 @@
         "Additional Notes (Question Text)": null,
         "Permissible Values": [
             "years",
-            " months",
-            " weeks",
-            " days",
-            " hours"
+            "months",
+            "weeks",
+            "days",
+            "hours"
         ],
         "PV Description": [],
         "Data Type": "Alphanumeric",
@@ -1136,16 +1172,21 @@
         "Population": null,
         "Classification": "Core",
         "External Id CDISC": "C66781",
-        "CDISC Permissible Values": "Child participant",
-        "CDISC Data Type": "Days - C25301                                      Hours - C25529                                Months - C29846                               Weeks - C29844                                     Years - C29848",
-        "CDISC Notes": "Character",
+        "CDISC Permissible Values": [
+            "Days - C25301",
+            "Hours - C25529",
+            "Months - C29846",
+            "Weeks - C29844",
+            "Years - C29848"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": "Child participant",
         "Additional Information": "Those units of time that are routinely used to express the age of a subject",
         "Map to CDISC variable name if different": null,
         "Map to CDISC format": null,
         "Notes": null
     },
     "Ageparent": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 7,
         "CDE Name": "Age Parent",
@@ -1163,18 +1204,9 @@
             "336(7641):425-429. Pediatric-specific reference(s): Anderson V, Catroppa C, Morse S, Haritou F, Rosenfeld J (2005) Functional plasticity or vulnerability after early brain injury. Pediatrics 116:1374-1382."
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": null,
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": null,
-        "CDISC Notes": "Number",
-        "Additional Information": "Age expressed in AgeU. Maybe derived from RFSTDTC and BIRTHDTC, but BRTHDTC may not be available in all cases (due to subject privacy concers)",
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
     },
     "AgeUparent": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": null,
         "CDE Name": "Age unit parent",
@@ -1184,28 +1216,30 @@
         "Additional Notes (Question Text)": null,
         "Permissible Values": [
             "years",
-            " months",
-            " weeks",
-            " days",
-            " hours"
+            "months",
+            "weeks",
+            "days",
+            "hours"
         ],
         "PV Description": [],
         "Data Type": "Alphanumeric",
-        "Disease Specific Instructions": "For adults - default value of \"years\" may be used.",
+        "Disease Specific Instructions": "For adults - default value of years may be used.",
         "Disease Specific References": [],
         "Population": null,
         "Classification": "Core",
         "External Id CDISC": "C66781",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "Days - C25301                                     Hours - C25529                                Months - C29846                               Weeks - C29844                                     Years - C29848",
-        "CDISC Notes": "Character",
-        "Additional Information": "Those units of time that are routinely used to express the age of a subject",
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "CDISC Permissible Values": [
+            "Days - C25301",
+            "Hours - C25529",
+            "Months - C29846",
+            "Weeks - C29844",
+            "Years - C29848"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Those units of time that are routinely used to express the age of a subject"
     },
     "ProxyRelationship": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 8,
         "CDE Name": "Respondent relationship to participating child",
@@ -1218,8 +1252,7 @@
             "2",
             "3",
             "4",
-            "5",
-            "ProxyRelationshipOTH"
+            "5"
         ],
         "PV Description": [
             "1=Mother/Father",
@@ -1229,23 +1262,30 @@
             "5=Other"
         ],
         "Data Type": "Numeric Values",
-        "Disease Specific Instructions": "Choose one.\nA study may choose to differentiate between people (separately ask about mother and father for example), and then re-code for dataset integration",
+        "Disease Specific Instructions": "Choose one. A study may choose to differentiate between people (separately ask about mother and father for example), and then re-code for dataset integration",
         "Disease Specific References": [
             "NIH Common Data Elements https://cde.nlm.nih.gov/deView?tinyId=FkTwut4k29M"
         ],
         "Population": "Adult;Pediatric",
-        "Classification": "Core",
-        "External Id CDISC": "I'm not sure which code to use",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "Mother/Father -      Aunt/Uncle-     Grandmother/Grandfather -    Brother/Sister -    Other-      I'm not sure which codes to use",
-        "CDISC Notes": "Character",
-        "Additional Information": null,
-        "Map to CDISC variable name if different": null,
-        "Map to CDISC format": null,
-        "Notes": null
+        "Classification": "Core"
+    },
+    "ProxyRelationshipOTH": {
+        "Domain": null,
+        "CRF Question #": 8,
+        "CDE Name": "Respondent relationship to participating child",
+        "Variable Name": "ProxyRelationship",
+        "Definition": "The free-text field related to Proxy Relationship response of other",
+        "Short Description": "The free-text field related to Proxy Relationship response of other",
+        "Additional Notes (Question Text)": "If other, please specify",
+        "Permissible Values": [],
+        "PV Description": [],
+        "Data Type": "Alphanumeric",
+        "Disease Specific Instructions": "Please write in a response",
+        "Disease Specific References": null,
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
     },
     "ETHNICparent": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 9,
         "CDE Name": "Ethnicity category parent",
@@ -1273,16 +1313,19 @@
         "Population": "Adult;Pediatric",
         "Classification": "Core",
         "External Id CDISC": "C66790",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "Hispanic or Latino -- C17459,                                     Not Hispanic or Latino -- C4122,                                      Unkown, Not reported --C17998",
-        "CDISC Notes": "Character",
+        "CDISC Permissible Values": [
+            "Hispanic or Latino - C17459",
+            "Not Hispanic or Latino - C4122",
+            "Unkown, Not reported - C17998"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": "Parent participant",
         "Additional Information": "A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease. ",
         "Map to CDISC variable name if different": null,
         "Map to CDISC format": null,
         "Notes": null
     },
     "AI_AN_p": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 10,
         "CDE Name": "Parent Race",
@@ -1292,42 +1335,221 @@
         "Additional Notes (Question Text)": "American Indian or Alaska Native",
         "Permissible Values": [
             "0",
-            "1",
-            "Asian_p",
-            "Bl_AA_p",
-            "NH_PI_p",
-            "White_p",
-            "Unkn_p",
-            "Not_Rep_p"
+            "1"
         ],
         "PV Description": [
             "0=not checked",
-            " 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked",
-            "0=not checked; 1=checked"
+            "1=checked"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "The participant can select one or more races",
         "Disease Specific References": [
             "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
         ],
-        "Population": "Adult;Pediatric",
+        "Population": "Pediatric",
         "Classification": "Core",
         "External Id CDISC": "C74457",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "American Indian or Alaska Native -C41259",
-        "CDISC Notes": null,
+        "CDISC Permissible Values": "American Indian or Alaska Native - C41259",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "Asian_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "Asian_p",
+        "Definition": "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam",
+        "Short Description": "Parent/respondent race - Asian",
+        "Additional Notes (Question Text)": "Asian",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "Asian - C41260",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "Bl_AA_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "Bl_AA_p",
+        "Definition": "Race:  Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as Haitian or Negro can be used in addition to Black or African American",
+        "Short Description": "Parent/respondent race - Black or African-American",
+        "Additional Notes (Question Text)": "Black or African-American",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "Black or African-American - C16352",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "NH_PI_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "NH_PI_p",
+        "Definition": "Race:  Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu",
+        "Short Description": "Parent/respondent race - Native Hawaiian or Pacific Islander",
+        "Additional Notes (Question Text)": "Native Hawaiian or Pacific Islander",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "Native Hawaiian or Pacific Islander - C41219",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "White_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "White_p",
+        "Definition": "Race:  Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White",
+        "Short Description": "Parent/respondent race - White",
+        "Additional Notes (Question Text)": "White",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "White - C41261",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "Unkn_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "Unkn_p",
+        "Definition": "Race:  Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is self-declared as unknown",
+        "Short Description": "Parent/respondent race - Unknown",
+        "Additional Notes (Question Text)": "Unknown",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "Unknown - C17998",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
+        "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "Not_Rep_p": {
+        "Domain": null,
+        "CRF Question #": 10,
+        "CDE Name": "Parent Race",
+        "Variable Name": "Not_Rep_p",
+        "Definition": "Race:  Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is not reported, not known to the research team, not observed, not recorded, or refused",
+        "Short Description": "Parent/respondent race - Not Reported",
+        "Additional Notes (Question Text)": "Not Reported",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0=not checked",
+            "1=checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more races",
+        "Disease Specific References": [
+            "NIH Guidelines on Inclusion of Women and Minorities as Subjects in Clinical Research: The Office of Management and Budget Directive No. 15  https://grants.nih.gov/policy/inclusion/women-and-minorities/guidelines.htm"
+        ],
+        "Population": "Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C74457",
+        "CDISC Permissible Values": "Not Reported - C43234",
+        "CDISC Data Type": null,
+        "CDISC Notes": "Parent participant",
         "Additional Information": "Terminology codelist used to identify the race of an individual within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.",
         "Map to CDISC variable name if different": null,
         "Map to CDISC format": null,
         "Notes": null
     },
     "EDULEVELspouse": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 14,
         "CDE Name": "Education level partner",
@@ -1349,8 +1571,7 @@
             "3 = High School or Secondary School degree complete",
             "4 = Associate's or Technical Degree complete",
             "5 = College or Baccalaureate degree complete",
-            "6 = Doctoral or Postgraduate education",
-            ""
+            "6 = Doctoral or Postgraduate education"
         ],
         "Data Type": "Numeric Values",
         "Disease Specific Instructions": "Choose one.",
@@ -1360,16 +1581,22 @@
         "Population": "Adult;Pediatric",
         "Classification": "Core",
         "External Id CDISC": "C17953",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "Did not complete Secondary School or Less than High School\nSome Secondary School or High School Education\nHigh School or Secondary School Degree Complete\nAssociate's or Technical Degree Complete\nCollege or Baccalaureate Degree Complete\nDoctoral or Postgraduate Education",
-        "CDISC Notes": "Character",
+        "CDISC Permissible Values": [
+            "Did not complete Secondary School or Less than High School",
+            "Some Secondary School or High School Education",
+            "High School or Secondary School Degree Complete",
+            "Associate's or Technical Degree Complete",
+            "College or Baccalaureate Degree Complete",
+            "Doctoral or Postgraduate Education"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": [],
         "Additional Information": "Level of Education Attained",
         "Map to CDISC variable name if different": null,
         "Map to CDISC format": null,
-        "Notes": "\nDid not complete Secondary School or Less than High School\nSome Secondary School or High School Education\nHigh School or Secondary School Degree Complete\nAssociate's or Technical Degree Complete\nCollege or Baccalaureate Degree Complete\nDoctoral or Postgraduate Education"
+        "Notes": "If pediatric form, info regarding parent participant."
     },
     "EMPSTATspouse": {
-        "Study Population Focus": "Peds Demographics",
         "Domain": null,
         "CRF Question #": 15,
         "CDE Name": "Employment status partner",
@@ -1383,7 +1610,7 @@
             "3"
         ],
         "PV Description": [
-            "1=Full-time employment, Employment involving the standard or customary working time",
+            "1 = Full-time employment, Employment involving the standard or customary working time",
             "2 = Not employed, The state of not having a job",
             "3 = Part-time employment, Employment involving less than the standard or customary working time"
         ],
@@ -1395,13 +1622,411 @@
         "Population": "Adult;Pediatric",
         "Classification": "Core",
         "External Id CDISC": "C111108",
-        "CDISC Permissible Values": "Parent participant",
-        "CDISC Data Type": "Full time -- C52658\nNot employed -- C75563\nPart time -- C75562",
-        "CDISC Notes": "Character",
+        "CDISC Permissible Values": [
+            "Full time - C52658",
+            "Not employed - C75563",
+            "Part time - C75562"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": "If pediatric form, info regarding parent participant",
         "Additional Information": "Terminology relevant to the state of being engaged in an activity or service for wages or salary.",
         "Map to CDISC variable name if different": null,
         "Map to CDISC format": " ",
         "Notes": " "
+    },
+    "SDOH_Childcare": {
+        "Domain": null,
+        "CRF Question #": "13a",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Childcare",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get childcare that they really needed within the past year, as a part of the HEAL CDE pain core demographics. ",
+        "Short Description": "Economic Stability - Social Need - Childcare",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Childcare",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C127785",
+        "CDISC Permissible Values": [
+            "Daytime supervision, which may include recreational or medical facilities, for infants and children - C127785."
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Clothing": {
+        "Domain": null,
+        "CRF Question #": "13b",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Clothing",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get clothing that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Clothing",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Clothing",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C86930",
+        "CDISC Permissible Values": [
+            "A covering designed to be worn on the body - C86930."
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Food": {
+        "Domain": null,
+        "CRF Question #": "13c",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Food",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get food that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Food",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Food",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C62695",
+        "CDISC Permissible Values": [
+            "A group of materials of either plant, animal or artificial origin containing essential body nutrients that can be ingested by an organism to produce energy, stimulate growth, and maintain life - C62695."
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Housing": {
+        "Domain": null,
+        "CRF Question #": "13d",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Housing",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get housing that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Housing",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Housing",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C86029",
+        "CDISC Permissible Values": [
+            "Housing in which people can reside - C86029."
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Internet": {
+        "Domain": null,
+        "CRF Question #": "13e",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Internet",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get internet that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Internet/Broadband",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Internet/Broadband",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C20342",
+        "CDISC Permissible Values": [
+            "A worldwide, decentralized network of computer networks connecting individuals and organizations to information and electronic mail services - C20342."
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Phone": {
+        "Domain": null,
+        "CRF Question #": "13f",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Phone",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get phone that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Phone (e.g., mobile or landline)",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Phone (e.g., mobile or landline)",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": [
+            "C25395",
+            "C60786",
+            "C81284"
+        ],
+        "CDISC Permissible Values": [
+            "Electronic equipment that converts sound into electrical signals that can be transmitted over distances and then converts received signals back into sounds - C25395",
+            "Mobile communications system that uses a combination of radio wave transmission and conventional telephone switching to permit telephone communication to and from mobile users within a specified area - C60786",
+            "The sequence of numbers or characters, that when dialed, connects to a particular residential telephone - C81284"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Transportation": {
+        "Domain": null,
+        "CRF Question #": "13g",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Transportation",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get transportation that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Transportation (e.g., private or public)",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Transportation (e.g., private or public)",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": [
+            "C141286",
+            "C141287",
+            "C54104"
+        ],
+        "CDISC Permissible Values": [
+            "Methods of traveling from one place to another - C141286",
+            "Forms of transportation that run on fixed routes and are available to the public, usually for a set fare - C141287",
+            "Not public; kept secret or restricted - C54104"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Utilities": {
+        "Domain": null,
+        "CRF Question #": "13h",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Utilities",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get utilities that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Utilities (e.g., gas, electric, propane, natural gas, etc.)",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Utilities (e.g., gas, electric, propane, natural gas, etc.)",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C159730",
+        "CDISC Permissible Values": "A question about whether an individual had utility companies cut off service due to not paying bills - C159730",
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_MedHlthcare": {
+        "Domain": null,
+        "CRF Question #": "13i",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_MedHlthcare",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get medicine that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Medicine or any health care (medical, dental, mental health, vision)",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Medicine or any health care (medical, dental, mental health, vision)",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": [
+            "C16833",
+            "C15244"
+        ],
+        "CDISC Permissible Values": [
+            "Refers to the practices and procedures used for the prevention, treatment, or relief of symptoms of a diseases or abnormal conditions. This term may also refer to a legal drug used for the same purpose - C16833",
+            "The ability of individuals or a population to utilize and obtain care from the health care system - C15244"
+        ],
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_Other": {
+        "Domain": null,
+        "CRF Question #": "13j",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_Other",
+        "Definition": "Indicator the participant or any of the participants family members was unable to get an item or service that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Other",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Other",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric Values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
+    },
+    "SDOH_OtherSpecify": {
+        "Domain": null,
+        "CRF Question #": "13j.1",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_OtherSpecify",
+        "Definition": "Description of the item or service the participant or any of the participants family members was unable to get that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - If other, specify",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? If other, specify",
+        "Permissible Values": "",
+        "PV Description": "",
+        "Data Type": "Alphanumeric values",
+        "Disease Specific Instructions": "Specify, if SDOH_Other was checked.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core",
+        "External Id CDISC": "C25685",
+        "CDISC Permissible Values": "Be specific about something; define clearly - C25685",
+        "CDISC Data Type": "Character",
+        "CDISC Notes": null,
+        "Additional Information": "Part of PRAPARE tool",
+        "Map to CDISC variable name if different": null,
+        "Map to CDISC format": null,
+        "Notes": null
+    },
+    "SDOH_NotAnswer": {
+        "Domain": null,
+        "CRF Question #": "14k",
+        "CDE Name": "SDOH",
+        "Variable Name": "SDOH_NotAnswer",
+        "Definition": "Indicator the participant prefers not to answer if they or any of the participants family members was unable to get an item or service that they really needed within the past year, as a part of the HEAL CDE pain core demographics.",
+        "Short Description": "Economic Stability - Social Need - Prefer not to answer",
+        "Additional Notes (Question Text)": "In the past year, have you or any family members you live with been unable to get any of the following when it was really needed? Prefer not to answer",
+        "Permissible Values": [
+            "0",
+            "1"
+        ],
+        "PV Description": [
+            "0 = Unchecked",
+            "1 = Checked"
+        ],
+        "Data Type": "Numeric values",
+        "Disease Specific Instructions": "The participant can select one or more SDOH indicators.",
+        "Disease Specific References": [
+            "Modified from item in NIH Common Data Elements Repository. https://cde.nlm.nih.gov/deView?tinyId=imJYgqzrA4B"
+        ],
+        "Population": "Adult;Pediatric",
+        "Classification": "Core"
     },
     "GAD2FeelNervScale": {
         "Study Population Focus": "Peds Acute",

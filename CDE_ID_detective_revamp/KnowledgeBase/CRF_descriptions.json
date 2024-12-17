@@ -18,7 +18,12 @@
       {
         "name": "Demographics",
         "abbreviations": ["DEM", "Demographics"],
-        "description": "Collects baseline demographic information, including age, gender, ethnicity, education, income, SDOH and other background details."
+        "description": "Collects baseline demographic information, including age, gender, ethnicity, education, income, and other background details."
+      },
+      {
+        "name": "SDOH Demographics",
+        "abbreviations": ["SDOH", "Social Determinants of Health", "S.D.O.H."],
+        "description": "Assesses the availability of essential resources like childcare, food, housing, and other social determinants of health (SDOH). It evaluates unmet needs in areas such as healthcare, utilities, transportation, and more, over the past year. Participants can also indicate if they prefer not to answer. These indicators provide insight into the social and environmental factors affecting health outcomes."
       },
       {
         "name": "Generalized Anxiety Disorder (GAD-2)",

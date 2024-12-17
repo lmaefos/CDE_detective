@@ -1,0 +1,341 @@
+Study Variable,HEAL Core CRF Name Match,Exact/CRF Match Result,Close Match Result,PV/Encoding Result
+record_id,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+welcomemess,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+first_name,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+last_name,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+phone,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+textout___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+sitename,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+email,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+above18,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fmdiag,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+reffered,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+spkenglish,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+willingtens,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+implanted_device,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+another_study,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+tens_use,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+epilepsy,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+cancer,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+pregnant,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+pad_reaction,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fmtips_id,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+street_address,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+city_address,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+state_address,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+zip_address,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+contract_yn,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+initials,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+date_signed,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+signature,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+signature_2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+randomized,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+healthsystem,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+site_email,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+site_id,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+consent_upload,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rest_pain,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rest_fatigue,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+move_pain,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+move_fatigue,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+tens_start,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+tens_start_2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+start_date,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+remind_30,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+remind_60,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+remind_90,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+remind_180,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+brthdtc,demographics,Exact Match,,Both PV/Encoding missing
+age,demographics,Exact Match,,Both PV/Encoding missing
+dob_verify,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+sex,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+genident,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+genidentoth,demographics,Wrong CRF (via Close Match and Fuzzy CRF),Close Match: genidentoth  (Fuzzy CRF Match),No Comparison Possible
+ethnic,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+race___1,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___2,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___3,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___4,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___5,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___6,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+race___7,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+edulevel,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+empstat,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+maristat,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+incmlvl,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+disabinsind,demographics,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+year,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+month,demographics,Not in CDE,No Close Match Found,No Comparison Possible
+activity1_bl,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+activity1_display,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+activity1_rating,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+activity2_bl,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+activity2_display,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+activity2_rating,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___4,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___5,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___6,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___7,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___8,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___9,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___10,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___11,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___12,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___13,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___14,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___15,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___16,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___17,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___18,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___19,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_painindex___0,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_fatigue,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_waking,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_congnative,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_headaches,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_cramps,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fibro_depress,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+walkcon_358f79,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_brushhair_bdb852,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_preparemeal_92d87b,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_cleanfloors_016a32,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_carrybags_384326,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_flightstairs_bb4001,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_changesheets_d8db8b,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_sitinchair_211ed5,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_shopping_8891d7,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_weeklygoals_176aba,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_overwhelmed_b28f86,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_pain,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_balancelvl_9e50ab,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_sensitivitylvl_324764,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_energy,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_stiffness,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_sleep,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_depression,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_memory,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_anxiety,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fiqr_touch,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_experience,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_severity,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_distress,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_chores,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_cook,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_wash,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_dress,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_work,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_socialize,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_sexactive,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_recreation,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_errands,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_walk,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_exercise,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_frequency,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_change,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+maf_missed,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+other_pain,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___1,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___2,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___3,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___4,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___5,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___6,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___7,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___8,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___9,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___10,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___11,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___12,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___13,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___14,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___15,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___16,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___17,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___18,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___19,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___20,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___21,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___22,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___23,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___24,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___25,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___26,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___27,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___28,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___29,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___30,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___31,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___32,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___33,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___34,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___35,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___36,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___37,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___38,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___39,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___40,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___41,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___42,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___43,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___44,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainareamap___45,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpi_mostpain,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpiworstpainratingscl,brief pain inventory (bpi),Wrong CRF,Close Match: bpiworstpainratingscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+bpileastpainratingscl,brief pain inventory (bpi),Wrong CRF,Close Match: bpileastpainratingscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+bpiavgpainratingscl,brief pain inventory (bpi),Wrong CRF,Close Match: bpiavgpainratingscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+bpicurrentpainratingscl,brief pain inventory (bpi),Wrong CRF,Close Match: bpicurrentpainratingscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+bpi_treatment,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainintfrgnrlactvtyscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainintfrmoodscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainintfrwlkablscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainnrmlwrkintrfrscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainrelationsintrfrscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainsleepintrfrscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+bpipainenjoymntintrfrscl,brief pain inventory (bpi),Not in CDE,No Close Match Found,No Comparison Possible
+promisphysfuncchrsablscl,promis physical function pain,Wrong CRF,Close Match: promisphysfuncchrsablscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+promisphfncstrsnrmpcabscl,promis physical function pain,Wrong CRF,Close Match: promisphfncstrsnrmpcabscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+promisphysfunc15mnwlkscl,promis physical function pain,Wrong CRF,Close Match: promisphysfunc15mnwlkscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+promisphysfncerrshpablscl,promis physical function pain,Not in CDE,Close Match: promisphyfncerndshpablscl (CRF Mismatch),No Comparison Possible
+promisphysfunc2hrlbrscl,promis physical function pain,Wrong CRF,Close Match: promisphysfunc2hrlbrscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+promisphysfunchswrkscl,promis physical function pain,Wrong CRF,Close Match: promisphysfunchswrkscl (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+promissleepqualityscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+promissleepwasrefreshscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+promisproblemwithslpscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+promisdifficltfallaslpscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+promisslpwasrestlessscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+promistryhardgettoslpscl,promis sleep disturbance 6a,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+sleepnighthourdur,sleep duration pain,Wrong CRF (via Close Match and Fuzzy CRF),Close Match: sleepnighthourmindur (Fuzzy CRF Match),No Comparison Possible
+sleepnightmindur,sleep duration pain,Wrong CRF (via Close Match and Fuzzy CRF),Close Match: sleepnighthourmindur (Fuzzy CRF Match),No Comparison Possible
+pcs_painend,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_goon,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_nevergetbetter,pcs 6,Not in CDE,Close Match: pcspnevergetbetterscale (CRF Mismatch),No Comparison Possible
+pcs_cantstand,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_painworse,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_overwhelm,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_painevents,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_anxious,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_outofmind,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_hurt,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_painstop,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_painintesity,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+pcs_serious,pcs 6,Not in CDE,No Close Match Found,No Comparison Possible
+phqlitintrstscore,patient health questionnaire 2 (phq2),Wrong CRF,Close Match: phqlitintrstscore (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+phqdeprssnscore,patient health questionnaire 2 (phq2),Wrong CRF,Close Match: phqdeprssnscore (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+phqsleepimpairscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+phqtirdlittleenrgyscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+phqabnrmldietscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+phqconcntrtnimprmntscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+phqflngfailrscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+phqmovmntspchimprmntscore,patient health questionnaire 2 (phq2),Not in CDE,No Close Match Found,No Comparison Possible
+gad7feelnervscl,generalized anxiety disorder (gad2),Not in CDE,Close Match: gad2feelnervscale (CRF Mismatch),No Comparison Possible
+gad7notstopwryscl,generalized anxiety disorder (gad2),Not in CDE,Close Match: gad2notstopwryscale (CRF Mismatch),No Comparison Possible
+gad7wrytoomchscl,generalized anxiety disorder (gad2),Not in CDE,No Close Match Found,No Comparison Possible
+gad7troubrelxscl,generalized anxiety disorder (gad2),Not in CDE,No Close Match Found,No Comparison Possible
+gad7rstlessscl,generalized anxiety disorder (gad2),Not in CDE,No Close Match Found,No Comparison Possible
+gad7easyannoyedscl,generalized anxiety disorder (gad2),Not in CDE,No Close Match Found,No Comparison Possible
+gad7feelafrdscl,generalized anxiety disorder (gad2),Not in CDE,No Close Match Found,No Comparison Possible
+tapstobaccoproductscl,taps pain,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+tapsalcoholusemalescl,taps pain,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+tapsalcoholusefemalescl,taps pain,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+tapsdrugusescl,taps pain,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+tapsprescriptionmedusescl,taps pain,Exact Match,,"PV Mismatch: True, Encoding Mismatch: True"
+med_tylenol,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_ibup,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_ultram,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_neurontin,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_depress,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_anxiety,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_muscle,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_marijuana,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_rarly,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_light,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_lightweekly,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_mod,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_vig,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_modweekly,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_vigweekly,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_strength,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rapa_flex,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+pgicsymptomchangestatval,patient global impression of change (pgic) pain,Wrong CRF,Close Match: pgicsymptomchangestatval (CRF Mismatch),"PV Mismatch: True, Encoding Mismatch: True"
+related_problem,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+related_checks___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+related_checks___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+related_checks___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+related_checks___4,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+related_other,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fall_problem___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fall_problem___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+fall_problem___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+health_changes___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+health_changes___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+health_changes___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+health_changes___4,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+health_changes___5,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+hospitalized,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+why_hospitalized,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+cause_tens,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+serious_ae,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+emergency_visit,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+emer_visit_explain,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+emer_visit_tens,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+ae_otherspecify,no crf match,Not in CDE,Close Match: sdoh_otherspecify (CRF Mismatch),No Comparison Possible
+ae_health,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+tens_problem,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___4,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___6,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+problem_type___5,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+tens_other,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_helpful,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_frequency,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___3,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___4,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___5,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barrier_stopuse___6,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+barriers_other,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+rest_pain_post,peg pain,Not in CDE,No Close Match Found,No Comparison Possible
+rest_fatigue_post,peg pain,Not in CDE,No Close Match Found,No Comparison Possible
+move_pain_post,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+move_fatigue_post,promis physical function pain,Not in CDE,No Close Match Found,No Comparison Possible
+tens_stop,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+non_tens_stop,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+termination_date,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+termination_reason,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+death_date,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+other_specify,no crf match,Not in CDE,Close Match: sdoh_otherspecify (CRF Mismatch),No Comparison Possible
+participant_reason,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+participant_other,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+pi_termination,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+discontinue_other,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+withdraw_consent,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+withdraw_date,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+termination_comments,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+reason1___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+reason2___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+reason3___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_day,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_rep,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_detail,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_event,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+medmon_date,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+med_rev,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_prod,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_tens,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_sae,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+sae_onset,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+sae_stop,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+sae_severity,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_sae_2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_action,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+foll_expl,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+discon_dis___1,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+discon_dis___2,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+dis_reason,no crf match,Not in CDE,No Close Match Found,No Comparison Possible
+ae_review_pdf,no crf match,Not in CDE,No Close Match Found,No Comparison Possible

@@ -20,6 +20,24 @@ def detect_array_fields(df, delimiters):
                 break  # Stop after finding the first matching delimiter
     return array_fields
 
+def sanitize_data(data):
+    """
+    Sanitize the data to ensure compatibility with JSON.
+    - Converts NaN to None (becomes 'null' in JSON).
+    - Handles numpy data types.
+    """
+    if isinstance(data, float) and np.isnan(data):  # Check for NaN
+        return None
+    if isinstance(data, (np.integer, np.floating)):  # Convert numpy types to native Python types
+        return int(data) if isinstance(data, np.integer) else float(data)
+    return data  # Keep all other types as-is
+
+def sanitize_dataframe(df):
+    """
+    Applies sanitization to the entire DataFrame.
+    """
+    return df.applymap(sanitize_data)
+
 def file_to_json(file_path, output_json_path, columns_to_split=None, delimiters=[';', '|']):
     # Determine the file extension
     _, file_extension = os.path.splitext(file_path)
@@ -35,7 +53,7 @@ def file_to_json(file_path, output_json_path, columns_to_split=None, delimiters=
         raise ValueError("Unsupported file type")
 
     # Replace NaN and empty string values with None (which becomes 'null' in JSON)
-    df = df.replace({pd.NA: None, '': None})
+    df = sanitize_dataframe(df)
 
     # Automatically detect columns with delimited values if not provided
     if columns_to_split is None:
@@ -49,24 +67,26 @@ def file_to_json(file_path, output_json_path, columns_to_split=None, delimiters=
     # Convert the DataFrame to a list of dictionaries (suitable for JSON)
     data = df.to_dict(orient='records')
 
-    # Group by the 'module' field
+    # Group by the 'module' field (or adjust as needed for your dataset)
     grouped_data = {}
     for entry in data:
-        module = entry.get('module')
+        module = entry.get('module')  # Change 'module' to the column you want to group by
         if module not in grouped_data:
             grouped_data[module] = []
         grouped_data[module].append(entry)
 
     # Save the data to a JSON file
-    with open(output_json_path, 'w') as file:
-        json.dump(grouped_data, file, indent=4)
+    with open(output_json_path, 'w', encoding='utf-8') as file:
+        json.dump(grouped_data, file, indent=4, ensure_ascii=False)
 
     print(f"JSON file created at: {output_json_path}")
 
-# Example usage
-if __name__ == "__main__":
-    file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary.csv'
-    output_json_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\SAMPLE_DataDictionary.json'
-    # Specify columns that contain delimited strings and their delimiters (optional, auto-detection included)
-    columns_to_process = None  # {'Permissible Values': ';'}  # Example: Use the exact column name including spaces
-    file_to_json(file_path, output_json_path, columns_to_process)
+# File paths for input and output
+input_file_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\CDE_ID_detective_revamp\out\HDP00125_DataDictionary_2023-08-22_2024-12-09_enhanced_removedNoCoreCRFMatch.xlsx'
+output_json_path = r'C:\Users\lmaefos\Code Stuffs\CDE_detective\CDE_ID_detective_revamp\out\HDP00125_DataDictionary_2023-08-22_2024-12-09_enhanced.json'
+
+# Specify columns that contain delimited strings and their delimiters (optional, auto-detection included)
+columns_to_process = None  # Example: {'Permissible Values': ';'} to manually specify columns to split
+
+# Generate the JSON file
+file_to_json(input_file_path, output_json_path, columns_to_process)
