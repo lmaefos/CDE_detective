@@ -1,0 +1,154 @@
+{
+    "baseline_assessment": [
+        {
+            "variable_name": "birth",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "age_at_enrollment",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "gender",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ethnicity",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___1",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___2",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___3",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___4",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___5",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___6",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___7",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "ehtnicity_1___8",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "income",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "employment",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "marital_status",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "education",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "little_do",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "feel_down",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "fall_sleep",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "tired_energy",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "poor_eating",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "let_down",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "con_things",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "move_usual",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "phq8_questions",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "groc_quest",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        }
+    ],
+    "opioid_risk_tool": [
+        {
+            "variable_name": "alcohol_family_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "illegal_drugs_family_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "rx_drugs_family_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "alcohol_personal_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "illegal_drugs",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "rx_drugs_personal_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "age_between_16_45_years",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "history_of_preadolescent_s",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "add_ocd_bipolar_schizophre",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "illegal_drugs_personal_history",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        },
+        {
+            "variable_name": "depression",
+            "response": "Error: AsyncThreads.create() got an unexpected keyword argument 'assistant_id'"
+        }
+    ]
+}

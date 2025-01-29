@@ -1,0 +1,5022 @@
+[
+    {
+        "Variable Name": "AI_AN",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This response indicates self-declared race is American Indian or Alaska Native, A person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories- American Indian or Alaska Native, A person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment",
+            "Child race - American Indian or Alaska Native"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "AI_AN_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This response indicates self-declared race is American Indian or Alaska Native, A person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment"
+        ],
+        "Short Description": [
+            "Parent/respondent race - American Indian or Alaska Native"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSDelayBedScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - delay going to bed scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject puts off or delays when it is time to go to bed, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject delays going to bed at bedtime, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSFallingAsleepScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) Falling Asleep and Staying Asleep subscale score"
+        ],
+        "Definition": [
+            "Calculated subscale score for Falling Asleep and Staying Asleep; as part of the Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Falling Asleep and Staying Asleep ASWS (calculated)"
+        ],
+        "Permissible Values": [
+            "1 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSFeelRestedScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - feel rested  scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject awakens in the morning and feels rested and alert, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject wakes up in the morning feeling rested, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSGoingToBedScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) Going to Bed subscale score"
+        ],
+        "Definition": [
+            "Calculated subscale score for Going To Bed; as part of the Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Going to Bed subscale ASWS (calculated)"
+        ],
+        "Permissible Values": [
+            "1 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSHelpBackToSleepScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - need help getting back to sleep scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject needs help getting back to sleep after an awakening, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject needs help getting back to sleep after an awakening, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSNeedHelpToSleepScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - need help getting to sleep scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject needs help getting to sleep, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject needs help getting to sleep, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSReadyGetUpScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - ready to get up scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject feels awake and ready to get up upon awakening in the morning, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject feels ready to awaken in the morning, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSReadyGoBedScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - ready to go to bed scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject is ready to go to bed when it is time to go to bed, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject is ready to go to bed at bedtime, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSReturnWakefulScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) Returning to Wakefulness subscale score"
+        ],
+        "Definition": [
+            "Calculated subscale score for Returning to Wakefulness; as part of the Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Returning to Wakefulness ASWS (calculated)"
+        ],
+        "Permissible Values": [
+            "1 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSStayUpScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - want to stay up scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject wants to stay up when it is time to go to bed, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject wants to stay up at bedtime, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSTotalAvgScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) Total Measure score"
+        ],
+        "Definition": [
+            "Calculated overall/total measure score for the Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "ASWS overall/total score"
+        ],
+        "Permissible Values": [
+            "1 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSTrblBackToSleepScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - trouble going back to sleep scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject has trouble going back to sleep after an awakening, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject needs help getting back to sleep, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSTrblGetComfort",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - trouble getting comfortable scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject has trouble going getting comfortable after an awakening, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject has trouble getting comfortable after an awakening, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ASWSTroubleSettlngScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Adolescent Sleep Wake Scale (ASWS) - trouble settling down scale"
+        ],
+        "Definition": [
+            "Scale describing typical weekday sleep pattern for how frequently (what percent of the time time) participant/subject has trouble settling down to fall asleep, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Short Description": [
+            "Scale describing how frequently participant/subject has trouble settling down to fall asleep, as a part of Adolescent Sleep Wake Scale (ASWS)"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Age",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Age ",
+            "Age child"
+        ],
+        "Definition": [
+            "Value for participant/subject's age, calculated as elapsed time since the birth of the participant/subject.",
+            "Value for participant/subject child age, calculated as elapsed time since birth."
+        ],
+        "Short Description": [
+            "Value for participant/subject's age, calculated as elapsed time since the birth of the participant/subject.",
+            "Value for participant/subject child age, calculated as elapsed time since birth."
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "AgeU",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Age unit child"
+        ],
+        "Definition": [
+            "Unit of measure for Age child"
+        ],
+        "Short Description": [
+            "Unit of measure for Age child"
+        ],
+        "Permissible Values": [
+            "years; months; weeks; days; hours"
+        ],
+        "Data Type": [
+            "Alphanumeric"
+        ],
+        "Population": [],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "AgeUparent",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Age unit parent"
+        ],
+        "Definition": [
+            "Unit of measure for Age"
+        ],
+        "Short Description": [
+            "Unit of Measure for Age"
+        ],
+        "Permissible Values": [
+            "years; months; weeks; days; hours"
+        ],
+        "Data Type": [
+            "Alphanumeric"
+        ],
+        "Population": [],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Ageparent",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Age Parent"
+        ],
+        "Definition": [
+            "Value for parent/respondent age, calculated as elapsed time since the birth of the parent/respondent."
+        ],
+        "Short Description": [
+            "Parent/respondent age"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Asian",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories- Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam",
+            "Child race - Asian"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Asian_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam"
+        ],
+        "Short Description": [
+            "Parent/respondent race - Asian"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPIAvgPain7dRtngScale",
+        "Study Population Focus": [
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - average pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the average pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the average pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPIAvgPainRatingScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - average pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the average pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the average pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPICurntPainRtngScale",
+        "Study Population Focus": [
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - current pain rating scale"
+        ],
+        "Definition": [
+            "Scale rating the pain the subject is feeling right now, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale rating the pain the subject is feeling right now, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPICurrentPainRatingScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - current pain rating scale"
+        ],
+        "Definition": [
+            "Scale rating the pain the subject is feeling right now, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale rating the pain the subject is feeling right now, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPILeastPainRatingScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - least pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the least pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the least pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPILstPain7dRtngScale",
+        "Study Population Focus": [
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - least pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the least pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the least pain experienced by the subject, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPIPainSeverityScore",
+        "Study Population Focus": [
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - pain severity subscale score"
+        ],
+        "Definition": [
+            "Calculated score for the Brief Pain Inventory (BPI) Pain Severity items"
+        ],
+        "Short Description": [
+            "BPI Pain Severity Subscale Score (calculated)"
+        ],
+        "Permissible Values": [
+            "0 to 10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPIWorstPainRatingScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - worst pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the worst pain, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the worst pain, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BPIWrstPain7dRtngScale",
+        "Study Population Focus": [
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "Brief Pain Inventory (BPI) - worst pain rating scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of the worst pain, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the worst pain, as part of the Brief Pain Inventory (BPI) form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "BRTHDTC",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Birth date",
+            "Birth date (child)"
+        ],
+        "Definition": [
+            "BRTHDTC",
+            "Date (and time, if applicable and known) the participant/subject child was born"
+        ],
+        "Short Description": [
+            "Date (and time, if applicable and known) the participant/subject was born",
+            "Date (and time, if applicable and known) the participant/subject child was born"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Date or Date & Time"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Bl_AA",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\""
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\"",
+            "Child race -  Black or African-American"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Bl_AA_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\""
+        ],
+        "Short Description": [
+            "Parent/respondent race - Black or African-American"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkDayTimeToBedOthrTxt",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekday time to bed other "
+        ],
+        "Definition": [
+            "Text describing typical weekday sleep pattern for what time the participant/subject  goes to bed, if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Text describing typical weekday sleep pattern for what time the participant/subject  goes to bed if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "(free text)"
+        ],
+        "Data Type": [
+            "Text"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkDayTimeToBedScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekday time go to bed scale"
+        ],
+        "Definition": [
+            "Scale describing weekday sleep pattern for what time the participant/subject typically goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Scale describing typical weekday sleep pattern for what time the participant/subject  goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10;11"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkDayTimeWakeOthrTxt",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekday time wake up other "
+        ],
+        "Definition": [
+            "Text describing typical weekday sleep pattern for what time the participant/subject typically goes to bed if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Text describing typical weekday sleep pattern for what time the participant/subject wakes up, if after 12:00p.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "(free text)"
+        ],
+        "Data Type": [
+            "Text"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkDayTimeWakeScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekday time wake up scale"
+        ],
+        "Definition": [
+            "Scale describing weekday sleep pattern for what time the participant/subject typically goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Scale describing typical weekday sleep pattern for what time the participant/subject wakes up, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkEndTimeToBedOthrTxt",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekend time to bed other "
+        ],
+        "Definition": [
+            "Text describing typical weekends sleep pattern for what time the participant/subject  goes to bed, if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Text describing typical weekends sleep pattern for what time the participant/subject  goes to bed if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "(free text)"
+        ],
+        "Data Type": [
+            "Text"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkEndTimeToBedScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekend time go to bed scale"
+        ],
+        "Definition": [
+            "Scale describing weekends sleep pattern for what time the participant/subject typically goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Scale describing typical weekends sleep pattern for what time the participant/subject  goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10;11;12;13"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkEndTimeWakeOthrTxt",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekend time wake up other "
+        ],
+        "Definition": [
+            "Text describing typical weekends sleep pattern for what time the participant/subject typically goes to bed if after 1:00 a.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Text describing typical weekends sleep pattern for what time the participant/subject wakes up, if after 12:00p.m., as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "(free text)"
+        ],
+        "Data Type": [
+            "Text"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "CRSPWkEndTimeWakeScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Children\u2019s Report of Sleep Patterns (CRSP) weekend time wake up scale"
+        ],
+        "Definition": [
+            "Scale describing weekends sleep pattern for what time the participant/subject typically goes to bed, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Short Description": [
+            "Scale describing typical weekends sleep pattern for what time the participant/subject wakes up, as part of the Children's Report of Sleep Patterns (CRSP)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "DISABINSIND",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Disability insurance pain indicator"
+        ],
+        "Definition": [
+            "Indicator of whether the participant/subject has ever applied for or received disability insurance for their pain condition"
+        ],
+        "Short Description": [
+            "Indicator of whether the participant/subject has ever applied for or received disability insurance for their pain condition"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "EDULEVEL",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Education level type",
+            "Education level parent"
+        ],
+        "Definition": [
+            "Highest level of education participant/subject has completed or the highest degree received",
+            "Highest level of education parent/respondent has completed or the highest degree received"
+        ],
+        "Short Description": [
+            "Highest level of education that participant/subject has attained",
+            "Highest level of education parent/respondent has completed or the highest degree received"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "EDULEVELspouse",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Education level partner"
+        ],
+        "Definition": [
+            "Highest level of education the spouse/partner of the parent/respondent has completed or the highest degree received"
+        ],
+        "Short Description": [
+            "Highest level of education that the spouse/partner of the parent/respondent has attained"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "EMPSTAT",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Employment status",
+            "Employment status parent"
+        ],
+        "Definition": [
+            "Status of participant/subject current employment",
+            "Status of parent/respondent current employment"
+        ],
+        "Short Description": [
+            "Status of participant/subject current employment",
+            "Status of parent/respondent current employment"
+        ],
+        "Permissible Values": [
+            "1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "EMPSTATspouse",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Employment status partner"
+        ],
+        "Definition": [
+            "Status of  current employment for the spouse/partner of the parent/respondent"
+        ],
+        "Short Description": [
+            "Status of  current employment for the spouse/partner of the parent/respondent"
+        ],
+        "Permissible Values": [
+            "1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ETHNIC",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Ethnicity category",
+            "Ethnicity category child"
+        ],
+        "Definition": [
+            "Category of ethnicity the participant/subject most closely identifies with. A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease",
+            "Category of ethnicity the participant/subject child most closely identifies with. A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease"
+        ],
+        "Short Description": [
+            "Category of ethnicity the participant/subject most closely identifies with.",
+            "Category of ethnicity the participant/subject child most closely identifies with. "
+        ],
+        "Permissible Values": [
+            "1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ETHNICparent",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Ethnicity category parent"
+        ],
+        "Definition": [
+            "Category of ethnicity the parent/respondent most closely identifies with. A social group characterized by a distinctive social and cultural tradition maintained from generation to generation, a common history and origin and a sense of identification with the group; members of the group have distinctive features in their way of life, shared experiences and often a common genetic heritage; these features may be reflected in their experience of health and disease"
+        ],
+        "Short Description": [
+            "Parent/respondent ethnicity"
+        ],
+        "Permissible Values": [
+            "1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "GAD2FeelNervScale",
+        "Study Population Focus": [
+            "Peds Acute",
+            "Adult Acute",
+            "Adult Chronic",
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Anxiety"
+        ],
+        "CDE Name": [
+            "Generalized Anxiety Disorder (GAD-2) - feeling nervous scale"
+        ],
+        "Definition": [
+            "Scale describing how often participant/subject has been bothered by feeling nervous, anxious or on edge, as a part of Generalized Anxiety Disorder (GAD-2)"
+        ],
+        "Short Description": [
+            "Scale describing how often participant/subject has been bothered by feeling nervous, anxious or on edge, as a part of Generalized Anxiety Disorder (GAD-2)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "GAD2NotStopWryScale",
+        "Study Population Focus": [
+            "Peds Acute",
+            "Adult Acute",
+            "Adult Chronic",
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Anxiety"
+        ],
+        "CDE Name": [
+            "Generalized Anxiety Disorder (GAD-2) - not stop worry scale"
+        ],
+        "Definition": [
+            "Scale describing how often participant/subject has not been able to stop or control worrying, as a part of Generalized Anxiety Disorder (GAD-2)."
+        ],
+        "Short Description": [
+            "Scale describing how often participant/subject has not been able to stop or control worrying, as a part of Generalized Anxiety Disorder (GAD-2)."
+        ],
+        "Permissible Values": [
+            "0;1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "GAD2TotalScore",
+        "Study Population Focus": [
+            "Peds Acute",
+            "Adult Acute",
+            "Adult Chronic",
+            "Peds Chronic"
+        ],
+        "Domain": [
+            "Anxiety"
+        ],
+        "CDE Name": [
+            "Generalized Anxiety Disorder (GAD-2) - total score"
+        ],
+        "Definition": [
+            "Calculated overall/total score"
+        ],
+        "Short Description": [
+            "Calculated overall/total score"
+        ],
+        "Permissible Values": [
+            "0 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "GENIDENT",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Gender identification type",
+            "Gender identification type child"
+        ],
+        "Definition": [
+            "Self-reported participant's/subject's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex.",
+            "Self-reported (or parent reported) participant's/subject child's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex."
+        ],
+        "Short Description": [
+            "Self-reported gender of the participant/subject.",
+            "Child's gender identity"
+        ],
+        "Permissible Values": [
+            "1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "GENIDENTOTH ",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Gender identification other type text",
+            "Gender identification other type text child"
+        ],
+        "Definition": [
+            "The free-text field related to 'Gender idenitification type. ",
+            "The free-text field related to Gender idenitification other. "
+        ],
+        "Short Description": [
+            "Self-reported other gender type of the participant/subject.",
+            "The free-text field related to Gender idenitification other. "
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Alphanumeric"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "INCMLVL",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Annual household income range"
+        ],
+        "Definition": [
+            "Range, in U.S. dollars, of the annual pre-tax, pre-deduction total income, of the household of which the participant/subject is a member"
+        ],
+        "Short Description": [
+            "Range, in U.S. dollars, of the annual pre-tax, pre-deduction total income, of the household of which the participant/subject is a member"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "MARISTAT",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Marital response status",
+            "Marital  status"
+        ],
+        "Definition": [
+            "Status of participant/subject current conjugal situation",
+            "Status of parent/respondent current conjugal situation"
+        ],
+        "Short Description": [
+            "Status of participant/subject current conjugal situation",
+            "Status of parent/respondent current conjugal situation"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5; 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NH_PI",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu",
+            "Child race -  Native Hawaiian or Pacific Islander"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NH_PI_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu"
+        ],
+        "Short Description": [
+            "Parent/respondent race - Native Hawaiian or Pacific Islander"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2AnyAlchlScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "NIDA-Modified ASSIST L2 screener (age 11-17)  any alcohol"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's use of any alcoholic beverage in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (age 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating any use of alcohol"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugClubDrgScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) club drug use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (ecstasy or other club drugs) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (club drugs)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugCocaineScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  cocaine use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (cocaine) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (cocaine)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugHallcngnScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  hallucinogen use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (hallucinogens) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (hallucinogens)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugHeroinScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  heroin use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (heroin) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (heroin)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugInhlntScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  inhalant use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (inhalants or solvents) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (inhalants)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugMethScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  methamphetamine use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (methamphetamine) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (meth)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugMrjnaScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  marijuana use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's drug use (marijuana) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (marijuana)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugOthrMedScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) other medicine use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's medication use (other medicines) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (other medicines)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2DrugSteroidScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  steroid use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's medication use (steroids) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (steroids)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2ExtntAlchlScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) extent of alcohol use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's extent of alcoholic beverage use, in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (age 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating extent of alcohol use"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2MedPainScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) painkiller use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's prescription medication use (painkillers) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (painkillers)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2MedSedtvScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) sedative or tranquilizer use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's prescription medication use (sedatives or tranquilizers) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (sedatives or tranquilizers)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2MedStimScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) stimulant use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's prescription medication use (stimulants) in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating drug use (stimulants)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2OverallCount",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17)  Overall count of items scored greater than 0"
+        ],
+        "Definition": [
+            "Calculated/derived: Count of items scored greater than 0"
+        ],
+        "Short Description": [
+            "Calculated/derived: Count of items scored greater than 0"
+        ],
+        "Permissible Values": [
+            "0 to 15"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "NIDAL2TobacPrdctScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "APA modified NIDA-Modified Assist Level 2 screener (age 11-17) tobacco use"
+        ],
+        "Definition": [
+            "The status indicating the participant/subject's use of tobacco products in the past two weeks, as part of the APA modified NIDA-Modified Assist Level 2 screener (ages 11-17)"
+        ],
+        "Short Description": [
+            "NIDA-Mod ASSIST L2 (11-17) screener indicating tobacco use"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Not_Rep",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is not reported, not known to the research team, not observed, not recorded, or refused"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Not Reported, Not known, not observed, not recorded, or refused",
+            "Child race - Not Reported"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Not_Rep_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is not reported, not known to the research team, not observed, not recorded, or refused"
+        ],
+        "Short Description": [
+            "Parent/respondent race - Not Reported"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PAINDUR",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Pain duration value"
+        ],
+        "Definition": [
+            "Duration in months participant/subject has experienced pain"
+        ],
+        "Short Description": [
+            "Duration in months participant/subject has experienced pain"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCCantGoOnScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Feel Cannot Go On Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they cannot go on when they have pain; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they can't go on when they have pain, part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCCantStandPainScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Can not Stand Pain Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that they can no longer stand the pain; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they cannot stand the pain; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCHelplessnessSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Helplessness subscale total"
+        ],
+        "Definition": [
+            "Computed Helplessness subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Computed Helplessness subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Permissible Values": [
+            "0 to 24"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCMagnificationSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Magnification subscale total"
+        ],
+        "Definition": [
+            "Computed Magnification subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Computed Magnification subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Permissible Values": [
+            "0 to 12"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCNeverGetBetterScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Never Get Better Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels pain is terrible and will never get better; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels pain  will never get better, part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCNothingCanDoScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Nothing Can Do Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that when they are in pain there is nothing they can do to reduce the pain; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels there is nothing they can do to reduce pain; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCOthrPainEventScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Thinking of Other Painful Events Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about other painful events when they have pain; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject keeps thinking of other painful events; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCOverwhelmScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Pain Overwhelms Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that pain is awful and takes over (overwhelms) them; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels that pain is overwhelming; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCPainGoAwayScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Wants Pain to Go Away Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they want pain to go away; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject wants pain to go away; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCPainOutOfMindScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Keep Pain Out of Mind Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they cannot keep pain out of their mind; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they can't keep pain out of their mind; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCPainWorsenScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Fear Pain will Worsen Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject fears that pain will get worse; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject fears pain will worsen; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCRuminationSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Rumination subscale total"
+        ],
+        "Definition": [
+            "Computed Rumination subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Computed Rumination subscale score for the Pain Catastrophizing Scale-Child (PCS-C)"
+        ],
+        "Permissible Values": [
+            "0 to 16"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCSeriousHappenScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Something Serious May Happen Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject worries whether something serious may happen when they are in pain; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject worries about whether something serious will happen when in pain; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCSufferingScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Suffering Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about how much it hurts when they have pain (how much they are suffering); part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject keeps thinking about how much it hurts; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCTotalScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Overall Score"
+        ],
+        "Definition": [
+            "Computed overall score for the Pain Catastrophizing Scale-Child (PCS-C), calculated as the sum of responses to all items. "
+        ],
+        "Short Description": [
+            "Computed overall score for the Pain Catastrophizing Scale-Child (PCS-C), calculated as the sum of responses to all items. "
+        ],
+        "Permissible Values": [
+            "0 to 52"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCWantPainStopScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Want Pain to Stop Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about how much they want pain to stop; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject worries about how much they want pain to stop; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSCWorryPainEndScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Child (PCS-C) Worry Whether Pain will End Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject worries all the time about whether pain will end; part of the Pain Catastrophizing Scale - Child (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject worries about whether pain will end; part of the PCS-C"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPCantGoOnScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Feel Cannot Go On Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they cannot go on when their child has pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they can't go on when their child has pain, part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPCantStandPainScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Can not Stand Pain Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that they can no longer stand their child's pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they cannot stand their child's pain; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPHelplessnessSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Helplessness subscale total"
+        ],
+        "Definition": [
+            "Computed Helplessness subscale score for the Pain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Short Description": [
+            "Computed Helplessness subscale score for the Pain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Permissible Values": [
+            "0 to 24"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPMagnificationSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Magnification subscale total"
+        ],
+        "Definition": [
+            "Computed Magnification subscale score for the Pain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Short Description": [
+            "Computed Magnification subscale score for the Pain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Permissible Values": [
+            "0 to 12"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPNeverGetBetterScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Never Get Better Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels their child's pain is terrible and will never get better; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels their child's pain will never get better, part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPNothingCanDoScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Nothing Can Do Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that when their child is in pain there is nothing the parent can do to reduce the pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels there is nothing they can do to reduce their child's pain; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPOthrPainEventScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Thinking of Other Painful Events Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about other painful events when their child has pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject keeps thinking of other painful events; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPOverwhelmScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Overwhelm Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels that their child's pain is awful and this takes over (overwhelms) the parent; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels that their child's pain overwhelms them; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPPainGoAwayScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Wants Pain to Go Away Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they want their child's pain to go away; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject wants pain to go away; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPPainOutOfMindScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Keep Pain Out of Mind Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject feels they cannot keep their child's pain out of their mind; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject feels they can't keep pain out of their mind; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPPainWorsenScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Fear Pain will Worsen Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject fears that their child's pain will get worse; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject fears that their child's pain will worsen; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPRuminationSubScl",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P)  Rumination subscale total"
+        ],
+        "Definition": [
+            "Computed Rumination subscale score for thePain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Short Description": [
+            "Computed Rumination subscale score for thePain Catastrophizing Scale - Parent (PCS-P) "
+        ],
+        "Permissible Values": [
+            "0 to 16"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPSeriousHappenScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Something Serious May Happen Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject worries whether something serious may happen when their child is in pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject worries about whether something serious will happen when the child is in pain; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPSufferingScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Suffering Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about how much their child is suffering when they have pain; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject keeps thinking about how much their child is suffering; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPTotalScore",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Overall Score"
+        ],
+        "Definition": [
+            "Computed overall score for the Pain Catastrophizing Scale - Parent (PCS-P) , calculated as the sum of responses to all items. "
+        ],
+        "Short Description": [
+            "Computed overall score for the Pain Catastrophizing Scale - Parent (PCS-P) , calculated as the sum of responses to all items. "
+        ],
+        "Permissible Values": [
+            "0 to 52"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPWantPainStopScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Want Pain to Stop Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject keeps thinking about how much they want their child's pain to stop; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject thinks about how much they want pain to stop; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PCSPWorryPainEndScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Pain Catastrophizing Scale"
+        ],
+        "CDE Name": [
+            "Pain Catastrophizing Scale - Parent (PCS-P) Worry Whether Pain will End Scale"
+        ],
+        "Definition": [
+            "Scale describing how much the participant/subject worries all the time about whether the child's pain will end; part of the Pain Catastrophizing Scale - Parent (PCS-C)"
+        ],
+        "Short Description": [
+            "Scale describing how much the participant/subject worries about whether their child's pain will end; part of the PCS-P"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric (Parent)"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PEGAvgPainPastWeekScl",
+        "Study Population Focus": [
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "PEG - average pain past week scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of past week average pain experienced by the subject, as part of the PEG form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of the past week average pain, as part of the PEG form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PEGOverallScore",
+        "Study Population Focus": [
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "PEG - overall score"
+        ],
+        "Definition": [
+            "Computed overall score for the PEG, calculated as the arithmetic mean (average; sum of scores divided by 3)."
+        ],
+        "Short Description": [
+            "Computed overall score for the PEG, calculated as the arithmetic mean (average; sum of scores divided by 3)."
+        ],
+        "Permissible Values": [
+            "0 to 10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PEGPainPastWkEnjoyLifeScl",
+        "Study Population Focus": [
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "PEG - pain past week enjoyment life scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of past week pain life enjoyment experienced by the subject, as part of the PEG form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of past week pain life enjoyment experienced by the subject, as part of the PEG form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PEGPainPastWkGenrlActScl",
+        "Study Population Focus": [
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "Pain Intensity"
+        ],
+        "CDE Name": [
+            "PEG - pain past week general activity scale"
+        ],
+        "Definition": [
+            "Scale indicating the rating of past week pain general activity experienced by the subject, as part of the PEG form."
+        ],
+        "Short Description": [
+            "Scale indicating the rating of past week pain general activity experienced by the subject, as part of the PEG form."
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6;7;8;9;10"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PGICSymptomChangeStatVal",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Peds Chronic",
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Global Satisfaction with Treatment"
+        ],
+        "CDE Name": [
+            "Patient Global Impression of Change (PGIC) Symptom change status value"
+        ],
+        "Definition": [
+            "Status describing the change in the subject's symptoms have since the beginning of treatment as a part of the Patient Global Impression of Change"
+        ],
+        "Short Description": [
+            "Status describing the change in the subject's symptoms have since the beginning of treatment as a part of the Patient Global Impression of Change"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;5;6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PGISSeverityScale",
+        "Study Population Focus": [
+            "Peds Chronic",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Global Satisfaction with Treatment"
+        ],
+        "CDE Name": [
+            "Patient Global Impression of Severity (PGIS) pain severity scale"
+        ],
+        "Definition": [
+            "Single item scale describing the participant/subject perception about overall pain severity"
+        ],
+        "Short Description": [
+            "Scale describing the participant/subject perception about overall pain severity"
+        ],
+        "Permissible Values": [
+            "1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PHQ2TotalScore",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Peds Chronic",
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Depression"
+        ],
+        "CDE Name": [
+            "Patient Health Questionnaire (PHQ) - total score"
+        ],
+        "Definition": [
+            "Calculated overall/total score"
+        ],
+        "Short Description": [
+            "Calculated overall/total score"
+        ],
+        "Permissible Values": [
+            "0 to 6"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PHQDeprssnScore",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Peds Chronic",
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Depression"
+        ],
+        "CDE Name": [
+            "Patient Health Questionnaire (PHQ) - Depressed score"
+        ],
+        "Definition": [
+            "Score of how much the subject has been feeling down and depressed in the past two weeks, as part of the Patient Health Questionnaire (PHQ)."
+        ],
+        "Short Description": [
+            "Score of how much the subject has been feeling down and depressed in the past two weeks, as part of the Patient Health Questionnaire (PHQ)."
+        ],
+        "Permissible Values": [
+            "0;1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PHQLitIntrstScore",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Peds Chronic",
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Depression"
+        ],
+        "CDE Name": [
+            "Patient Health Questionnaire (PHQ) - Little interest score"
+        ],
+        "Definition": [
+            "Score of how much the subject has been bothered by having little interest or pleasure in doing things in the past two weeks, as part of the Patient Health Questionnaire (PHQ)."
+        ],
+        "Short Description": [
+            "Score of how much the subject has been bothered by having little interest or pleasure in doing things in the past two weeks, as part of the Patient Health Questionnaire (PHQ)."
+        ],
+        "Permissible Values": [
+            "0;1;2;3"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISDifficltFallAslpScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep difficulty assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents how often the participant had difficulty falling asleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents how often the participant had difficulty falling asleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhFncStrsNrmPcAbScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function stairs normal pace ability scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant was able to go up and down stairs at a normal pace, as a part of the PROMIS Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant was able to go up and down stairs at a normal pace, as a part of the PROMIS Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhyFncErndShpAblScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function errands shopping ability scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant was able to run errands and shop, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS) ."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant was able to run errands and shop, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS) ."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFunc15MnWlkScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function 15 minute walk scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant was able to go for a walk of at least 15 minutes, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant was able to go for a walk of at least 15 minutes, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFunc2HrLbrScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function limit two hours physical labor scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant health limits the ablity to perform two hours of physical labor, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant health limits the ablity to perform two hours of physical labor, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFuncChrsAblScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) -  Physical function chores ability scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant was able to perform chores such as vacuuming or yard work, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant was able to perform chores such as vacuuming or yard work, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFuncHswrkScl",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) -  Physical function moderate housework scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant health limits the ablity to perform moderate work around the house like vacuuming, sweeping floors or carrying in groceries, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant health limits the ablity to perform moderate work around the house like vacuuming, sweeping floors or carrying in groceries, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFx6TScore",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function item total t-score"
+        ],
+        "Definition": [
+            "Normalized t-score corresponding to the raw total score for the PROMIS Physical function  6a items"
+        ],
+        "Short Description": [
+            "Calculated normalized score"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISPhysFx6TotalScore",
+        "Study Population Focus": [
+            "Adult Acute",
+            "Adult Chronic"
+        ],
+        "Domain": [
+            "PF and QOL"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Physical function item total"
+        ],
+        "Definition": [
+            "Calculated raw total score for the PROMIS Physical function 6a items"
+        ],
+        "Short Description": [
+            "Calculated raw total score"
+        ],
+        "Permissible Values": [
+            "6 to 30"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISProblemWithSlpScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep problem assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents how often the participant had a problem with sleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents how often the participant had a problem with sleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISSleepQualityScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep quality assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents the participant's description of his/her sleep quality in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the participant's description of his/her sleep quality in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISSleepWasRefreshScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep refresh assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents how often the participant's sleep was refreshing in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents how often the participant's sleep was refreshing in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "5;4;3;2;1"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISSlpDist6TScore",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - sleep disturbance 6a item total t-score"
+        ],
+        "Definition": [
+            "Normalized t-score corresponding to the raw total score for the PROMIS Sleep Disturbance 6a items"
+        ],
+        "Short Description": [
+            "Calculated normalized score"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISSlpDist6TotalScore",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - sleep disturbance 6a item total"
+        ],
+        "Definition": [
+            "Calculated raw total score for the PROMIS Sleep Disturbance 6a items"
+        ],
+        "Short Description": [
+            "Calculated raw total score"
+        ],
+        "Permissible Values": [
+            "6 to 30"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISSlpWasRestlessScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep restlessness assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents how often the participant's sleep was restless in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents how often the participant's sleep was restless in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "PROMISTryHardGetToSlpScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Patient-Reported Outcome Measurement Information System (PROMIS) - Sleep determination assessment past week scale"
+        ],
+        "Definition": [
+            "Scale which represents the extent to which the participant tried hard to get to sleep in the past 7 days, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Short Description": [
+            "Scale which represents the extent to which the participant tried hard to get to sleep in the past 7 days, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS)."
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5"
+        ],
+        "Data Type": [
+            "Numeric"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ProxyRelationship",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Respondent relationship to participating child"
+        ],
+        "Definition": [
+            "Relationship between the parent/respondent (person answering questions for the child) and the child who is the main study participant/subject. Includes relationships that are biologic, adoptive, or step."
+        ],
+        "Short Description": [
+            "Parent/responent's relationship to the study participant/subject child"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "ProxyRelationshipOTH",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Respondent relationship to participating child"
+        ],
+        "Definition": [
+            "The free-text field related to Proxy Relationship response of other"
+        ],
+        "Short Description": [
+            "The free-text field related to Proxy Relationship response of other"
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Alphanumeric"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Childcare",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get childcare that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need - Childcare"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Clothing",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get clothing that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Clothing"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Food",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get food that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Food"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Housing",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get housing that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Housing"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Internet",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get internet that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Internet/ Broadband"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_MedHlthcare",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get medcine that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Medicine or any health care (medical, dental, mental health, vision)"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_NotAnswer",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant prefers not to answer if they or any of the participants family members was unable to get an item or service that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Prefer not to answer"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Other",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get an item or service they needed that was not listed above within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Other"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_OtherSpecify",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Description of the item or service the participant or any of the participants family members was unable to get that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -If other, specify "
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Alphaumeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Phone",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get phone that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Phone (e.g., mobile or landline)"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Transportation",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get transportation that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Transportation (e.g., private or public)"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SDOH_Utilities",
+        "Study Population Focus": [
+            "Adult Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "SDOH"
+        ],
+        "Definition": [
+            "Indicator the participant or any of the participants family members was unable to get utilities that they really needed within the past year, as a part of the HEAL CDE pain core demographics. "
+        ],
+        "Short Description": [
+            "Economic Stability - Social Need -Utilities (e.g., gas, electric, propane, natural gas, etc.)"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Sex",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Sex birth type",
+            "Sex birth type child"
+        ],
+        "Definition": [
+            "Self-reported sex at birth of the participant/subject. The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female. ",
+            "Self-reported (or parent reported) participant/subject child's sex at birth. The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female. "
+        ],
+        "Short Description": [
+            "Self-reported sex at birth of the participant/subject",
+            "Child's sex at birth. "
+        ],
+        "Permissible Values": [
+            "1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SleepNightHourMinDur",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Peds Chronic",
+            "Adult Acute",
+            "Peds Acute"
+        ],
+        "Domain": [
+            "Sleep"
+        ],
+        "CDE Name": [
+            "Sleep night hours minutes duration"
+        ],
+        "Definition": [
+            "Duration in hours and minutes of sleep per night by the participant/subject."
+        ],
+        "Short Description": [
+            "Duration in hours and minutes of sleep per night by the participant/subject."
+        ],
+        "Permissible Values": [],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "SurveyLanguage",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Survey language"
+        ],
+        "Definition": [
+            "Language used for survey administration"
+        ],
+        "Short Description": [
+            "Language for surveys"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6;7"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSAlcoholUseFemaleScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) - Alcohol use female scale"
+        ],
+        "Definition": [
+            "Status indicating the female participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Short Description": [
+            "Status indicating the female participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;9"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSAlcoholUseMaleScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) - Alcohol use male scale"
+        ],
+        "Definition": [
+            "Status indicating the male participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Short Description": [
+            "Status indicating the male participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4;9"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSDrugUseScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) - Drug use scale"
+        ],
+        "Definition": [
+            "Status indicating the participant's drug use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Short Description": [
+            "Status indicating the participant's drug use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSOverallYN",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) - Overall TAPS possible substance use indicator"
+        ],
+        "Definition": [
+            "Indicator evaluating the overall set of responses to the Tobacco Alcohol Prescription medications and other Substance (TAPS) part 1"
+        ],
+        "Short Description": [
+            "Overall TAPS part 1"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSPrescriptionMedUseScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) - Prescription medication use scale"
+        ],
+        "Definition": [
+            "Status indicating the participant's perscription medication use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Short Description": [
+            "Status indicating the participant's perscription medication use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "TAPSTobaccoProductScl",
+        "Study Population Focus": [
+            "Adult Chronic",
+            "Adult Acute"
+        ],
+        "Domain": [
+            "Substance Use"
+        ],
+        "CDE Name": [
+            "Tobacco Alcohol Prescription medications and other Substance (TAPS) -  Tobacco product use scale"
+        ],
+        "Definition": [
+            "Status indicating the participant's tobacco use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Short Description": [
+            "Status indicating the participant's tobacco use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)"
+        ],
+        "Permissible Values": [
+            "0;1;2;3;4"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Unkn",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is self-declared as unknown"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Unknown, Not provided or available",
+            "Child race -  Unknown."
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "Unkn_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates that race is self-declared as unknown"
+        ],
+        "Short Description": [
+            "Parent/respondent race - Unknown."
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "White",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Race",
+            "Race child"
+        ],
+        "Definition": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories",
+            "Race: Participant/subject child self declared (or parent reported) racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White"
+        ],
+        "Short Description": [
+            "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White",
+            "Child race -  White"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "White_p",
+        "Study Population Focus": [
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Parent Race"
+        ],
+        "Definition": [
+            "Race: Parent/respondent self declared racial origination, independent of ethnic origination, using OMB approved categories. This reponse indicates self-declared race is White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White"
+        ],
+        "Short Description": [
+            "Parent/respondent race - White"
+        ],
+        "Permissible Values": [
+            "0;1"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "demRUCA1",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Rural-Urban Commuting Area (RUCA) Codes - primary code"
+        ],
+        "Definition": [
+            "The rural-urban commuting area (RUCA) codes classify U.S. locations to reflect population density, urbanization, and daily commuting. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.  "
+        ],
+        "Short Description": [
+            "RUCA code: Primary"
+        ],
+        "Permissible Values": [
+            "1;2;3;4;5;6;7;8;9;10;99"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    },
+    {
+        "Variable Name": "demRUCA2",
+        "Study Population Focus": [
+            "Adult Demographics",
+            "Peds Demographics"
+        ],
+        "Domain": [],
+        "CDE Name": [
+            "Rural-Urban Commuting Area (RUCA) Codes - secondary code"
+        ],
+        "Definition": [
+            "The rural-urban commuting area (RUCA) codes classify U.S. locations to reflect population density, urbanization, and daily commuting. The classification contains two levels. The 10 primary codes can be  further subdivided based on secondary commuting flows. "
+        ],
+        "Short Description": [
+            "RUCA code: Secondary "
+        ],
+        "Permissible Values": [
+            "1;1.1;2;2.1;3;4;4.1;5;5.1;6;7;7.1;7.2;8;8.1;8.2;9;10;10.1;10.2;10.3;99"
+        ],
+        "Data Type": [
+            "Numeric Values"
+        ],
+        "Population": [
+            "Adult;Pediatric"
+        ],
+        "Classification": [
+            "Core"
+        ]
+    }
+]

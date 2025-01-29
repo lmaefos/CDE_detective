@@ -1,0 +1,1100 @@
+[
+    {
+        "Variable Name": "Age",
+        "Extracted CRF Name": "Demographics Form",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Value for participant/subject's age, calculated as elapsed time since the birth of the participant/subject.",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "EDULEVEL",
+        "Extracted CRF Name": "Education Level Assessment",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Highest level of education that participant/subject has attained",
+        "PV Description": "1 = Did not complete Secondary School or less than High School;2 = Some Secondary School or High School education;3 = High School or Secondary School degree complete;4 = Associate's or Technical Degree complete;5 = College or Baccalaureate degree complete;6 = Doctoral or Postgraduate education; 99 = Unknown/Prefer not to answer",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "edulevel_2",
+        "Extracted CRF Name": "Education Level Specification",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Doctoral or Postgraduate Education, Specify which:",
+        "PV Description": "1 = Doctoral; 2 = Postgraduate",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "AI_AN",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories- American Indian or Alaska Native, A person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "Asian",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories- Asian, A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "Bl_AA",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Black or African-American, A person having origins in any of the black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\"",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "NH_PI",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Native Hawaiian or Pacific Islander, Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "White",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  White, Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "Unkn",
+        "Extracted CRF Name": "Race",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Participant/subject self declared racial origination, independent of ethnic origination, using OMB approved categories-  Unknown, Not provided or available",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "ETHNIC",
+        "Extracted CRF Name": "Ethnicity Questionnaire",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Category of ethnicity the participant/subject most closely identifies with.",
+        "PV Description": "1 = Hispanic or Latino, A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race;2 = Not Hispanic or Latino, A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification;3 = Unknown, Not known, not observed, not recorded, or refused;4 = Not reported, Not provided or available",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "Sex",
+        "Extracted CRF Name": "Birth Sex",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Self-reported sex at birth of the participant/subject",
+        "PV Description": "1 = Male, A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both;2 = Female, A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both;3 = Unknown, Not known, not observed, not recorded, or refused;4 = Intersex, A person (one of unisexual specimens) who is born with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes",
+        "Data Type": "Numeric Values\n"
+    },
+    {
+        "Variable Name": "GENIDENT",
+        "Extracted CRF Name": "Gender Identification Questionnaire",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Self-reported gender of the participant/subject.",
+        "PV Description": "1 = Male;2 = Female;3 = Unknown;4 = Other, specify",
+        "Data Type": "Numeric Values\n"
+    },
+    {
+        "Variable Name": "GENIDENTOTH ",
+        "Extracted CRF Name": "Gender Identification Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Self-reported other gender type of the participant/subject.",
+        "PV Description": null,
+        "Data Type": "Alphanumeric"
+    },
+    {
+        "Variable Name": "MARISTAT",
+        "Extracted CRF Name": "Marital Status Questionnaire",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Status of participant/subject current conjugal situation",
+        "PV Description": "1 = Divorced,Marriage contract has been declared dissolved and inactive;2 = Married, A current marriage contract is active;3 = Never Married, No marriage contract has ever been entered;4 = Separated, A person who is separated from their spouse, whether or not there is a legal arrangement;5 = Widowed, The spouse has died; 6=Domestic Partner, Person declares that a domestic partnership relationship exists; 7 = Prefer not to answer; 8 = Other",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "maristatoth",
+        "Extracted CRF Name": "Marital Status",
+        "Matched HEAL Core CRF": "Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Marital Status Other, specify:",
+        "PV Description": null,
+        "Data Type": "text "
+    },
+    {
+        "Variable Name": "EMPSTAT",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Status of participant/subject current employment",
+        "PV Description": "1=Full-time employment, Employment involving the standard or customary working time;2 = Not employed, The state of not having a job;3 = Part-time employment, Employment involving less than the standard or customary working time; 4= Prefer not to answer",
+        "Data Type": "Numeric Values\n"
+    },
+    {
+        "Variable Name": "empstat_2___1",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "not looking for work",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_2___2",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "looking for work",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_2___3",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "retired",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_2___4",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "disabled",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_2___5",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "unable to work",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_2___6",
+        "Extracted CRF Name": "Employment Status Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "other",
+        "PV Description": "0=not checked; 1=checked",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "empstat_3",
+        "Extracted CRF Name": "Employment Status",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Not employed: other, specify:",
+        "PV Description": null,
+        "Data Type": "text "
+    },
+    {
+        "Variable Name": "INCMLVL",
+        "Extracted CRF Name": "Household Income Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Range, in U.S. dollars, of the annual pre-tax, pre-deduction total income, of the household of which the participant/subject is a member",
+        "PV Description": "1 = Less than $10,000;2 = $10,000-$24,999;3 = $25,000-$34,999;4 = $35,000-$49,999;5 = $50,000-$74,999;6 = $75,000-$99,999;7 = $100,000-$149,999;8 = $150,000-$199,999;9 = $200,000 or more;10 = Prefer not to answer",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "incmlvl_2",
+        "Extracted CRF Name": "Household Income Comfort Level",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Household Income Comfort Level",
+        "PV Description": "0 = Comfortable\n1 = Just enough to make ends meet; 2=Not enough to make ends meet; 3=Don't know; 4=Prefer not to answer",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIWrstPnLast24HRtngScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale indicating the rating of the worst pain, experienced by the participant in the last 24 hours, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = No pain;;;;;;;;;;10 = Pain as bad as you can imagine",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPILeastPnLst24HRtngScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale indicating the rating of the least pain experienced by the participant in the last 24 hours, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = No pain;;;;;;;;;;10 = Pain as bad as you can imagine",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIAvgPainRtngScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale indicating the rating of the average pain experienced by the participant, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = No pain;;;;;;;;;;10 = Pain as bad as you can imagine",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPICurrentPainRtngScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale rating the pain the participant is feeling right now, as part of the Brief Pain Inventory (BPI) form.",
+        "PV Description": "0 = No pain;;;;;;;;;;10 = Pain as bad as you can imagine",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntfrGnrlActvtyScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with general activity, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntfrMoodScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with mood, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntfrWlkAblScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with walking ability, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainNrmlWrkIntrfrScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with normal work, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainRelationsIntrfrScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with relations with other people, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainSleepIntrfrScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with sleep, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainEnjoymntIntrfrScl",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale assessing how much the pain has interfered with enjoyment of life, as part of the Brief Pain Inventory (BPI).",
+        "PV Description": "0 = Does not Interfere;;;;;;;;;;10 = Completely Interferes",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainSeverityScore_n",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Severity",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Severity Score variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainSeverityScore_nmiss",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Severity",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Severity Score variables missing count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainSeverityScore",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Severity",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Severity Subscale Score (calculated)",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntrfrScore_n",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Interference Score variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntrfrScore_nmiss",
+        "Extracted CRF Name": "BPI Pain Interference Score",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Interference Score missing variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "BPIPainIntrfrScore",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "BPI Pain Interference",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Interference Subscale Score (calculated)",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "BPI_total_n",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Total Score variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "BPI_total_nmiss",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "BPI Pain Total Score missing variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "BPI_Total",
+        "Extracted CRF Name": "Brief Pain Inventory (BPI)",
+        "Matched HEAL Core CRF": "Brief Pain Inventory (BPI)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Brief Pain Inventory (BPI) - pain total score",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "PEG_n",
+        "Extracted CRF Name": "PEG Score Questionnaire",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "PEG Score variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "PEG_nmiss",
+        "Extracted CRF Name": "PEG Score Questionnaire",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "PEG Score missing variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "PEG_Total",
+        "Extracted CRF Name": "PEG Scale",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "PEG total score",
+        "PV Description": null,
+        "Data Type": "Numeric Value"
+    },
+    {
+        "Variable Name": "PHQLitIntrstScore",
+        "Extracted CRF Name": "Patient Health Questionnaire-9 (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been bothered by having little interest or pleasure in doing things in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQDeprssnScore",
+        "Extracted CRF Name": "Patient Health Questionnaire-9 (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been feeling down and depressed in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQSleepImpairScore",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ)",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been bothered with troubling falling/staying asleep or sleeping too much in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQTirdLittleEnrgyScore",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been feeling tired in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQAbnrmlDietScore",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject  has been bothered by abnormal diet/appetite in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQFlngFailrScore",
+        "Extracted CRF Name": "Patient Health Questionnaire-9 (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been feeling bad for himself/herself in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQConcntrtnImprmntScore",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been bothered with troubling concentrating in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQMovmntSpchImprmntScore",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Score of how much the subject has been suffering with moving or speaking too slowly in the past two weeks, as part of the Patient Health Questionnaire (PHQ).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQ8_n",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "PHQ variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQ8_nmiss",
+        "Extracted CRF Name": "Patient Health Questionnaire (PHQ)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "PHQ variables missing count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PHQTotalScore",
+        "Extracted CRF Name": "Patient Health Questionnaire-9 (PHQ-9)",
+        "Matched HEAL Core CRF": "Patient Health Questionnaire 2 (PHQ2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Total score of the questionnaire, as the part of Patient Health Questionnaire Depression (PHQ).",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD2FeelNervScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder 7-item (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has been bothered by feeling nervous, anxious or on edge, as a part of Generalized Anxiety Disorder (GAD-7). ",
+        "PV Description": "0 = Not at all;1 = Several days;2 = More than half the days;3 = Nearly every day",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD2NotStopWryScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has not been able to stop or control worrying, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7WryTooMchScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder 7-item (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject worries too much about different things, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7TroubRelxScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder 7-item (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has trouble relaxing, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7RstlessScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject is so restless that it is hard to sit still, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7EasyAnnoyedScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder 7-item (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject becomes easily annoyed or irritable, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7FeelAfrdScl",
+        "Extracted CRF Name": "Generalized Anxiety Disorder (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject feels afraid as if something awful might happen, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": "0 = Not at all;1 = Several days; 2 = More than half the days; 3 = Nearly every day    ",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7_n",
+        "Extracted CRF Name": "Generalized Anxiety Disorder 7-item (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "GAD variables count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7_nmiss",
+        "Extracted CRF Name": "Generalized Anxiety Disorder (GAD)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "GAD variables missing count",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "GAD7TotScore",
+        "Extracted CRF Name": "Generalized Anxiety Disorder (GAD-7)",
+        "Matched HEAL Core CRF": "Generalized Anxiety Disorder (GAD2)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Total score for the GAD-7 used for office coding, as a part of Generalized Anxiety Disorder (GAD-7).",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQWorryPainEndScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject  feelings and thoughts concerning the statement, \"When I'm in pain I worry all the time about whether the pain will end\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQCannotGoOnScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject  feelings and thoughts concerning the statement, \"When I'm in pain I feel I can\u2019t go on\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQPainNeverBetterScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject  feelings and thoughts concerning the statement, \"When I'm in pain it\u2019s terrible and I think it\u2019s never going to get any better\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQPainAwfulOvrwhlmScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain it\u2019s awful and I feel that it overwhelms me\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQFeelCantWithstandScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I feel I can\u2019t stand it anymore\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQAfraidPainWorseScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I become afraid that the pain will get worse\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQOtherPainEventScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I keep thinking of other painful events\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQAnxiousPainAwayScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I anxiously want the pain to go away\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQMindScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I can\u2019t seem to keep it out my mind\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQHurtScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I keep thinking about how much it hurts\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQPainStopScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I keep thinking about how badly I want the pain to stop\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQReduceIntensityScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain there\u2019s nothing I can do to reduce the intensity of the pain\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQSeriousScl",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale of the severity of the participant/subject feelings and thoughts concerning the statement, \"When I'm in pain I wonder whether something serious may happen\"",
+        "PV Description": "0 = not at all;1 = to a slight degree;2 = to a moderate degree;3 = to a great degree;4 = all the time",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PCQTotalScoreVal",
+        "Extracted CRF Name": "Pain Catastrophizing Scale (PCS)",
+        "Matched HEAL Core CRF": "PCS 6",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Total sum value of the scores from all queries from the Pain Catastrophizing Questionnaire ",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "NSCAPRAcupuncture1b",
+        "Extracted CRF Name": "NSCAP Revised- Acupuncture Pain Scale",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale on how effective acupuncture was for subjects pain. Scale from 0 to 10. (0=not at all to 10=completely) ",
+        "PV Description": "0=Not at all;;;;;;;;;10= Completely",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "NSCAPRPhysicalTherapy1b",
+        "Extracted CRF Name": "NSCAP Revised- Physical Therapy Pain Scale",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale on how effective Physical Therapy was for subjects pain. Scale from 0 to 10. (0=not at all to 10=completely) ",
+        "PV Description": "0=Not at all;;;;;;;;;10= Completely",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "NSCAPRMassage1b",
+        "Extracted CRF Name": "NSCAP Massage Pain Scale",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale on how effective Massage was for subjects pain. Scale from 0 to 10. (0=not at all to 10=completely) ",
+        "PV Description": "0=Not at all;;;;;;;;;10= Completely",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "NSCAPRWalking1b",
+        "Extracted CRF Name": "Walking Pain Effectiveness Scale",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale on how effective Walking was for subjects pain. Scale from 0 to 10. (0=not at all to 10=completely) ",
+        "PV Description": "0=Not at all;;;;;;;;;10= Completely",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "nscap12d",
+        "Extracted CRF Name": "Pain Effectiveness Questionnaire",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "How effective was it for your pain?",
+        "PV Description": "0 = Min ::::::: 10 = Max",
+        "Data Type": "text number"
+    },
+    {
+        "Variable Name": "nscap13d",
+        "Extracted CRF Name": "Pain Effectiveness Questionnaire",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "How effective was it for your pain?",
+        "PV Description": "0 = Min ::::::: 10 = Max",
+        "Data Type": "text number"
+    },
+    {
+        "Variable Name": "nscap14d",
+        "Extracted CRF Name": "Pain Effectiveness Questionnaire",
+        "Matched HEAL Core CRF": "PEG Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "How effective was it for your pain?",
+        "PV Description": "0 = Min ::::::: 10 = Max",
+        "Data Type": "text number"
+    },
+    {
+        "Variable Name": "TAPSTobaccoProductScl",
+        "Extracted CRF Name": "Tobacco Alcohol Prescription medications and other Substance (TAPS)",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Status indicating the participant's tobacco use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)",
+        "PV Description": "0 - Daily or Almost Daily;1 - Weekly;2 - Monthly;3 - Less Than Monthly;4 - Never",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "TAPSAlcoholUseMaleScl",
+        "Extracted CRF Name": "TAPS - Alcohol Use Male Scale",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Status indicating the male participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)",
+        "PV Description": "0 - Daily or Almost Daily;1 - Weekly;2 - Monthly;3 - Less Than Monthly;4 - Never; 9 - Not Applicable",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "TAPSAlcoholUseFemaleScl",
+        "Extracted CRF Name": "Tobacco Alcohol Prescription medications and other Substance (TAPS)",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Status indicating the female participant's alcohol use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)",
+        "PV Description": "0 - Daily or Almost Daily;1 - Weekly;2 - Monthly;3 - Less Than Monthly;4 - Never; 9 - Not Applicable",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "TAPSDrugUseScl",
+        "Extracted CRF Name": "TAPS - Drug Use Scale",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Status indicating the participant's drug use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)",
+        "PV Description": "0 - Daily or Almost Daily;1 - Weekly;2 - Monthly;3 - Less Than Monthly;4 - Never",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "TAPSPrescriptionMedUseScl",
+        "Extracted CRF Name": "Tobacco Alcohol Prescription medications and other Substance (TAPS)",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "No Confidence Score",
+        "Short Description": "Status indicating the participant's perscription medication use in the past 12 months as a part of the Tobacco Alcohol and Prescription medications and other Substance (TAPS)",
+        "PV Description": "0 - Daily or Almost Daily;1 - Weekly;2 - Monthly;3 - Less Than Monthly;4 - Never",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "TAPSOverallYN",
+        "Extracted CRF Name": "TAPS Tool (Tobacco, Alcohol, Prescription medications, and other Substances)",
+        "Matched HEAL Core CRF": "TAPS Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Overall TAPS part 1",
+        "PV Description": "0 = Negative screening; 1 = Positive screening (possible substance use)",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PDHPoorerServices",
+        "Extracted CRF Name": "Perceived Discrimination in Healthcare Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has received poorer services than other people, as a part of Perceived Discrimination in Healthcare.",
+        "PV Description": "0= Never; 1= Rarely; 2= Sometimes; 3= Most of the time; 4= Always",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PDHBetterThan",
+        "Extracted CRF Name": "Perceived Discrimination in Healthcare",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has had a doctor or nurse act as if he or she is better than the participant, as a part of Perceived Discrimination in Healthcare.",
+        "PV Description": "0= Never; 1= Rarely; 2= Sometimes; 3= Most of the time; 4= Always",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PDHNotListening",
+        "Extracted CRF Name": "Perceived Discrimination in Healthcare Questionnaire",
+        "Matched HEAL Core CRF": "SDOH Demographics",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale describing how often participant/subject has felt a doctor or nurse was not listening to what the participant was saying, as a part of Perceived Discrimination in Healthcare.",
+        "PV Description": "0= Never; 1= Rarely; 2= Sometimes; 3= Most of the time; 4= Always",
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PROMISPhysFuncChrsAblScl",
+        "Extracted CRF Name": "PROMIS Physical Function - Chores Ability Scale",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale which represents the extent to which the participant was able to perform chores such as vacuuming or yard work, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Without any difficulty;4 = With a little difficulty;3 = With some difficulty;2 = With much difficulty;1 = Unable to do",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISPhFncStrsNrmPcAbScl",
+        "Extracted CRF Name": "PROMIS Physical Function - Stairs",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale which represents the extent to which the participant was able to go up and down stairs at a normal pace, as a part of the PROMIS Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Without any difficulty;4 = With a little difficulty;3 = With some difficulty;2 = With much difficulty;1 = Unable to do",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISPhysFunc15MnWlkScl",
+        "Extracted CRF Name": "PROMIS Physical Function",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale which represents the extent to which the participant was able to go for a walk of at least 15 minutes, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Without any difficulty;4 = With a little difficulty;3 = With some difficulty;2 = With much difficulty;1 = Unable to do",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISPhysFunc2HrLbrScl",
+        "Extracted CRF Name": "PROMIS Physical Function",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale which represents the extent to which the participant health limits the ablity to perform two hours of physical labor, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Not at all;4 = Very little;3 = Somewhat;2 = Quite a lot;1 = Cannot do",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISPhysFuncHswrkScl",
+        "Extracted CRF Name": "PROMIS Physical Function - Moderate Housework Scale",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Scale which represents the extent to which the participant health limits the ablity to perform moderate work around the house like vacuuming, sweeping floors or carrying in groceries, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Not at all;4 = Very little;3 = Somewhat;2 = Quite a lot;1 = Cannot do",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PhysFunc_n",
+        "Extracted CRF Name": "Physical Function Questionnaire",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "The physical function variables count",
+        "PV Description": null,
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PhysFunc_nmiss",
+        "Extracted CRF Name": "Physical Function Assessment Form",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "The physical function variables missing count",
+        "PV Description": null,
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISPhysFx6TotalScore",
+        "Extracted CRF Name": "PROMIS Physical Function",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Calculated raw total score",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PROMISPhysFx6TScore",
+        "Extracted CRF Name": "PROMIS Physical Function",
+        "Matched HEAL Core CRF": "PROMIS Physical Function Pain (PROMIS PF Pain)",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Calculated normalized score",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "sleepnighthourdur",
+        "Extracted CRF Name": "Sleep Duration Questionnaire",
+        "Matched HEAL Core CRF": "Sleep Duration Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Sleep Night Hour Duration\n",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "sleepnightmindur",
+        "Extracted CRF Name": "Sleep Diary or Sleep Log",
+        "Matched HEAL Core CRF": "Sleep Duration Pain",
+        "Match Confidence": "Medium Confidence",
+        "Short Description": "Sleep Night Minute duration",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "SleepNightHourMinDur",
+        "Extracted CRF Name": "Sleep Duration Questionnaire",
+        "Matched HEAL Core CRF": "Sleep Duration Pain",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Duration in hours and minutes of sleep per night by the participant/subject.",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PROMISSleepQualityScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents the participant's description of his/her sleep quality in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Very Poor;4 = Poor;3 = Fair;2 = Good;1 = Very Good",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISSleepWasRefreshScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents how often the participant's sleep was refreshing in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "5 = Not at all;4 = A little bit;3 = Somewhat;2 = Quite a bit;1 = Very Much",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISProblemWithSlpScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents how often the participant had a problem with sleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "1 = Not at all;2 = A little bit;3 = Somewhat;4 = Quite a bit;5 = Very Much",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISDifficltFallAslpScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents how often the participant had difficulty falling asleep in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "1 = Not at all;2 = A little bit;3 = Somewhat;4 = Quite a bit;5 = Very Much",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISSlpWasRestlessScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents how often the participant's sleep was restless in the past 7 days, as part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "1 = Not at all;2 = A little bit;3 = Somewhat;4 = Quite a bit;5 = Very Much",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISTryHardGetToSlpScl",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Scale which represents the extent to which the participant tried hard to get to sleep in the past 7 days, as a part of the Patient-Reported Outcome Measurement Information System (PROMIS).",
+        "PV Description": "1 = Not at all;2 = A little bit;3 = Somewhat;4 = Quite a bit;5 = Very Much",
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISSlpDist6_n",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "PROMIS Sleep Disturbance variables count",
+        "PV Description": null,
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISSlpDist6_nmiss",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "PROMIS Sleep Disturbance missing variables count",
+        "PV Description": null,
+        "Data Type": "Numeric"
+    },
+    {
+        "Variable Name": "PROMISSlpDist6TotalScore",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Calculated raw total score",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PROMISSlpDist6TScore",
+        "Extracted CRF Name": "PROMIS Sleep Disturbance Short Form",
+        "Matched HEAL Core CRF": "PROMIS Sleep Disturbance 6a",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Calculated normalized score",
+        "PV Description": null,
+        "Data Type": "Numeric Values"
+    },
+    {
+        "Variable Name": "PGICSymptomChangeStatVal",
+        "Extracted CRF Name": "Patient Global Impression of Change (PGIC)",
+        "Matched HEAL Core CRF": "Patient Global Impression of Change Pain (PGIC)",
+        "Match Confidence": "High Confidence",
+        "Short Description": "Status describing the change in the subject's symptoms have since the beginning of treatment as a part of the Patient Global Impression of Change",
+        "PV Description": "0 = Very much improved;1 = Much improved;2 = Minimally improved;3 = No change;4 = Minimally worse;5 = Much worse;6 = Very much worse",
+        "Data Type": "Numeric Values"
+    }
+]

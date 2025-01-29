@@ -22,7 +22,7 @@
       },
       {
         "name": "SDOH Demographics",
-        "abbreviations": ["SDOH", "Social Determinants of Health", "S.D.O.H."],
+        "abbreviations": ["SDOH", "Social Determinants of Health", "S.D.O.H.", "Demographics SDOH"],
         "description": "Assesses the availability of essential resources like childcare, food, housing, and other social determinants of health (SDOH). It evaluates unmet needs in areas such as healthcare, utilities, transportation, and more, over the past year. Participants can also indicate if they prefer not to answer. These indicators provide insight into the social and environmental factors affecting health outcomes."
       },
       {
@@ -36,13 +36,18 @@
         "description": "A version of the GAD-2 screener used specifically for populations experiencing pain."
       },
       {
+        "name": "GAD7",
+        "abbreviations": ["GAD-7", "GAD 7"],
+        "description": "A version of the GAD-7 screener used specifically for populations experiencing pain."
+      },
+      {
         "name": "NIDA-Modified ASSIST L2",
-        "abbreviations": ["NIDA Modified", "NIDA-Modified ASSIST"],
+        "abbreviations": ["NIDA Modified", "NIDA-Modified ASSIST", "NIDAL2"],
         "description": "A screening tool for adolescents (ages 11-17), adapted from the NIDA ASSIST to assess substance use, including alcohol."
       },
       {
         "name": "PCS-6",
-        "abbreviations": ["PCS-6", "Pain Catastrophizing Scale Short Form"],
+        "abbreviations": ["PCS-6", "Pain Catastrophizing Scale Short Form", "PCS6"],
         "description": "A shortened version of the Pain Catastrophizing Scale (PCS) focusing on key items related to catastrophic thinking about pain."
       },
       {
@@ -54,6 +59,11 @@
         "name": "PCS-Parent",
         "abbreviations": ["PCS Parent", "Pain Catastrophizing Scale Parent"],
         "description": "An adapted version of the PCS for parents to report on their perceptions of their child’s pain experience."
+      },
+      {
+        "name": "PCS-13",
+        "abbreviations": ["PCS-13", "Pain Catastrophizing Scale 13 Questions", "PCS13"],
+        "description": "A 13 question version of the Pain Catastrophizing Scale (PCS) focusing on key items related to catastrophic thinking about pain."
       },
       {
         "name": "Pediatric Quality of Life Inventory (PedsQL)",
@@ -112,8 +122,13 @@
       },
       {
         "name": "TAPS Pain",
-        "abbreviations": ["TAPS Pain", "Tobacco, Alcohol, Prescription Medication, and Other Substance Use Pain"],
+        "abbreviations": ["TAPS Pain", "Tobacco, Alcohol, Prescription Medication, and Other Substance Use Pain", "TAPS"],
         "description": "The TAPS tool adapted to assess substance use in individuals with pain."
+      },
+      {
+        "name": "WHOQOL2",
+        "abbreviations": ["WHOQOL", "The World Health Organization Quality of Life Scale", "WHOQOL-2", "WHO-QOL2", "WHOQOL-BREF"],
+        "description": "The WHOQOL2 is a 2 question self-reported measure of a person's satisfaction with their overall health and quality of life."
       }
     ]
   }
