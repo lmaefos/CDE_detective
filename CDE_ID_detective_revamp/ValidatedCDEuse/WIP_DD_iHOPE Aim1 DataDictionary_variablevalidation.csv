@@ -1,0 +1,103 @@
+Study Variable,Study Form Name,Extracted CRF Name,Matched HEAL Core CRF,Exact/CRF Match Result,Exact Match CDE Name,Close Match Result,Best Close Match CDE Name,PV/Encoding Result,PV Similarity Score,Final Match Type
+id,introduction,"Introduction Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,Gender identification type,No Comparison Possible,,Close
+introduction,introduction,"Introduction Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+referral_source,introduction,"Introduction Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+referral_other,introduction,"Introduction Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+contact_y_n,introduction,"Introduction Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+rhc_care,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+age55_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,Age ,No Comparison Possible,,Close
+age_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,Age ,No Comparison Possible,,Close
+cog_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+cog_2_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+smedi_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+smenti_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+sud_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+walk_eligibility,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+exclusion_total,eligibility_criteria,"Eligibility and Exclusion Criteria Questionnaire
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+nrs,nrs,Numeric Rating Scale (NRS),PEG Pain,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+nrs_total,nrs,Numeric Rating Scale (NRS),PEG Pain,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+patient_factsheet,patient_fact_sheet,"Informed Consent Form
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+question,patient_fact_sheet,"Informed Consent Form
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+pt_consent,patient_fact_sheet,"Informed Consent Form
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+first_name,participant_information,"Demographic Information Form
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+last_name,participant_information,"Demographic Information Form
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+email_address,participant_information,"Demographic Information Form
+ ",Demographics,Not in CDE,,No Close Match Found,Race,No Comparison Possible,,Close
+role,participant_information,"Demographic Information Form
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+dob,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+age,demographics,"Demographics Questionnaire
+ ",Demographics,Exact Match,Age ,,,"PV Mismatch: False, Encoding Mismatch: True",,Exact
+sexatbirth,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Sex birth type,No Comparison Possible,,Close
+gender_id,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+specify_gender,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+ethnicity,demographics,"Demographics Questionnaire
+ ",Demographics,Wrong CRF (via Close Match and Fuzzy CRF),,Close Match: ethnic (Fuzzy CRF Match),Ethnicity category,No Comparison Possible,,Close
+race,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+edu_status,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+employment_status,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+rel_status,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+hh_income,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+disability,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+pain_duration,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Pain duration value,No Comparison Possible,,Close
+language_fluency,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Age ,No Comparison Possible,,Close
+specify_language_fluency,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Age ,No Comparison Possible,,Close
+children,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+hh_size,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+zipcode,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+birth_country,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+yrs_usa,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+country_12yrs,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+mothers_country,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+father_country,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+ethnic_ident,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Ethnicity category,No Comparison Possible,,Close
+english,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+home_language,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,Age ,No Comparison Possible,,Close
+english_level,demographics,"Demographics Questionnaire
+ ",Demographics,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match
+focus_group_date,finalized_focus_group_date,"Focus Group Attendance Form
+ ",No CRF match,Not in CDE,,No Close Match Found,,No Comparison Possible,,No Match

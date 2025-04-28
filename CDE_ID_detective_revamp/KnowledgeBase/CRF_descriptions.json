@@ -31,8 +31,8 @@
         "description": "A 2-item screener for generalized anxiety disorder, assessing symptoms like feeling nervous and unable to control worrying."
       },
       {
-        "name": "GAD2 Pain",
-        "abbreviations": ["GAD-2 Pain", "GAD Pain"],
+        "name": "GAD2 Pain (Generalized Anxiety Disorder)",
+        "abbreviations": ["GAD-2 Pain", "GAD2 Pain"],
         "description": "A version of the GAD-2 screener used specifically for populations experiencing pain."
       },
       {
@@ -41,7 +41,7 @@
         "description": "A version of the GAD-7 screener used specifically for populations experiencing pain."
       },
       {
-        "name": "NIDA-Modified ASSIST L2",
+        "name": "NIDAL2 (NIDA Modified ASSIST L2)",
         "abbreviations": ["NIDA Modified", "NIDA-Modified ASSIST", "NIDAL2"],
         "description": "A screening tool for adolescents (ages 11-17), adapted from the NIDA ASSIST to assess substance use, including alcohol."
       },
