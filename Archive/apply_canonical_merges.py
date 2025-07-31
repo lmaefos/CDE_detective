@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 # === CONFIG ===
-EXCEL_FILE    = "HDP00066_ACTNOWOBOE_DataDictionary_REDCap.vlmd_2025-07-29.xlsx"
+EXCEL_FILE    = "HDP00110_PRECICEV2_DataDictionary_2023-08-11.vlmd_2025-07-30.xlsx"
 SHEET_NAME    = "EnhancedDD"
 CANONICAL_COL = "Canonical CRF Name"
 MERGES_FILE   = "confirmed_merges.csv"
