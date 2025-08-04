@@ -5,7 +5,7 @@ from rapidfuzz import fuzz
 from xlsxwriter.utility import xl_rowcol_to_cell
 
 # === CONFIG ===
-INPUT_FILE           = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2025-07-31.xlsx"
+INPUT_FILE           = "Testfile_2025-08-04.xlsx"
 SHEET_NAME           = "EnhancedDD"
 MATCH_COL            = "HEAL Core CRF Match"
 DESCRIPTION_COL      = "description"
@@ -14,7 +14,7 @@ RATIONALE_COL        = "Rationale"
 CRF_COL              = "section"
 FULL_RESPONSE_COL    = "Full Response"
 MERGES_FILE          = "confirmed_merges.csv"  # optional CSV output
-OUTPUT_FILE          = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2025-07-31.xlsx"
+OUTPUT_FILE          = "Testfile_2025-08-04.xlsx"
 SIMILARITY_THRESHOLD = 90
 
 

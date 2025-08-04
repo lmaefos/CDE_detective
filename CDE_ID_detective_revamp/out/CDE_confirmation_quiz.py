@@ -2,14 +2,14 @@ import os
 import pandas as pd
 
 # === CONFIG ===
-INPUT_FILE        = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2025-07-31.xlsx"
+INPUT_FILE        = "Testfile_2025-08-04.xlsx"
 SHEET_NAME        = "EnhancedDD"
 MATCH_COL         = "HEAL Core CRF Match"
 RATIONALE_COL     = "Rationale"
 CANONICAL_COL     = "Canonical CRF Name"
 CRF_COL           = "section"
 FULL_RESPONSE_COL = "Full Response"
-OUTPUT_FILE       = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2025-07-31.xlsx"
+OUTPUT_FILE       = "Testfile_2025-08-04_matches_confirmed.xlsx"
 
 # Your approved CRF choices:
 CRF_OPTIONS = [
