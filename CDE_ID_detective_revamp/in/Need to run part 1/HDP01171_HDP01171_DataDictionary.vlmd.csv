@@ -1,8 +1,0 @@
-schemaVersion,section,name,title,description,type,format,constraints.required,constraints.maxLength,constraints.enum,constraints.pattern,constraints.maximum,constraints.minimum,enumLabels,enumOrdered,missingValues,trueValues,falseValues,custom,standardsMappings[0].instrument.url,standardsMappings[0].instrument.source,standardsMappings[0].instrument.title,standardsMappings[0].instrument.id,standardsMappings[0].item.url,standardsMappings[0].item.source,standardsMappings[0].item.id,relatedConcepts[0].url,relatedConcepts[0].title,relatedConcepts[0].source,relatedConcepts[0].id
-0.3.2,form_1,record_id,Record ID,Record ID,string,,,,,,,,,,,,,,,,,,,,,,,,
-0.3.2,demographics,age,What is animal age using in the experiment? (age at experiment),What is animal age using in the experiment? (age at experiment),integer,,,,,,,,,,,,,,,,,,,,,,,,
-0.3.2,demographics,sex,Gender of the animal,Gender of the animal,integer,,,,0|1,,,,0=Male|1=Female,,,,,,,,,,,,,,,,
-0.3.2,drug_administration,buprenorphine,"buprenorphine dosing by s.l. , i.v.","buprenorphine dosing by s.l. , i.v.",integer,,,,,,,,,,,,,,,,,,,,,,,,
-0.3.2,biomeasures,blood_drug_conentration,drug blood concentration measured by LC-MS,drug blood concentration measured by LC-MS,number,,,,,,,,,,,,,,,,,,,,,,,,
-0.3.2,biomeasures,tissue_drug_concentration,Tissue drug concentration measured by LC-MS,Tissue drug concentration measured by LC-MS,number,,,,,,,,,,,,,,,,,,,,,,,,
-0.3.2,biomeasures,biofilm_formation,Crystal violet staining for biofilm biomass assessment,Crystal violet staining for biofilm biomass assessment,number,,,,,,,,,,,,,,,,,,,,,,,,
