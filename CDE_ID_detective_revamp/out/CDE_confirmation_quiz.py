@@ -49,6 +49,7 @@ def main():
     print(f"🔍 {len(to_check)} rows with proposed matches found.\n")
 
     decisions = {}
+    discrepancies = []  # Track incorrect matches for analysis
 
     for idx in to_check:
         canon = df.at[idx, CANONICAL_COL]
@@ -97,6 +98,21 @@ def main():
             choice = None
 
         decisions[key] = choice
+        
+        # Log discrepancy if match was changed or rejected
+        if choice != orig:  # Either rejected (None) or changed to something else
+            discrepancy_record = {
+                'Row': idx + 2,  # Excel row number (accounting for header)
+                'Section': df.at[idx, CRF_COL],
+                'Canonical_CRF_Name': canon,
+                'Original_Proposed_Match': orig,
+                'Final_Decision': choice if choice is not None else "No CRF match",
+                'Rationale_for_Original': rationale,
+                'Action_Taken': 'Rejected' if choice is None else 'Changed',
+                'Full_Response': df.at[idx, FULL_RESPONSE_COL] if FULL_RESPONSE_COL in df.columns else ""
+            }
+            discrepancies.append(discrepancy_record)
+        
         if choice is None:
             df.at[idx, MATCH_COL] = "No CRF match"
             print("✖ Marked as 'No CRF match'.\n")
@@ -104,14 +120,17 @@ def main():
             df.at[idx, MATCH_COL] = choice
             print(f"✔ Set match to '{choice}'.\n")
 
-    # 3) Build Metadata sheet
+    # 3) Build Discrepancies sheet for analysis
+    discrepancies_df = pd.DataFrame(discrepancies) if discrepancies else pd.DataFrame()
+
+    # 4) Build Metadata sheet
     metadata_df = (
         df[[CRF_COL, CANONICAL_COL, RATIONALE_COL, FULL_RESPONSE_COL]]
         .drop_duplicates(subset=[CRF_COL, CANONICAL_COL])
         .reset_index(drop=True)
     )
 
-    # 4) Build “wide” report
+    # 5) Build "wide" report
     grouped = (
         df[df[MATCH_COL].fillna("No CRF match") != "No CRF match"]
         .groupby(MATCH_COL)[CRF_COL]
@@ -125,23 +144,37 @@ def main():
     }
     report_df = pd.DataFrame(report_data)
 
-    # 5) Write all sheets (guarding Report)
+    # 6) Write all sheets
     with pd.ExcelWriter(OUTPUT_FILE, engine="xlsxwriter") as writer:
         # Always write EnhancedDD & Metadata
         df.to_excel(writer,      sheet_name=SHEET_NAME, index=False)
         metadata_df.to_excel(writer, sheet_name="Metadata", index=False)
+        
+        # Write Discrepancies sheet if there are any
+        if not discrepancies_df.empty:
+            discrepancies_df.to_excel(writer, sheet_name="Discrepancies", index=False)
+            print(f"📊 {len(discrepancies)} discrepancies logged for analysis")
 
         wb      = writer.book
         ws_dd   = writer.sheets[SHEET_NAME]
         ws_meta = writer.sheets["Metadata"]
 
-        # Format those two
+        # Format main sheets
         for ws, data in ((ws_dd, df), (ws_meta, metadata_df)):
             ws.freeze_panes(1, 0)
             ws.autofilter(0, 0, data.shape[0], data.shape[1] - 1)
             for col_idx, col in enumerate(data.columns):
                 width = max(data[col].astype(str).map(len).max(), len(col)) + 2
                 ws.set_column(col_idx, col_idx, width)
+
+        # Format Discrepancies sheet if it exists
+        if not discrepancies_df.empty:
+            ws_disc = writer.sheets["Discrepancies"]
+            ws_disc.freeze_panes(1, 0)
+            ws_disc.autofilter(0, 0, discrepancies_df.shape[0], discrepancies_df.shape[1] - 1)
+            for col_idx, col in enumerate(discrepancies_df.columns):
+                width = max(discrepancies_df[col].astype(str).map(len).max(), len(col)) + 2
+                ws_disc.set_column(col_idx, col_idx, width)
 
         # Only write & format Report if it has at least one column
         if report_df.shape[1] > 0:
