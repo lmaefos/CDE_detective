@@ -5,17 +5,17 @@ from rapidfuzz import fuzz
 from xlsxwriter.utility import xl_rowcol_to_cell
 
 # === CONFIG ===
-INPUT_FILE           = "Testfile_2025-08-04.xlsx"
+INPUT_FILE           = "ThePersistStudy_DataDictionary_2023-09-15_2025-08-07.xlsx"
 SHEET_NAME           = "EnhancedDD"
 MATCH_COL            = "HEAL Core CRF Match"
-DESCRIPTION_COL      = "description"
+DESCRIPTION_COL      = "Field Label"
 CANONICAL_COL        = "Canonical CRF Name"
 RATIONALE_COL        = "Rationale"
-CRF_COL              = "section"
+CRF_COL              = "Form Name"
 FULL_RESPONSE_COL    = "Full Response"
 MERGES_FILE          = "confirmed_merges.csv"  # optional CSV output
-OUTPUT_FILE          = "Testfile_2025-08-04.xlsx"
-SIMILARITY_THRESHOLD = 90
+OUTPUT_FILE          = "ThePersistStudy_DataDictionary_2023-09-15_2025-08-07.xlsx"
+SIMILARITY_THRESHOLD = 85
 
 
 def normalize_crf_name(name: str) -> str:
