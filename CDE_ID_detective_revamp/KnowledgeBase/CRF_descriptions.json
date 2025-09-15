@@ -92,13 +92,8 @@
       },
       {
         "name": "PROMIS Physical Function Pain",
-        "abbreviations": ["PROMIS PF Pain", "PROMIS Physical Function Pain"],
+        "abbreviations": ["PROMIS PF Pain", "PROMIS Physical Function Pain", "PROMIS PF PAIN 6b", "PROMIS Pain 6b"],
         "description": "Part of the PROMIS suite, assessing physical function as it relates to pain."
-      },
-      {
-        "name": "PROMIS Physical Function Pain 6b",
-        "abbreviations": ["PROMIS PF Pain 6b", "PROMIS Pain 6b"],
-        "description": "A subset of PROMIS Physical Function items related to pain, version 6b."
       },
       {
         "name": "PROMIS Sleep Disturbance 6a",

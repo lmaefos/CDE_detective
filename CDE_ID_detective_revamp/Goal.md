@@ -1,38 +1,50 @@
 # Goal
-To create a tool that identifies and verifies the use of HEAL Common Data Elements (CDEs) in data dictionaries submitted by study teams. Often, study teams don’t explicitly label their data using HEAL CDEs, so this tool will analyze the submitted data dictionary to detect potential matches with HEAL Core CDEs by comparing forms (CRFs) and variable descriptions. The tool should generate a report showing the likelihood that specific CDEs are being used, based on semantic and structural similarities.
+To create the **CDE-ID Detective** workflow: a tool that detects, harmonizes, and verifies the use of HEAL Common Data Elements (CDEs) in study data dictionaries submitted under NIH DMSP compliance.  
 
-Steps to Achieve This Goal
-Here’s a summary of the approach you outlined, with each step to implement in the script:
+Because study teams often do not explicitly label their data with HEAL CDEs, the workflow uses AI-powered matching to compare case report forms (CRFs) and variable descriptions against the HEAL Core CDE knowledge base. It then incorporates **two levels of human verification** to ensure proposed matches are accurate and trustworthy before saving as “confirmed matches.”
 
-Knowledge Base Setup:
+# Steps to Achieve This Goal
 
-Import a structured knowledge base, including:
-Common abbreviations and alternate names for each CRF.
-Descriptions and purposes for each CRF.
-The detailed Core CDE Data Dictionary, with variables, descriptions, permissible values, and any notes.
-Store these as JSON files or Python data structures that the script can reference.
-Load the Submitted Data Dictionary:
+**Knowledge Base Setup**
+- Import a structured knowledge base including:
+  - Common abbreviations and alternate CRF names  
+  - CRF descriptions and purposes  
+  - Full HEAL Core CDE Data Dictionary (variables, descriptions, permissible values, notes)  
+- Store these resources as JSON or Python data structures for quick reference.
 
-Read the study team's data dictionary into a structured format (e.g., a Pandas DataFrame).
-Create a summary or pivot table that lists all CRFs (or forms) included in the submitted dictionary, along with any variables and descriptions.
-Initial CRF Matching:
+**Load the Submitted Data Dictionary**
+- Read the study team’s data dictionary into a structured DataFrame.  
+- Capture all CRFs, variables, and descriptions for downstream comparison.  
 
-Use the knowledge base to compare the list of CRF names in the study’s data dictionary against known HEAL Core CRFs.
-For each form in the study’s dictionary, provide a list of potential HEAL CRF matches, along with a confidence level based on name similarity (taking into account common abbreviations).
-Variable-Level Semantic Matching:
+**CRF-Level Matching**
+- Compare submitted CRF names against known HEAL Core CRFs.  
+- Suggest potential matches with confidence scores, accounting for abbreviations and fuzzy naming.  
 
-For forms with a potential CRF match, check each variable to see if it matches variables from the corresponding HEAL Core CDE Data Dictionary.
-Use semantic similarity (e.g., using OpenAI’s API) to compare variable descriptions, even if the names differ. The goal is to determine if the descriptions align with those in the HEAL CDE Data Dictionary.
-Generate a confidence score for each variable, indicating how closely it matches the HEAL CDE definition.
-Generate Report:
+**Variable-Level Semantic Matching**
+- For each CRF candidate, compare variables against HEAL Core variables.  
+- Use semantic similarity (OpenAI API + function calling) to detect matches based on descriptions, not just names.  
+- Produce confidence scores for each variable match.  
 
-The final output should be a report that includes:
-A list of forms in the study’s data dictionary and their matched HEAL CRFs (if any), along with confidence scores.
-For each form match, a list of variables with potential HEAL CDE matches and their semantic match scores.
-This report will allow you to see how well the submitted data aligns with HEAL CDE standards and which CDEs might be in use.
-Key Output Goals
-Form Match Report: A summary of each form in the study’s data dictionary, with any HEAL CRF matches and associated confidence levels.
+**Harmonization & Error Resilience**
+- Process in configurable chunks (50 rows prestep, 20 rows harmonization).  
+- Use async parallelization (`asyncio.gather`) for speed.  
+- Implement retry logic with exponential backoff to handle API rate limits.  
+- Include fallback mechanisms so errors don’t halt the workflow.  
 
-Variable Match Report: For each matched form, a list of variables and their potential HEAL CDE matches, along with semantic match confidence scores.
+**Human Verification Gates**
+- **Level 1 (CLI Quiz):** Reviewer validates/edits proposed matches one by one.  
+- **Level 2 (Spreadsheet Review):** Reviewer bulk-checks and finalizes all Level 1–confirmed rows.  
+- Confirmed results are marked and saved for final export.  
 
-This structured approach will help you automate the identification of HEAL CDEs, even when study teams use alternate names or labels for forms and variables. 
+**Generate Outputs**
+- **Form Match Report:** Each submitted form with its matched HEAL Core CRFs + confidence levels.  
+- **Variable Match Report:** Each variable with proposed HEAL CDE match + semantic scores.  
+- **Final Confirmed Workbook:** A curated Excel/CSV with reviewer-approved matches.  
+- **Audit Logs:** Processing logs, retries, and reviewer decisions for traceability.  
+
+# Key Output Goals
+- Clear mapping between study CRFs and HEAL Core CRFs  
+- Verified variable-level matches with confidence scores  
+- Human-verified “confirmed matches” for final compliance and reuse  
+
+This structured, semi-automated workflow reduces the manual burden on data stewards while ensuring high-quality, reliable CDE alignment.

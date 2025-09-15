@@ -5,18 +5,17 @@ from rapidfuzz import fuzz
 from xlsxwriter.utility import xl_rowcol_to_cell
 
 # === CONFIG ===
-INPUT_FILE           = "ThePersistStudy_DataDictionary_2023-09-15_2025-08-07.xlsx"
+INPUT_FILE           = "Testfile_2025-09-15_canonical_merge.xlsx"
 SHEET_NAME           = "EnhancedDD"
 MATCH_COL            = "HEAL Core CRF Match"
-DESCRIPTION_COL      = "Field Label"
+DESCRIPTION_COL      = "description"
 CANONICAL_COL        = "Canonical CRF Name"
 RATIONALE_COL        = "Rationale"
-CRF_COL              = "Form Name"
+CRF_COL              = "section"
 FULL_RESPONSE_COL    = "Full Response"
 MERGES_FILE          = "confirmed_merges.csv"  # optional CSV output
-OUTPUT_FILE          = "ThePersistStudy_DataDictionary_2023-09-15_2025-08-07.xlsx"
+OUTPUT_FILE          = "Testfile_2025-09-15_canonical_merge.xlsx"
 SIMILARITY_THRESHOLD = 85
-
 
 def normalize_crf_name(name: str) -> str:
     """Lowercase, strip punctuation/underscores, collapse spaces for fuzzy matching."""
@@ -84,9 +83,11 @@ def run_quiz(df: pd.DataFrame) -> pd.DataFrame:
         row2 = df[df[CANONICAL_COL] == c2].iloc[0]
         print(f"\nPotential match (Score: {score})")
         print(f"  1) Canonical: {c1}")
+        print(f"     CRF:        {row1[CRF_COL]}")   # <-- NEW LINE
         print(f"     Description: {row1[DESCRIPTION_COL]}")
         print(f"     Rationale:   {row1[RATIONALE_COL]}")
         print(f"  2) Canonical: {c2}")
+        print(f"     CRF:        {row2[CRF_COL]}")   # <-- NEW LINE
         print(f"     Description: {row2[DESCRIPTION_COL]}")
         print(f"     Rationale:   {row2[RATIONALE_COL]}")
         ans = input("\n[y]es / [n]o / [c]ustom / [s]kip all: ").strip().lower()

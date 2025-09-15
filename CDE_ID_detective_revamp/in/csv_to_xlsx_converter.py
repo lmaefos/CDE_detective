@@ -2,13 +2,17 @@ import os
 import glob
 import pandas as pd
 
+# === DEFAULT CONFIG ===
+DEFAULT_INPUT_DIR = r"C:\Users\lmaefos\Code Stuffs\CDE_detective\CDE_ID_detective_revamp\in"
+DEFAULT_OUTPUT_DIR = None  # Set to None to use same folder as input
+# Example: r"C:\Users\lmaefos\Desktop\converted_excels"
+
 def convert_each_csv(input_folder: str, output_folder: str = None):
     """
     Reads every .csv in `input_folder` and writes each out as a separate
     .xlsx file (same name, different extension) into `output_folder`
     (defaults to the same folder as the CSVs).
     """
-    # If no explicit output folder given, use the input folder
     if output_folder is None:
         output_folder = input_folder
     os.makedirs(output_folder, exist_ok=True)
@@ -40,12 +44,14 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         'input_dir',
-        help="Path to the folder containing your .csv files"
+        nargs='?',
+        default=DEFAULT_INPUT_DIR,
+        help=f"Path to the folder containing your .csv files (default: {DEFAULT_INPUT_DIR})"
     )
     parser.add_argument(
         '-o', '--output-dir',
-        help="Where to save the .xlsx files (defaults to input folder)",
-        default=None
+        default=DEFAULT_OUTPUT_DIR,
+        help="Where to save the .xlsx files (defaults to input folder)"
     )
     args = parser.parse_args()
 
