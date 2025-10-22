@@ -5,17 +5,17 @@ from rapidfuzz import fuzz
 from xlsxwriter.utility import xl_rowcol_to_cell
 
 # === CONFIG ===
-INPUT_FILE           = "Testfile_2025-09-15_canonical_merge.xlsx"
-SHEET_NAME           = "EnhancedDD"
-MATCH_COL            = "HEAL Core CRF Match"
+INPUT_FILE           = "HDP01415_SUPPORTMOMR61InterviewsFocusGr_DD.redcap.vlmd_2025-10-20.xlsx"
+SHEET_NAME           = "EnhancedDD"             # autopopulated from output
+MATCH_COL            = "HEAL Core CRF Match"    # autopopulated from output
+CANONICAL_COL        = "Canonical CRF Name"     # autopopulated from output
+RATIONALE_COL        = "Rationale"              # autopopulated from output
+FULL_RESPONSE_COL    = "Full Response"          # autopopulated from output
 DESCRIPTION_COL      = "description"
-CANONICAL_COL        = "Canonical CRF Name"
-RATIONALE_COL        = "Rationale"
 CRF_COL              = "section"
-FULL_RESPONSE_COL    = "Full Response"
-MERGES_FILE          = "confirmed_merges.csv"  # optional CSV output
-OUTPUT_FILE          = "Testfile_2025-09-15_canonical_merge.xlsx"
-SIMILARITY_THRESHOLD = 85
+MERGES_FILE          = "confirmed_merges.csv"   # optional CSV output
+OUTPUT_FILE          = "HDP01415_SUPPORTMOMR61InterviewsFocusGr_DD.redcap.vlmd_2025-10-20.xlsx"
+SIMILARITY_THRESHOLD = 90
 
 def normalize_crf_name(name: str) -> str:
     """Lowercase, strip punctuation/underscores, collapse spaces for fuzzy matching."""

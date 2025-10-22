@@ -1,16 +1,18 @@
 import os
 import pandas as pd
+import textwrap
 
 # === CONFIG ===
-INPUT_FILE            = "Testfile_2025-09-15_canonical_merge.xlsx"
-SHEET_NAME            = "EnhancedDD"
-MATCH_COL             = "HEAL Core CRF Match"
-RATIONALE_COL         = "Rationale"
-CANONICAL_COL         = "Canonical CRF Name"
-CRF_COL               = "section"            # original CRF name
-VARIABLE_NAME_COLUMN  = "name"               # original variable name
-FULL_RESPONSE_COL     = "Full Response"
-OUTPUT_FILE           = "Testfile_2025-09-15_canonical_merge_matches_confirmed.xlsx"
+INPUT_FILE            = "HDP01415_SUPPORTMOMR61InterviewsFocusGr_DD.redcap.vlmd_2025-10-20.xlsx"
+SHEET_NAME            = "EnhancedDD"            # autopopulated from output
+MATCH_COL             = "HEAL Core CRF Match"   # autopopulated from output
+RATIONALE_COL         = "Rationale"             # autopopulated from output
+CANONICAL_COL         = "Canonical CRF Name"    # autopopulated from output
+FULL_RESPONSE_COL     = "Full Response"         # autopopulated from output
+CRF_COL               = "section"               # original CRF name
+VARIABLE_NAME_COLUMN  = "name"                  # original variable name
+DESCRIPTION_COL       = "description"           # original variable description column name
+OUTPUT_FILE           = "HDP01415_SUPPORTMOMR61InterviewsFocusGr_DD.redcap.vlmd_2025-10-20_matches confirmed.xlsx"
 
 # Your approved CRF choices:
 CRF_OPTIONS = [
@@ -108,16 +110,22 @@ def main():
 
         # prompt the user
         rationale = df.at[idx, RATIONALE_COL]
+        description = df.at[idx, DESCRIPTION_COL]
         var_name  = df.at[idx, VARIABLE_NAME_COLUMN]
         orig_form = df.at[idx, CRF_COL]
+
+        # wrap long text for readability
+        wrapped_desc = "\n       ".join(textwrap.wrap(str(description), width=90))
+        wrapped_rat  = "\n       ".join(textwrap.wrap(str(rationale), width=90))
+
         print(f"Row {idx+2}:")
         print(f"  Original Form (CRF) → {orig_form}")
         print(f"  Variable Name      → {var_name}")
+        print(f"  Description        → {wrapped_desc}")
         print(f"  Canonical CRF Name → {canon}")
-        # 🔽🔽🔽 Emphasized proposed match with arrow pointers
         print(f">>> PROPOSED MATCH: {orig} <<<")
-        # 🔼🔼🔼
-        print(f"  Rationale          → {rationale}\n")
+        print(f"  Rationale          → {wrapped_rat}\n")
+
         if not tip_shown:
             print("Tip: [y] keep, [n] set to 'No CRF match', [l] choose from list, [u] undo last, [s] skip the rest.\n")
             tip_shown = True
