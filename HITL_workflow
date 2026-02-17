@@ -1,0 +1,51 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+
+  subgraph S["HITL Script: CRF Validation (5-stage)"]
+    direction TB
+    S1["1) Load Prestep Output<br>Read workbook → sheet <code>EnhancedDD</code>"]
+    S2["2) Acronym Group Confirmation (HITL)<br>Group by <code>CDE Acronym Finder</code><br>Optionally apply instrument version to group"]
+    S3["3) Manual Review Queue<br>Select rows requiring review<br>(skip acronym-confirmed rows)"]
+    S4["4) CLI Review + Decision Reuse<br>Confirm/override proposed match<br>Cache decisions per (Canonical CRF, Proposed Match)<br>Track overrides for audit"]
+    S5["5) Export Reviewed Workbook<br>Write updated <code>EnhancedDD</code> + summary/audit sheets"]
+  end
+
+  subgraph U["User Interaction (CLI)"]
+    direction TB
+    U1(["Choose instrument version per acronym group<br>or mark 'not grouped'"])
+    U2(["Review row details and decide:<br>keep / no-match / choose from list<br>(undo/skip supported)"])
+  end
+
+  subgraph F["Files & Artifacts"]
+    direction TB
+    F1["[Input Workbook]<br>Prestep output (<code>EnhancedDD</code>)"]
+    F2["[Output Workbook]<br>Reviewed matches workbook"]
+    F3["[Optional sheets]<br><code>AcronymGroups</code>, <code>Discrepancies</code>, <code>Report</code>, <code>Metadata</code>"]
+  end
+
+  A0["CDE-ID Detective<br>CRF Validation (HITL)"] --> F1
+  F1 --> S1 --> S2 --> S3 --> S4 --> S5 --> F2
+  S5 --> F3
+
+  U1 --> S2
+  U2 --> S4
+
+  N1(["Notes:<br>
+  • This step occurs after CRF-level prestep matching and before variable-level CDE matching<br>
+  • Group-level confirmation accelerates review for acronym families (e.g., PHQ/GAD/PCS)<br>
+  • Overrides are explicitly captured to support auditability and iterative refinement"]) --- S3
+
+  classDef title fill:#111,stroke:#555,color:#fff,font-weight:bold
+  classDef script fill:#e5e7eb,stroke:#374151,color:#111
+  classDef user fill:#c7d2fe,stroke:#3730a3,color:#111
+  classDef file fill:#d1fae5,stroke:#065f46,color:#111
+  classDef note fill:#fef3c7,stroke:#92400e,color:#111
+
+  class A0 title
+  class S1,S2,S3,S4,S5 script
+  class U1,U2 user
+  class F1,F2,F3 file
+  class N1 note

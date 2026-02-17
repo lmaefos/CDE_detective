@@ -1,0 +1,54 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+
+  subgraph S["Script / Automation: Variable-level CDE Matching (5-stage)"]
+    direction TB
+    S1["1) Load Inputs<br>Read reviewed study workbook (<code>EnhancedDD</code>)<br>Load HEAL CDE knowledge base (<code>ALL</code> sheet)"]
+    S2["2) Filter + Prepare Study Rows<br>Skip rows where <code>HEAL Core CRF Match = No CRF match</code><br>Detect variable-name column (robust fallback)<br>Initialize match output columns"]
+    S3["3) Normalize + Score (Deterministic)<br>Normalize study text + encoding<br>Normalize CDE question text + PV encodings<br>Compute weighted fuzzy similarity<br>(encoding-weighted vs text)"]
+    S4["4) Select Matches + Flag for Review<br>Assign Best Match + top alternatives<br>Capture low-confidence cases<br>(below high threshold) for analysis"]
+    S5["5) Export + Visual Cues<br>Write output workbook:<br><code>VLMD_Results</code> + <code>Low_Confidence_Analysis</code><br>Apply confidence labels + color coding"]
+  end
+
+  subgraph F["Files & Artifacts"]
+    direction TB
+    F1["[Input Workbook]<br>CRF-reviewed study file<br>(contains <code>EnhancedDD</code>)"]
+    F2["[HEAL CDE Knowledge Base]<br>Compiled CDE master file (sheet: <code>ALL</code>)"]
+    F3["[Output Workbook]<br><code>..._vlmd_cdesearch_TIMESTAMP.xlsx</code><br>Tabs: <code>VLMD_Results</code>, optional <code>Low_Confidence_Analysis</code>"]
+  end
+
+  subgraph O["Outputs Added Per Study Variable"]
+    direction TB
+    O1(["Best match:<br><code>Best Match CDE Name</code><br><code>Best Match Score</code><br><code>Best Match CRF Name</code>"])
+    O2(["Alternatives:<br><code>Potential Match 2</code> + score + CRF<br><code>Potential Match 3</code> + score + CRF"])
+    O3(["Confidence + review aids:<br>Confidence Level column<br>Color-coded Best Match Score<br>Low_Confidence_Analysis tab"])
+  end
+
+  A0["CDE-ID Detective<br>Variable-level CDE Matching"] --> F1
+  A0 --> F2
+  F1 --> S1
+  F2 --> S1
+  S1 --> S2 --> S3 --> S4 --> S5 --> F3
+  S4 --> O1
+  S4 --> O2
+  S5 --> O3
+
+  N1(["Notes:<br>
+  • Matching compares study variable descriptions + encodings against HEAL CDE question text + permissible values<br>
+  • Similarity uses weighted scoring (encoding emphasized over free text)<br>
+  • Rows with no CRF alignment are skipped to reduce false candidate space"]) --- S3
+
+  classDef title fill:#111,stroke:#555,color:#fff,font-weight:bold
+  classDef script fill:#e5e7eb,stroke:#374151,color:#111
+  classDef file fill:#d1fae5,stroke:#065f46,color:#111
+  classDef out fill:#c7d2fe,stroke:#3730a3,color:#111
+  classDef note fill:#fef3c7,stroke:#92400e,color:#111
+
+  class A0 title
+  class S1,S2,S3,S4,S5 script
+  class F1,F2,F3 file
+  class O1,O2,O3 out
+  class N1 note

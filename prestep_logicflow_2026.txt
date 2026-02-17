@@ -1,0 +1,76 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+
+  subgraph S["Script / Automation"]
+    direction TB
+    S1["1) Setup<br><code>config_prestep.ini</code>, imports, load env key"]
+    S2["2) Load Input<br>Read Excel sheet → select CRF, variable, description"]
+    S3["3) Acronym Hint (Python)<br>Detect CRF acronym family/specific hint<br><code>CDE Acronym Finder</code>"]
+    S4["4) Prestep Refinement (LLM)<br>Refine CRF label per row<br>→ <code>Refined CRF Name</code> + rationale + full trace"]
+    S5["5) Harmonization (LLM)<br>Map refined labels → canonical labels<br>→ <code>Canonical CRF Name</code>"]
+    S6["6) Auto-Cluster (Python)<br>Fuzzy cluster canonicals → dedupe<br>→ <code>Final Canonical CRF Name</code>"]
+    S7["7) HEAL Core Matching (LLM)<br>Align to HEAL Core CRF<br>→ match + confidence + rationale"]
+    S8["8) Build Outputs<br>EnhancedDD + Metadata tables"]
+    S9["9) Export Workbook<br>Write Excel with 2 sheets"]
+    
+    S10["[Queue/Chunk Manager]<br>async batches (50/20)"]
+    S11(["Retry Wrapper<br>exponential backoff on rate limits"])
+    S12["Trace Capture<br>store model outputs for audit<br><code>Full Response</code>"]
+  end
+
+  subgraph F["Files & Artifacts"]
+    direction TB
+    F1["[Input Excel]<br>(CRF names, variables, descriptions + other fields)"]
+    F2["[EnhancedDD Sheet]<br>original rows + added columns:<br>refined/canonical/match/confidence/rationales"]
+    F3["[Metadata Sheet]<br>unique CRF → canonical + rationale + trace"]
+    F4["[Output Excel]<br>(2 tabs: <code>Metadata</code>, <code>EnhancedDD</code>)"]
+  end
+
+  A0["CDE-ID Detective<br>End-to-end Workflow (Current)"] --> F1
+  F1 --> S1
+  S1 --> S2
+  S2 --> S3
+
+  %% Prestep refinement
+  S3 --> S10
+  S10 --> S4
+  S4 --> S11
+  S11 --> S12
+
+  %% Harmonize + cluster
+  S12 --> S5
+  S5 --> S6
+
+  %% Match to HEAL Core
+  S6 --> S7
+  S7 --> S11
+
+  %% Outputs
+  S7 --> S8
+  S8 --> F2
+  S8 --> F3
+  F2 --> S9
+  F3 --> S9
+  S9 --> F4
+
+  %% Notes bubble
+  N1(["Notes:<br>
+  • Async processing via <code>asyncio.gather()</code><br>
+  • Chunk sizes: 50 (prestep + HEAL match), 20 (harmonizer)<br>
+  • Retries + backoff on rate limits; safe fallbacks on failure<br>
+  • Acronym hint is optional signal passed into LLM steps"]) --- S10
+
+  classDef title fill:#111,stroke:#555,color:#fff,font-weight:bold
+  classDef script fill:#e5e7eb,stroke:#374151,color:#111
+  classDef file fill:#d1fae5,stroke:#065f46,color:#111
+  classDef infra fill:#fee2e2,stroke:#991b1b,color:#111
+  classDef note fill:#fef3c7,stroke:#92400e,color:#111
+
+  class A0 title
+  class S1,S2,S3,S4,S5,S6,S7,S8,S9 script
+  class S10,S11,S12 infra
+  class F1,F2,F3,F4 file
+  class N1 note
