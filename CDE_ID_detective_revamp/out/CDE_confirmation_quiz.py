@@ -3,16 +3,16 @@ import pandas as pd
 import textwrap
 
 # === CONFIG ===
-INPUT_FILE            = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2026-02-16.xlsx"
+INPUT_FILE            = "ProjectThought_DataDictionary_2023-09-25_2026-04-21.xlsx"
 SHEET_NAME            = "EnhancedDD"            # autopopulated from output
 MATCH_COL             = "HEAL Core CRF Match"   # autopopulated from output
 RATIONALE_COL         = "Rationale"             # autopopulated from output
 CANONICAL_COL         = "Canonical CRF Name"    # autopopulated from output
 FULL_RESPONSE_COL     = "Full Response"         # autopopulated from output
-CRF_COL               = "section"               # original CRF name
-VARIABLE_NAME_COLUMN  = "name"                  # original variable name
-DESCRIPTION_COL       = "description"           # original variable description column name
-OUTPUT_FILE           = "StressFirstAidAim3FieldTestAss_DataDictionary_2024-11-14.vlmd_2026-02-16_matches confirmed.xlsx"
+CRF_COL               = "Form Name"               # original CRF name
+VARIABLE_NAME_COLUMN  = "Variable / Field Name"                  # original variable name
+DESCRIPTION_COL       = "Field Label"           # original variable description column name
+OUTPUT_FILE           = "ProjectThought_DataDictionary_2023-09-25_2026-04-21_matches confirmed.xlsx"
 
 # Your approved CRF choices:
 CRF_OPTIONS = [

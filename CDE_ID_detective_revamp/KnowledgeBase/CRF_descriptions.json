@@ -18,7 +18,7 @@
       {
         "name": "Demographics",
         "abbreviations": ["DEM", "Demographics"],
-        "description": "Collects participant background data such as age, gender, ethnicity, education, and income, along with social determinants of health like access to childcare, food, housing, healthcare, utilities, and transportation. May also include RUCA codes to classify rural and urban areas."
+        "description": "Collects participant background data such as age, gender, ethnicity, education, employment status, and income, along with social determinants of health like access to childcare, food, housing, healthcare, utilities, and transportation. May also include RUCA codes to classify rural and urban areas."
       },
       {
         "name": "Generalized Anxiety Disorder (GAD-2)",
