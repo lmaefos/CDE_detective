@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """
-Batch runner for CDE_ID_revamp_v5.ipynb using papermill.
+Batch runner for CDE_ID_revamp_v6.ipynb using papermill.
 
 Reads one or more data-dictionary CSV files (as produced by
 mds_export_data_dictionaries.py), executes the CDE-ID notebook for each one
 via papermill, and writes one output Excel per file.
 
-A run-report CSV is always written to <output_dir>/run_report.csv with one
-row per file: status, timing, output path, and reason for any skips/errors.
+The latest run-report CSV is written to <output_dir>/run_report.csv with one
+row per file: status, timing, resolved source-column mapping, output path, and
+reason for any skips/errors.
+Each batch also keeps a timestamped report under <output_dir>/reports and a
+timestamped console/notebook log under <output_dir>/logs.
+
+Before each notebook run, source headers are resolved from the primary names
+in [Columns] and optional fallbacks in [ColumnAliases]. The wrapper uses the
+same conservative rules as the notebook: a primary match wins; otherwise a
+single alias may match; missing or ambiguous mappings are skipped and logged.
 
 Processing modes
 ----------------
@@ -43,6 +51,7 @@ import configparser
 import csv
 from datetime import datetime
 from pathlib import Path
+import re
 import sys
 import time
 
@@ -90,29 +99,211 @@ def tprint(msg=""):
 # ---------------------------------------------------------------------------
 
 SCRIPT_DIR    = Path(__file__).parent.resolve()
-NOTEBOOK_PATH = SCRIPT_DIR / "CDE_ID_revamp_v5.ipynb"
+NOTEBOOK_PATH = SCRIPT_DIR / "CDE_ID_revamp_v6.ipynb"
 DEFAULT_CONFIG = SCRIPT_DIR / "config_prestep.ini"
 
-REQUIRED_COLUMNS = {"section", "name", "description", "enumLabels"}
 MIN_FIELDS = 3
 
 # ---------------------------------------------------------------------------
-# Preflight checks
+# Config-driven input-column resolution
 # ---------------------------------------------------------------------------
 
-def check_csv(csv_path: Path) -> tuple[bool, str, int]:
+class ColumnResolutionError(ValueError):
+    """Raised when configured input-column roles cannot be resolved safely."""
+
+
+def normalize_column_header(value) -> str:
     """
-    Quick preflight: check required columns and minimum field count.
-    Returns (ok, reason, field_count).
+    Normalize a header for comparison while preserving the actual source name.
+
+    Matching is case-insensitive and treats spaces, underscores, and hyphens
+    as equivalent. Ambiguous normalized matches are never guessed.
+    """
+    return re.sub(r"[^a-z0-9]+", "", str(value).strip().casefold())
+
+
+def split_column_aliases(raw_value) -> list[str]:
+    """Parse a pipe-delimited alias list from config."""
+    if raw_value is None:
+        return []
+
+    aliases = []
+    for item in str(raw_value).split("|"):
+        alias = " ".join(item.split()).strip()
+        if alias:
+            aliases.append(alias)
+    return aliases
+
+
+def load_column_candidates(config_path: Path) -> dict[str, list[str]]:
+    """
+    Load primary input headers and optional aliases from config.
+
+    The [Columns] value is always first. [ColumnAliases] values are fallbacks.
+    Duplicate spellings are removed using normalized-header comparison.
+    """
+    cfg = configparser.ConfigParser()
+    loaded_files = cfg.read(config_path, encoding="utf-8")
+    if not loaded_files:
+        raise ColumnResolutionError(f"Could not read config file: {config_path}")
+
+    roles = (
+        "crf_column",
+        "variable_column",
+        "description_column",
+        "encoding_column",
+    )
+    candidate_map: dict[str, list[str]] = {}
+
+    for role in roles:
+        primary_name = cfg.get("Columns", role, fallback="").strip()
+        aliases = split_column_aliases(
+            cfg.get("ColumnAliases", role, fallback="")
+        )
+        ordered_values = [primary_name, *aliases]
+        seen = set()
+        candidates = []
+
+        for value in ordered_values:
+            normalized = normalize_column_header(value)
+            if not value or not normalized or normalized in seen:
+                continue
+            seen.add(normalized)
+            candidates.append(value)
+
+        if not candidates:
+            raise ColumnResolutionError(
+                f"No primary or alias names were configured for '{role}'."
+            )
+
+        candidate_map[role] = candidates
+
+    return candidate_map
+
+
+def resolve_input_columns(
+    actual_columns,
+    candidate_map: dict[str, list[str]],
+) -> tuple[dict[str, str], dict[str, dict]]:
+    """
+    Resolve one actual source header for every logical input-column role.
+
+    The primary [Columns] name wins when present. Otherwise exactly one alias
+    may match. Missing, ambiguous, or duplicate-role mappings are rejected.
+    """
+    actual_columns = [str(column) for column in actual_columns]
+    normalized_actual: dict[str, list[str]] = {}
+
+    for actual in actual_columns:
+        normalized = normalize_column_header(actual)
+        if normalized:
+            normalized_actual.setdefault(normalized, []).append(actual)
+
+    resolved: dict[str, str] = {}
+    details: dict[str, dict] = {}
+    problems = []
+
+    for role, candidates in candidate_map.items():
+        primary_name = candidates[0]
+        primary_matches = normalized_actual.get(
+            normalize_column_header(primary_name),
+            [],
+        )
+
+        if len(primary_matches) > 1:
+            problems.append(
+                f"{role}: primary name '{primary_name}' matched multiple headers "
+                f"{primary_matches}."
+            )
+            continue
+
+        if len(primary_matches) == 1:
+            selected = primary_matches[0]
+            match_type = "primary"
+        else:
+            alias_matches = []
+            for alias in candidates[1:]:
+                for actual in normalized_actual.get(
+                    normalize_column_header(alias),
+                    [],
+                ):
+                    if actual not in alias_matches:
+                        alias_matches.append(actual)
+
+            if not alias_matches:
+                problems.append(
+                    f"{role}: no header matched configured candidates {candidates}."
+                )
+                continue
+
+            if len(alias_matches) > 1:
+                problems.append(
+                    f"{role}: multiple aliases are present {alias_matches}; "
+                    "the primary header is absent, so selection is ambiguous."
+                )
+                continue
+
+            selected = alias_matches[0]
+            match_type = "alias"
+
+        resolved[role] = selected
+        details[role] = {
+            "selected": selected,
+            "match_type": match_type,
+            "primary": primary_name,
+            "candidates": candidates,
+        }
+
+    if not problems:
+        source_to_roles: dict[str, list[str]] = {}
+        for role, selected in resolved.items():
+            source_to_roles.setdefault(selected, []).append(role)
+
+        for selected, roles in source_to_roles.items():
+            if len(roles) > 1:
+                problems.append(
+                    f"Source header '{selected}' was assigned to multiple roles: "
+                    f"{roles}."
+                )
+
+    if problems:
+        available = ", ".join(actual_columns) or "(none)"
+        message = "\n".join(f"- {problem}" for problem in problems)
+        raise ColumnResolutionError(
+            "Input column resolution failed:\n"
+            f"{message}\n"
+            f"Available columns: {available}"
+        )
+
+    return resolved, details
+
+
+# ---------------------------------------------------------------------------
+# Per-file preflight checks
+# ---------------------------------------------------------------------------
+
+def check_csv(
+    csv_path: Path,
+    column_candidates: dict[str, list[str]],
+) -> tuple[bool, str, int, dict[str, str], dict[str, dict]]:
+    """
+    Check configured column roles and minimum field count.
+
+    Returns:
+        ok, reason, field_count, resolved_columns, resolution_details
     """
     try:
         df = pd.read_csv(csv_path, nrows=5)
     except Exception as e:
-        return False, f"unreadable CSV: {e}", 0
+        return False, f"unreadable CSV: {e}", 0, {}, {}
 
-    missing = REQUIRED_COLUMNS - set(df.columns)
-    if missing:
-        return False, f"missing columns: {sorted(missing)}", 0
+    try:
+        resolved_columns, resolution_details = resolve_input_columns(
+            df.columns,
+            column_candidates,
+        )
+    except ColumnResolutionError as e:
+        return False, f"column resolution failed: {e}", 0, {}, {}
 
     try:
         n = len(pd.read_csv(csv_path))
@@ -120,9 +311,15 @@ def check_csv(csv_path: Path) -> tuple[bool, str, int]:
         n = 0
 
     if n < MIN_FIELDS:
-        return False, f"only {n} field(s) — below minimum {MIN_FIELDS}", n
+        return (
+            False,
+            f"only {n} field(s) — below minimum {MIN_FIELDS}",
+            n,
+            resolved_columns,
+            resolution_details,
+        )
 
-    return True, "", n
+    return True, "", n, resolved_columns, resolution_details
 
 
 def resolve_kb_paths(config_path: Path) -> dict[str, Path]:
@@ -245,6 +442,8 @@ def run_one_file(
 
 REPORT_COLUMNS = [
     "csv_file", "dd_guid", "dd_title", "field_count",
+    "resolved_crf_column", "resolved_variable_column",
+    "resolved_description_column", "resolved_encoding_column",
     "status", "start_time", "elapsed_seconds",
     "processing_seconds",
     "output_file", "skip_reason", "error_message",
@@ -252,11 +451,40 @@ REPORT_COLUMNS = [
 
 
 def write_report(rows: list[dict], report_path: Path) -> None:
+    """Write one complete report snapshot."""
     with open(report_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=REPORT_COLUMNS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
-    print(f"\nRun report → {report_path}  ({len(rows)} rows)")
+
+
+def column_mapping_report_fields(resolved_columns: dict[str, str]) -> dict:
+    """Convert a logical column mapping into stable run-report fields."""
+    return {
+        "resolved_crf_column": resolved_columns.get("crf_column", ""),
+        "resolved_variable_column": resolved_columns.get("variable_column", ""),
+        "resolved_description_column": resolved_columns.get(
+            "description_column",
+            "",
+        ),
+        "resolved_encoding_column": resolved_columns.get("encoding_column", ""),
+    }
+
+
+def write_report_snapshots(
+    rows: list[dict],
+    archived_report_path: Path,
+    latest_report_path: Path,
+) -> None:
+    """
+    Update both report views for the active batch.
+
+    The archived path is unique to this run, so historical reports are never
+    overwritten. The stable latest path is intentionally replaced so existing
+    workflows can continue reading <output_dir>/run_report.csv.
+    """
+    write_report(rows, archived_report_path)
+    write_report(rows, latest_report_path)
 
 
 # ---------------------------------------------------------------------------
@@ -282,7 +510,8 @@ def write_report(rows: list[dict], report_path: Path) -> None:
 @click.option(
     "--output-dir", required=True,
     type=click.Path(file_okay=False, path_type=Path),
-    help="Directory where output Excel files and the run report are written.",
+    help="Directory where output Excel files, logs, and reports are written. "
+         "Use a v6-specific directory to keep v5 and v6 outputs separate.",
 )
 @click.option(
     "--index-csv", default=None,
@@ -299,7 +528,7 @@ def write_report(rows: list[dict], report_path: Path) -> None:
 @click.option(
     "--env-file", "env_path", default=None,
     type=click.Path(dir_okay=False, path_type=Path),
-    help="Path to .env file containing OPENAI_API_KEY. "
+    help="Path to .env file containing an OpenAI or Azure OpenAI API key. "
          "Defaults to <config-dir>/.env.",
 )
 @click.option(
@@ -340,27 +569,58 @@ def main(
         print("Error: provide either --input-dir or --single-file.", file=sys.stderr)
         sys.exit(1)
 
+    # Resolve every CLI path before papermill switches its working directory.
+    input_dir = input_dir.expanduser().resolve() if input_dir else None
+    single_file = single_file.expanduser().resolve() if single_file else None
+    output_dir = output_dir.expanduser().resolve()
+    index_csv = index_csv.expanduser().resolve() if index_csv else None
+    config_path = config_path.expanduser().resolve()
+    env_path = env_path.expanduser().resolve() if env_path else None
+
     output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = output_dir / "run_report.csv"
+    latest_report_path = output_dir / "run_report.csv"
 
     # --- set up tee logging (stdout + log file) ---
     global _LOG_FILE
     log_dir = output_dir / "logs"
     log_dir.mkdir(exist_ok=True)
-    run_ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_path = log_dir / f"run_{run_ts}.log"
-    _LOG_FILE = open(log_path, "w", encoding="utf-8", buffering=1)  # line-buffered
+    report_dir = output_dir / "reports"
+    report_dir.mkdir(exist_ok=True)
+
+    run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+    notebook_stem = NOTEBOOK_PATH.stem
+    log_path = log_dir / f"{notebook_stem}_run_{run_id}.log"
+    archived_report_path = report_dir / f"{notebook_stem}_run_report_{run_id}.csv"
+
+    # Exclusive creation provides a final safeguard against accidental overwrite.
+    _LOG_FILE = open(log_path, "x", encoding="utf-8", buffering=1)  # line-buffered
     sys.stdout = _TeeStream(sys.__stdout__, _LOG_FILE)
     sys.stderr = _TeeStream(sys.__stderr__, _LOG_FILE)
+    tprint(f"Run ID    : {run_id}")
     tprint(f"Log file  : {log_path}")
+    tprint(f"Run report: {archived_report_path}")
+
+    # Create both report views immediately. Even a batch-level preflight
+    # failure therefore leaves a timestamped report (with headers) and a
+    # stable latest snapshot alongside its preserved log.
+    report_rows: list[dict] = []
+    write_report_snapshots(
+        report_rows,
+        archived_report_path,
+        latest_report_path,
+    )
 
     # --- resolve and verify .env ---
     resolved_env = env_path or (config_path.parent / ".env")
     if not resolved_env.exists():
         print(
             f"Error: .env file not found at {resolved_env}\n"
-            f"Create it with:  OPENAI_API_KEY=sk-...\n"
-            f"              OPENAI_BASE_URL=https://...\n"
+            f"Create it with one supported key name:\n"
+            f"  OPENAI_API_KEY=...  or  AZURE_OPENAI_API_KEY=...\n"
+            f"And, when using a custom/Azure endpoint:\n"
+            f"  OPENAI_BASE_URL=https://...\n"
+            f"  AZURE_OPENAI_BASE_URL=https://...\n"
+            f"  or AZURE_OPENAI_ENDPOINT=https://...\n"
             f"Or pass --env-file /path/to/.env",
             file=sys.stderr,
         )
@@ -369,6 +629,13 @@ def main(
     # --- verify notebook exists ---
     if not NOTEBOOK_PATH.exists():
         print(f"Error: notebook not found at {NOTEBOOK_PATH}", file=sys.stderr)
+        sys.exit(1)
+
+    # --- load config-driven input-column candidates ---
+    try:
+        column_candidates = load_column_candidates(config_path)
+    except ColumnResolutionError as e:
+        print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 
     # --- resolve KB paths once (from config, fixing Windows backslashes) ---
@@ -383,6 +650,9 @@ def main(
     tprint(f"Notebook  : {NOTEBOOK_PATH}")
     tprint(f"Config    : {config_path}")
     tprint(f"Env file  : {resolved_env}")
+    tprint("Input-column candidates:")
+    for role, candidates in column_candidates.items():
+        tprint(f"  {role}: {candidates}")
 
     # --- build file list ---
     index_map: dict[str, dict] = {}
@@ -432,7 +702,6 @@ def main(
     batch_start = time.time()
 
     # --- process files ---
-    report_rows: list[dict] = []
     success = skipped = errors = 0
 
     for i, csv_path in enumerate(csv_files, 1):
@@ -445,17 +714,38 @@ def main(
         if title:
             tprint(f"  title: {title[:60]}")
 
-        ok, reason, field_count = check_csv(csv_path)
+        (
+            ok,
+            reason,
+            field_count,
+            resolved_columns,
+            resolution_details,
+        ) = check_csv(csv_path, column_candidates)
+
+        if resolution_details:
+            tprint("  Resolved input columns:")
+            for role, details in resolution_details.items():
+                tprint(
+                    f"    {role}: {details['selected']} "
+                    f"({details['match_type']}; primary={details['primary']})"
+                )
+
         if not ok:
             tprint(f"  SKIP: {reason}")
             report_rows.append({
                 "csv_file": str(csv_path), "dd_guid": guid, "dd_title": title,
                 "field_count": field_count, "status": "skipped",
+                **column_mapping_report_fields(resolved_columns),
                 "start_time": start_time, "elapsed_seconds": 0,
                 "processing_seconds": 0,
                 "output_file": "", "skip_reason": reason, "error_message": "",
             })
             skipped += 1
+            write_report_snapshots(
+                report_rows,
+                archived_report_path,
+                latest_report_path,
+            )
             continue
 
         output_xlsx = output_dir / f"{csv_path.stem}_cde.xlsx"
@@ -477,6 +767,7 @@ def main(
         report_rows.append({
             "csv_file": str(csv_path), "dd_guid": guid, "dd_title": title,
             "field_count": field_count, "status": status,
+            **column_mapping_report_fields(resolved_columns),
             "start_time": start_time, "elapsed_seconds": result["elapsed_seconds"],
             "processing_seconds": processing_seconds,
             "output_file": result["output_file"], "skip_reason": "",
@@ -491,7 +782,18 @@ def main(
                 print("Stopping due to error (--no-skip-errors).")
                 break
 
-        write_report(report_rows, report_path)
+        write_report_snapshots(
+            report_rows,
+            archived_report_path,
+            latest_report_path,
+        )
+
+    # Always produce a final report, including zero-file and all-skipped runs.
+    write_report_snapshots(
+        report_rows,
+        archived_report_path,
+        latest_report_path,
+    )
 
     total = len(report_rows)
     batch_elapsed = round(time.time() - batch_start, 1)
@@ -502,7 +804,8 @@ def main(
         f"  Success: {success}\n"
         f"  Skipped: {skipped}\n"
         f"  Errors : {errors}\n"
-        f"  Report : {report_path}\n"
+        f"  Report : {archived_report_path}\n"
+        f"  Latest : {latest_report_path}\n"
         f"  Log    : {log_path}\n"
         f"  Total processing time: {batch_elapsed}s\n"
     )
