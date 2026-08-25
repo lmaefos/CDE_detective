@@ -1,168 +1,234 @@
-# CDE_ID_revamp_v5 — Pipeline Flow Diagram
+# CDE-ID Detective v6: Detailed Pipeline Flow
+
+This document describes the technical flow from a submitted study data dictionary to the final reconciled workbook and reporting layer. See [`workflowdiagram.md`](workflowdiagram.md) for the high-level version and [`README.md`](README.md) for output definitions and metric guidance.
+
+## Detailed workflow
 
 ```mermaid
 flowchart TD
-
-    %% ── External inputs ──────────────────────────────────────────
-    subgraph INPUTS["External Inputs"]
-        direction LR
-        I_DD["📄 Input data dictionary\n(Excel or CSV)"]
-        I_CFG["⚙️ config_prestep.ini\n(paths, columns, thresholds,\nacronyms, prompts)"]
-        I_ENV["🔑 .env\n(OPENAI_API_KEY)"]
-        I_CRF["📚 CRF_descriptions.json\n(CRF names + descriptions)"]
-        I_KB_XLS["📊 Compiled_CORE_CDEs…xlsx\n(HEAL CDE knowledge base)"]
-        I_KB_JSON["📄 All_HEALPAINCDEsDD…json\n(row-level flattened KB)"]
-        I_VS["☁️ OpenAI Vector Store\n(HEAL Core CRFs for matching)"]
-    end
-
-    %% ── Setup (Cells 0–1) ────────────────────────────────────────
-    subgraph SETUP["Setup  |  Cells 0–1"]
-        S1["Import libraries"]
-        S2["Load config\nResolve all file paths\nCreate OpenAI client\nLoad CRF reference text"]
-        S3["Read input vars from config:\ninput_file, output_file,\ncrf_column, variable_column,\ndescription_column, encoding_column"]
-    end
-
-    %% ── Stage 1: Prestep — CRF Identification (Cells 2–9) ────────
-    subgraph PRESTEP["Stage 1 · Prestep — CRF Identification  |  Cells 2–9"]
+    subgraph INPUTS["Inputs and executable specifications"]
         direction TB
-        P1["Read input file\n→ full_input_df\n→ data_dict_df\n(section, name, description, enumLabels)"]
-        P2["Acronym finder\n(variable name → CDE Acronym Finder column)\nloads map from config [Acronyms]"]
-        P3["Section context builder\n(infer local form context from\nneighboring rows, prefixes, encodings)\n→ section_context_df"]
-        P4["Prestep — LLM call per row\n(CRF name + rationale)\nbatched, checkpointed\n→ Refined CRF Name, Rationale"]:::llm
-        P5["Form harmonizer — LLM call per batch\n(collapse variant CRF names → canonical labels)\n→ Canonical CRF Name"]:::llm
-        P6["HEAL Core CRF match — LLM call per row\n(match Canonical CRF to official HEAL CRF list\nusing vector store)\n→ HEAL Core CRF Match, Confidence, Rationale"]:::llm
-        P7[("prestep_df\n(full_input_df + all prestep columns)")]:::df
+        I1["Study data dictionary"]
+        I2["config_prestep.ini"]
+        I3["Environment and API configuration"]
+        I4["HEAL Core CRF reference"]
+        I5["HEAL CDE knowledge base and row-level JSON"]
     end
 
-    %% ── Stage 2: VLMD Matching (Cells 10–19) ─────────────────────
-    subgraph VLMD["Stage 2 · VLMD CDE Matching  |  Cells 10–19"]
+    subgraph INTAKE["1. Intake, column resolution, and context"]
         direction TB
-        V1["Bridge: prestep_df → study_df\n(copy with config column aliases resolved)"]
-        V2["Load HEAL CDE knowledge base\n(Compiled_CORE_CDEs xlsx → cde_df)"]
-        V3["Load rules from config:\nProtectedPrimaryFamilies\nSkipVLMDMatchingCRFs\nConceptWeights, Thresholds"]
-        V4["Stage 1 — Concept similarity scoring\n(fuzzywuzzy against cde_df concept-family view)\n→ top-3 candidates,\nFinal HEAL CDE Concept Match,\nFinal Concept Match Score/Status/CRF"]
-        V5{"Skip VLMD matching?\n(SkipVLMDMatchingCRFs rule)"}
-        V6["Stage 2 — Encoding fidelity scoring\n(compare enumLabels vs CDE permissible values)\n→ Final Encoding Fidelity Score/Status"]
-        V7["Protected-family rule\n(block off-family primary candidates\nfor copyright-sensitive CRFs)\n→ Protected Family Rule Applied,\nBlocked Primary Candidate"]
-        V8[("DDtoCRFtoVLMDCDE_df\n(all rows + matching results)")]:::df
+        S1["Read the input and preserve original columns"]
+        S2["Resolve configured primary columns and aliases"]
+        S3["Build acronym hints and bounded section context"]
     end
 
-    %% ── Stage 3: Recon Setup (Cells 20–25) ───────────────────────
-    subgraph RECON_SETUP["Stage 3 · Recon Setup  |  Cells 20–25"]
+    subgraph CRF["2. HEAL Core CRF identification"]
         direction TB
-        R1["Confirm handoff dataframe exists"]
-        R2["Create recon_input_df\nResolve column names → resolved_cols\n(flexible lookup handles renamed columns)"]
-        R3["Load recon settings from config:\neligible_concept_statuses, max_rows, dry_run"]
-        R4{"Filter: rows with eligible concept status\n(High / Possible concept match)\nAND at least one candidate CDE"}
-        R5[("recon_candidate_df\n(eligible rows only)")]:::df
-        R6["Form-level consensus\n(group by section, find dominant CRF\nacross high/possible-match rows)\n→ form_consensus_crf, count, share\nmerged onto both recon_input_df\nand recon_candidate_df"]
+        C1["Infer a refined CRF name from row and section context"]
+        C2["Harmonize variant form names"]
+        C3["Compare with the official HEAL Core CRF reference"]
+        C4["Store CRF match, confidence, rationale, and audit status"]
     end
 
-    %% ── Stage 4: Recon Prep (Cells 26–31) ────────────────────────
-    subgraph RECON_PREP["Stage 4 · Recon Preparation  |  Cells 26–31"]
+    subgraph VLMD["3. Variable-level HEAL CDE candidate matching"]
         direction TB
-        RP1["Build official candidate packets\n(look up each candidate CDE name\nin All_HEALPAINCDEsDD JSON)\n→ recon_official_candidates list per row"]
-        RP2["Clean candidate packets\n(normalize field values to plain strings)\n→ recon_official_candidates_clean"]
-        RP3["Protected-family guardrails\n(check if row is anchored to\ncopyright-sensitive family;\nclassify candidates as in-/off-family)\n→ recon_skip_llm flag\n→ recon_preassigned_* for blocked rows\n→ form-consensus rescue for edge cases"]
-        RP4{"recon_skip_llm == True?"}
-        RP5["Pre-assign result:\nNeeds Human Review\n(off-family or no candidates)"]
-        RP6["Build LLM payload\n(row context + form consensus\n+ official candidate packets\n+ protected-family notes)\n→ recon_payload_df"]
+        V1["Load concept weights, thresholds, and CRF rules"]
+        V2["Retrieve top candidate concepts using variable, description, form, and CRF context"]
+        V3["Score concept similarity independently from encoding fidelity"]
+        V4["Retain top candidates and protected-family diagnostics"]
     end
 
-    %% ── Stage 5: LLM Adjudication (Cell 32) ──────────────────────
-    subgraph LLM_RECON["Stage 5 · LLM Adjudication  |  Cell 32"]
-        LR1["Send each payload to LLM\n(structured JSON response)\nbatched with retry logic"]:::llm
-        LR2[("llm_recon_results_df\nbest_best_match_cde/crf/variable\nrecon_decision, confidence, rationale)")]:::df
-    end
-
-    %% ── Stage 6: Merge & Export (Cells 33–37) ────────────────────
-    subgraph EXPORT["Stage 6 · Merge & Export  |  Cells 33–37"]
+    subgraph RECON["4. Form consensus, guardrails, and reconciliation"]
         direction TB
-        E1["Combine LLM results + preassigned results\n→ unified_recon_results_df\n(one row per recon_source_index)"]
-        E2["Merge onto recon_candidate_df\n→ recon_candidate_with_results_df"]
-        E3["Merge onto full recon_input_df\n→ final_reconciled_df\n(all rows, recon results where eligible)"]
-        E4["Build 3 export sheets:\n• metadata — run info\n• final-mapping — clean summary\n• all-outputs — full debug view"]
-        E5["Export Excel workbook\n(output_file + '_reconciled.xlsx')"]
+        R1["Select High or Possible concept candidates for reconciliation"]
+        R2["Build form-level CRF consensus and encoding context"]
+        R3["Construct official candidate packets from the CDE JSON"]
+        R4["Apply protected-family and content-filter guardrails"]
+        R5["Bounded adjudication selects Accept Candidate, No Match, or Needs Human Review"]
     end
 
-    %% ── Output ───────────────────────────────────────────────────
-    OUT["📊 Output Excel\n3 sheets:\n  metadata\n  final-mapping\n  all-outputs"]
+    subgraph EXPORT["5. Merge, export, and report"]
+        direction TB
+        E1["Merge reconciliation results onto all original rows"]
+        E2["Create metadata, final-mapping, and all-outputs sheets"]
+        E3["Write the reconciled workbook and batch run record"]
+        E4["Aggregate file-level metrics and prepare human validation"]
+    end
 
-    %% ── Wiring ───────────────────────────────────────────────────
-    I_DD & I_CFG & I_ENV & I_CRF --> SETUP
-    I_KB_XLS --> VLMD
-    I_KB_JSON --> RECON_PREP
-    I_VS --> PRESTEP
-    I_ENV --> LLM_RECON
+    I1 --> S1
+    I2 --> S2
+    I3 --> C1
+    I4 --> C3
+    I5 --> V2
+    I5 --> R3
 
-    SETUP --> P1
-    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7
+    S1 --> S2 --> S3
+    S3 --> C1 --> C2 --> C3 --> C4
+    C4 --> V1 --> V2 --> V3 --> V4
+    V4 --> R1 --> R2 --> R3 --> R4 --> R5
+    R5 --> E1 --> E2 --> E3 --> E4
 
-    P7 --> V1
-    V1 --> V2 --> V3 --> V4 --> V5
-    V5 -- "Yes → score=0, skip Stage 2" --> V7
-    V5 -- No --> V6 --> V7
-    V7 --> V8
+    classDef input fill:#d9f2e6,stroke:#25788e,color:#000
+    classDef llm fill:#fff2cc,stroke:#982568,color:#000
+    classDef deterministic fill:#e8f4f8,stroke:#25788e,color:#000
+    classDef output fill:#f4eef6,stroke:#532565,color:#000
 
-    V8 --> R1 --> R2 --> R3 --> R4
-    R4 -- "0 eligible rows → recon skipped,\nstill exports with no recon columns" --> E3
-    R4 -- "eligible rows" --> R5 --> R6
-
-    R6 --> RP1 --> RP2 --> RP3 --> RP4
-    RP4 -- Yes --> RP5 --> E1
-    RP4 -- No --> RP6
-
-    RP6 --> LR1 --> LR2 --> E1
-
-    E1 --> E2 --> E3 --> E4 --> E5 --> OUT
-
-    %% ── Styles ───────────────────────────────────────────────────
-    classDef llm fill:#fde68a,stroke:#d97706,color:#000
-    classDef df fill:#bfdbfe,stroke:#2563eb,color:#000
-    classDef input fill:#d1fae5,stroke:#059669,color:#000
-
-    class I_DD,I_CFG,I_ENV,I_CRF,I_KB_XLS,I_KB_JSON,I_VS input
+    class I1,I2,I3,I4,I5 input
+    class C1,C2,C3,R5 llm
+    class S1,S2,S3,C4,V1,V2,V3,V4,R1,R2,R3,R4 deterministic
+    class E1,E2,E3,E4 output
 ```
-
----
 
 ## Stage summary
 
-| Stage | Cells | Purpose | LLM calls |
-|-------|-------|---------|-----------|
-| Setup | 0–1 | Load config, open AI client, resolve all file paths | — |
-| Prestep | 2–9 | Identify which CRF each variable belongs to | ✅ Prestep (per row), Harmonizer (per batch), HEAL match (per row) |
-| VLMD Matching | 10–19 | Score each variable against HEAL CDE knowledge base | — (fuzzywuzzy) |
-| Recon Setup | 20–25 | Filter eligible rows, build form-level consensus | — |
-| Recon Prep | 26–31 | Look up official KB entries, apply guardrails, build payloads | — |
-| LLM Adjudication | 32 | LLM picks best CDE match from candidates | ✅ One call per eligible row |
-| Merge & Export | 33–37 | Reconcile all results, write Excel | — |
+| Stage | Purpose | Main outputs |
+|---|---|---|
+| Intake and context | Read the input, preserve original fields, resolve aliases, and build bounded context | Resolved input columns, acronym hints, section-context fields |
+| CRF identification | Infer, harmonize, and compare the study form with official HEAL Core CRFs | `HEAL Core CRF Match`, `Prestep CRF Confidence`, rationale, operational status |
+| Variable-level matching | Retrieve candidate CDEs and separately measure concept similarity and encoding fidelity | Top candidates, concept score and status, fidelity score and status |
+| Reconciliation | Use form consensus, official candidate packets, and guardrails to select the final mapping | Final CDE, CRF, variable, decision, confidence, rationale, result source |
+| Export and reporting | Merge results onto all rows, export three views, and calculate file-level metrics | Reconciled workbook, run report, file summary, validation-ready detail |
 
-## Key dataframes and their lineage
+## Scoring and decision layers
 
+The pipeline deliberately separates retrieval evidence from the final decision.
+
+| Layer | Main question | Key fields | Important boundary |
+|---|---|---|---|
+| CRF identification | Which HEAL Core form does the row or section most resemble? | `HEAL Core CRF Match`, `Prestep CRF Confidence` | A CRF anchor supplies context but does not independently establish a variable-level CDE match. |
+| Concept retrieval | Does the study variable represent the same concept as a HEAL CDE candidate? | `Final HEAL CDE Concept Match`, `Final Concept Match Score`, `Final Concept Match Status` | Encoding is excluded from candidate selection so different local codes do not automatically hide a concept match. |
+| Encoding fidelity | How similarly was the selected concept implemented? | `Final Encoding Fidelity Score`, `Final Encoding Fidelity Status` | A low score can indicate different encodings or missing encoding evidence. |
+| Reconciliation | Which official candidate, if any, should become the final mapping? | `best_best_match_cde`, `best_best_match_variable`, `recon_decision`, `recon_confidence` | Reconciliation may select a different candidate, so pre-reconciliation scores must be checked or recomputed before final reporting. |
+| Human validation | Was the proposed final mapping correct? | Confirmed, revised, rejected, unresolved outcomes | This is the layer required to calculate observed mapping precision. |
+
+## Concept-similarity calculation
+
+Candidate concept retrieval uses a weighted combination of fuzzy similarity signals configured in `config_prestep.ini`.
+
+Current default weights are:
+
+| Signal | Weight |
+|---|---:|
+| Study variable name versus official CDE variable name | 0.25 |
+| Study description or field label versus official question text | 0.50 |
+| Study form name versus official CDE CRF | 0.15 |
+| Pre-step HEAL Core CRF versus official CDE CRF | 0.10 |
+
+A configured CRF-context bonus may be added when the pre-step CRF and candidate CRF align. The score is capped at 100.
+
+Default concept categories are:
+
+| Score | Status |
+|---:|---|
+| 75-100 | High concept match |
+| 50-74.9 | Possible concept match |
+| 25-49.9 | Weak concept match |
+| Below 25 | No confident concept match |
+
+Thresholds remain config-driven and should be reported with the workflow version used for a formal run.
+
+## Encoding-fidelity calculation
+
+Encoding fidelity compares the study encoding text with the official CDE `PV Description` using token-set fuzzy similarity.
+
+Default fidelity categories are:
+
+| Score | Status |
+|---:|---|
+| 80-100 | Closely implemented |
+| 50-79.9 | Concept captured, encoding differs |
+| Below 50 | Low implementation fidelity |
+
+The current implementation returns zero when either encoding is empty. Reporting should therefore distinguish a true low-fidelity comparison from a row where encoding information was not scorable.
+
+## Reconciliation logic
+
+Rows generally enter reconciliation when:
+
+- the concept status is `High concept match` or `Possible concept match`
+- at least one CDE candidate is available
+- reconciliation is enabled in the config
+
+The reconciliation layer adds:
+
+1. Form-level CRF consensus and encoding context.
+2. Official candidate packets constructed from the row-level HEAL CDE JSON.
+3. Protected-family rules that block unsafe off-family proxy matches.
+4. Content-filter and parsing guardrails that route uncertain rows to human review.
+5. A bounded adjudication decision chosen only from official candidates.
+
+Allowed decisions are:
+
+- `Accept Candidate`
+- `No Match`
+- `Needs Human Review`
+
+Allowed confidence values are:
+
+- `High`
+- `Medium`
+- `Low`
+
+## Dataframe lineage
+
+```text
+input data dictionary
+  -> full_input_df
+  -> data_dict_df
+  -> prestep_df
+  -> study_df
+  -> DDtoCRFtoVLMDCDE_df
+  -> recon_input_df
+     -> recon_candidate_df
+        -> recon_payload_df
+        -> reconciliation results
+  -> final_reconciled_df
+     -> metadata_sheet_df
+     -> final_mapping_sheet_df
+     -> full_outputs_sheet_df
 ```
-full_input_df          ← read from input file
-  └─ data_dict_df      ← selected columns (section, name, description, enumLabels)
-       └─ prestep_df   ← + all prestep columns (Refined CRF Name, HEAL Core CRF Match, …)
-            └─ study_df (bridge copy)
-                 └─ DDtoCRFtoVLMDCDE_df  ← + VLMD matching columns
-                      └─ recon_input_df  (copy)
-                           └─ recon_candidate_df  ← filtered to eligible rows
-                                └─ recon_payload_df  ← + LLM payloads
-                                └─ (+ llm_recon_results_df merged in)
-                      └─ final_reconciled_df  ← recon results merged back onto all rows
-                           ├─ metadata_sheet_df
-                           ├─ final_mapping_sheet_df
-                           └─ full_outputs_sheet_df  → output Excel
-```
 
-## Proposed module boundaries (for refactoring)
+## Final workbook sheets
 
-| Module | Cells | Inputs | Outputs |
-|--------|-------|--------|---------|
-| `config.py` | 0–1 | config_prestep.ini, .env | config object, OpenAI client, resolved paths |
-| `prestep.py` | 2–9 | full_input_df, config, client, CRF JSON | prestep_df |
-| `vlmd_matching.py` | 10–19 | prestep_df, config, KB xlsx | DDtoCRFtoVLMDCDE_df |
-| `recon.py` | 20–32 | DDtoCRFtoVLMDCDE_df, config, client, KB JSON | final_reconciled_df |
-| `export.py` | 33–37 | final_reconciled_df, config | output Excel workbook |
-| `pipeline.py` | — | input CSV/Excel path, config path, env path | output Excel path |
+| Sheet | Purpose | Recommended use |
+|---|---|---|
+| `metadata` | Filtered rows with `Accept Candidate` or `Needs Human Review` | Compact stewardship handoff |
+| `final-mapping` | Original study fields plus selected final outputs | Primary clean mapping view |
+| `all-outputs` | Full pipeline, scoring, guardrail, reconciliation, and audit fields | Quantitative reporting, troubleshooting, and validation |
+
+## Batch operations and reporting
+
+`run_cde_id_batch.py` processes multiple input files and records operational outcomes such as:
+
+- success
+- skipped
+- error
+- resolved input columns
+- variable count
+- processing time
+- output path
+- skip reason or error message
+
+Operational outcomes should remain separate from scientific mapping metrics. A skipped or errored file contributes to processing completeness but does not have a mapping-quality score.
+
+`build_cde_mapping_report.py` aggregates successfully produced reconciled workbooks into:
+
+- a file-level summary suitable for tracking and Monday-board preparation
+- an expanded audit summary
+- variable-level scoring and combinability detail
+- metric definitions
+- batch run status
+
+See [`README.md`](README.md) for the authoritative metric definitions and the human-validation calculation framework.
+
+## Proposed code boundaries for future refactoring
+
+| Module | Responsibility | Primary output |
+|---|---|---|
+| `config.py` | Load config, resolve paths and aliases, initialize clients | Validated runtime configuration |
+| `prestep.py` | Build context and identify HEAL Core CRFs | `prestep_df` |
+| `vlmd_matching.py` | Retrieve candidates and calculate concept and encoding evidence | Variable-level candidate table |
+| `recon.py` | Build official packets, apply guardrails, and adjudicate | Reconciled results |
+| `export.py` | Build the three workbook sheets and route outputs | Reconciled workbook |
+| `reporting.py` | Aggregate file-level metrics and validation-ready detail | Mapping metrics report |
+| `pipeline.py` | Orchestrate the end-to-end workflow | Output and run-status paths |
